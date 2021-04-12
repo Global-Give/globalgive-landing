@@ -45,7 +45,7 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Experience your ultimate mobile application
+            Change Millions of Lives with GlobalGive
           </Heading>
           <Text as="p" variant="heroSecondary">
             Get your blood tests delivered at let home collect sample from the
@@ -60,7 +60,7 @@ export default function Banner() {
               <ModalVideo
                 channel="youtube"
                 isOpen={videoOpen}
-                videoId="ZNA9rmDsYVE"
+                videoId="dQw4w9WgXcQ"
                 onClose={() => setVideoOpen(false)}
               />
               <Button

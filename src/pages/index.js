@@ -20,7 +20,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 004" />
+          <SEO title="Global-Give Token - Charity Token" />
           <Banner />
           <KeyFeature />
           <CoreFeature />

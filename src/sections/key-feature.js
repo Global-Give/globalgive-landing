@@ -13,17 +13,17 @@ const data = [
     id: 1,
     imgSrc: Vector,
     altText: 'Vector',
-    title: 'Vector Editing',
+    title: 'Community-Driven',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Sample text sample text sample text sample text sample text sample text sample text.',
   },
   {
     id: 2,
     imgSrc: Editing,
     altText: 'Monitoring',
-    title: 'Customize & Monitoring',
+    title: 'Sample Title',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Sample text sample text sample text sample text sample text sample text sample text.',
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const data = [
     altText: 'Quality',
     title: 'Quality & Short-period',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Sample text sample text sample text sample text sample text sample text sample text.',
   },
 ];
 
@@ -40,8 +40,8 @@ export default function KeyFeature() {
     <section sx={{ variant: 'section.keyFeature' }} id="feature">
       <Container>
         <SectionHeader
-          slogan="Quality features"
-          title="Meet exciting feature of app"
+          slogan="Features"
+          title="Sample engaging phrase"
         />
 
         <Grid sx={styles.grid}>

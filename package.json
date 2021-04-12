@@ -5,11 +5,37 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "serve": "next start",
+    "export": "next export",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "dotenv": "^8.2.0",
+    "framer-motion": "^4.0.3",
+    "globby": "^11.0.3",
+    "isomorphic-unfetch": "^3.1.0",
     "next": "10.0.9",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
+    "prettier": "^2.2.1",
+    "rc-drawer": "^4.3.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "17.0.2",
+    "react-ga": "^3.3.0",
+    "react-icons": "^4.2.0",
+    "react-modal-video": "^1.2.6",
+    "react-multi-carousel": "^2.6.2",
+    "react-scroll": "^1.8.2",
+    "react-stickynode": "^3.0.5",
+    "theme-ui": "^0.6.0",
+    "typeface-dm-sans": "^1.1.13"
+  },
+  "devDependencies": {
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^9.0.0",
+    "next-sitemap": "^1.6.9"
   }
 }

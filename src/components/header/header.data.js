@@ -15,4 +15,32 @@ export default [
     path: 'pricing',
     label: 'Pricing',
   },
+  {
+    path: 'faq',
+    label: 'FAQ',
+  },
 ];
+
+
+// {
+//   path: 'home',
+//   label: 'Home',
+// },
+// {
+//   path: 'token',
+//   label: 'Token',
+// },
+// {
+//   path: 'roadmap',
+//   label: 'Roadmap',
+// },
+// {
+//   path: 'news',
+//   label: 'News',
+// },
+
+// {
+//   path: 'about us',
+//   label: 'About Us',
+// }
+// ];

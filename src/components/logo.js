@@ -3,7 +3,7 @@
 import { jsx, Image } from 'theme-ui';
 import { Link } from 'components/link';
 
-export default function Logo({ src, ...rest }) {
+export default function Logo({ src, component, ...rest }) {
   return (
     <Link
       path="/"
@@ -15,7 +15,7 @@ export default function Logo({ src, ...rest }) {
       }}
       {...rest}
     >
-      <Image src={src} alt="startup landing logo" />
+      {component()}
     </Link>
   );
 }

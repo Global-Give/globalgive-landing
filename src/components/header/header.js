@@ -5,6 +5,8 @@ import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo-dark.svg';
+import { GlobalGiveLogo } from 'assets/logos/globalgive';
+
 import LogoWhite from 'assets/logo.svg';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
@@ -15,7 +17,7 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={className === 'sticky' ? LogoDark : LogoWhite} />
+          <Logo component={GlobalGiveLogo} />
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
@@ -36,9 +38,9 @@ export default function Header({ className }) {
           <Button
             className="donate__btn"
             variant="secondary"
-            aria-label="Get Started"
+            aria-label="Buy"
           >
-            Get Started
+            Buy Now
           </Button>
 
           <MobileDrawer />
@@ -76,11 +78,18 @@ const styles = {
       flexShrink: 0,
       mr: [15, 20, null, null, 0],
       ml: ['auto', null, null, null, 0],
+      borderColor: 'primary',
+      color: 'primary',
+      '&:hover': {
+        boxShadow: 'rgba(31, 62, 118, 0.57) 0px 9px 20px -5px',
+        backgroundColor: 'primary',
+        color: 'white',
+      },
     },
     '&.sticky': {
       position: 'fixed',
       backgroundColor: 'background',
-      color: '#000000',
+      color: '#FFFFFF', // This modifies the nav links colors
       boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
       py: 3,
       'nev > a': {
@@ -115,7 +124,7 @@ const styles = {
       cursor: 'pointer',
       lineHeight: '1.2',
       '&.active': {
-        color: 'secondary',
+        color: 'primary',
       },
     },
   },

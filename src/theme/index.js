@@ -1,17 +1,17 @@
 export default {
   // example colors with dark mode
   colors: {
-    text: '#343D48', // body color and primary color
-    text_secondary: '#02073E', // secondary body color
+    text: '#717584', // body color and primary color
+    text_secondary: '#717584', // secondary body color
     heading: '#244886', // primary heading color
-    heading_secondary: '#0F2137', // heading color
-    background: '#FFFFFF', // body background color
+    heading_secondary: '#FFFFFF', // heading color
+    background: '#171921', // body background color
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E5ECF4', // border color
-    primary: '#1F3E76', // primary button and link color
-    secondary: '#25CB9E', // secondary color - can be used for hover states
+    primary: '#49A4CC', // primary button and link color
+    secondary: '#F9603E', // secondary color - can be used for hover states
     muted: '#7B8188', // muted color
-    accent: '#609', // a contrast color for emphasizing UI
+    accent: '#49A4CC', // a contrast color for emphasizing UI
     yellow: '#F6C416',
 
     // highlight	a background color for highlighting text
@@ -27,14 +27,15 @@ export default {
     '1620px',
   ],
   fonts: {
-    body: "'DM Sans', sans-serif",
-    heading: "'DM Sans', sans-serif",
+    body: "'Jost', 'DM Sans', sans-serif",
+    heading: "'Jost', 'DM Sans', sans-serif",
   },
   fontSizes: [12, 15, 16, 18, 20, 22, 24, 28, 32, 36, 42, 48, 52, 64],
   fontWeights: {
     body: 'normal',
     heading: 500,
     bold: 700,
+    normal: 'body'
   },
   lineHeights: {
     body: 1.8,
@@ -154,10 +155,10 @@ export default {
     heroSecondary: {
       color: 'white',
       fontSize: [2, 3, 4, '17px', null, 3, '19px', 4],
-      lineHeight: [2, null, null, null, 2.2],
-      fontWeight: 'body',
+      lineHeight: ['32px', '32px', '32px', '32px', '32px'],
+      fontWeight: 400,
       pr: [0, null, null, null, null, '100px', null, '125px'],
-      mb: ['35px', null, null, null, '40px', null, null, 7],
+      mb: ['30px', null, null, null, '35px', null, null, 7],
     },
     title: {
       // extends the text.heading styles
@@ -221,26 +222,40 @@ export default {
     }, // default variant for MenuButton
     // you can reference other values defined in the theme
     defaultBtn: {
-      borderRadius: '45px',
+      borderColor: 'transparent',
+      borderStyle: 'solid',
+      borderWidth: '1.5px',
+      borderRadius: '2px',
       fontSize: ['14px', 1, null, null, 2],
       letterSpacings: ['-0.5px', null, null, null, '-0.15px'],
-      padding: ['11px 20px 10px', null, null, null, '13px 30px'],
-      fontFamily: 'body',
+      padding: ['11px 18px 10px', null, null, null, '13px 30px'],
+      fontFamily: 'Jost',
       cursor: 'pointer',
       lineHeight: 1.2,
       transition: 'all 0.25s',
       fontWeight: 500,
+      color: 'background',
+      bg: 'primary',
       '&:focus': {
         outline: 0,
       },
+      '&:hover': {
+        border: 'solid primary',
+        borderColor: 'primary',
+        backgroundColor: 'transparent',
+        color: 'primary'
+      }
     },
     primary: {
       variant: 'buttons.defaultBtn',
-      color: 'white',
+      color: 'background',
       bg: 'primary',
       '&:hover': {
         boxShadow: 'rgba(31, 62, 118, 0.57) 0px 9px 20px -5px',
       },
+    },
+    outline: {
+
     },
     whiteButton: {
       variant: 'buttons.defaultBtn',

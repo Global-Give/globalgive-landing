@@ -400,4 +400,4 @@ export const BannerIllustration = () => (
 </defs>
 </svg>
 
-);
+	);

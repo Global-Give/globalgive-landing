@@ -81,7 +81,7 @@ const styles = {
       borderColor: 'primary',
       color: 'primary',
       '&:hover': {
-        boxShadow: 'rgba(31, 62, 118, 0.57) 0px 9px 20px -5px',
+        boxShadow: 'rgba(0, 211, 186, 0.37) 0px 9px 20px -5px',
         backgroundColor: 'primary',
         color: 'white',
       },

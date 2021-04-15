@@ -7,8 +7,8 @@ import ModalVideo from 'react-modal-video';
 import { Link } from 'components/link';
 import { FaPlayCircle } from 'react-icons/fa';
 import { IoDownloadOutline } from 'react-icons/io5';
-import BannerBG from 'assets/bannerBg.png';
-import BannerThumb from 'assets/banner-thumb.png';
+import BannerBG from 'assets/dot_wave.png';
+import DotWave from 'assets/dot_wave.png';
 import { BannerIllustration } from 'assets/illustrations/banner-illustration';
 
 import client1 from 'assets/sponsor/paypal.svg';
@@ -45,6 +45,7 @@ export default function Banner() {
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
+        <Image src={DotWave} sx={styles.banner.bgImage} />
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
             Save lives with a single token.
@@ -72,8 +73,8 @@ export default function Banner() {
                 }}
                 css={{
                   display: 'flex',
-                  'align-items': 'center',
-                  'justify-content': 'center'
+                  alignItems: 'center',
+                  justifyContent: 'center'
                 }}>
                   White Paper
                   <IoDownloadOutline sx={{
@@ -97,7 +98,7 @@ export default function Banner() {
               </Button>
             </> */}
           </Flex>
-          <Flex sx={styles.sponsorBox}>
+          {/* <Flex sx={styles.sponsorBox}>
             <Text sx={styles.sponsorTitle}>Sponsored by:</Text>
             <Box sx={styles.sponsorBox.sponsor}>
               {data.map((item, index) => (
@@ -106,13 +107,13 @@ export default function Banner() {
                 </Link>
               ))}
             </Box>
-          </Flex>
+          </Flex> */}
         </Box>
 
         <Flex sx={styles.banner.imageBox} css={{
           display: 'flex',
-          'align-items': 'center',
-          'justify-content': 'center'
+          alignItems: 'center',
+          justifyContent: 'center'
         }}>
           <BannerIllustration />
         </Flex>
@@ -124,16 +125,22 @@ export default function Banner() {
 const styles = {
   banner: {
     overflow: ['hidden', 'initial', null, 'hidden'],
-    backgroundImage: `url(${BannerBG})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'top left',
-    backgroundSize: 'cover',
+    
     borderBottomRightRadius: [100, 150, null, null, null, 250],
     pt: ['150px', null, null, null, null, null, '140px', '130px'],
     pb: ['100px', null, null, '110px', null, 10, '150px'],
     backgroundColor: 'background',
     container: {
-      display: 'flex',
+      display: 'flex'
+    },
+    bgImage: {
+      position: 'absolute',
+      opacity: 0.15,
+      left: '16rem',
+      top: '0%',
+      margin: '0 8%',
+      height: '56.563rem',
+      width: '51.125rem'
     },
     contentBox: {
       width: ['100%', null, '85%', '70%', '65%', '70%'],

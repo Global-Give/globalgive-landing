@@ -22,14 +22,14 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Global-Give Token - Charity Token" />
           <Banner />
-          <KeyFeature />
-          <CoreFeature />
+          {/* <KeyFeature /> */}
+          {/* <CoreFeature /> */}
           <Feature />
           <PartnerSection />
           <WorkFlow />
-          <TestimonialCard />
+          {/* <TestimonialCard /> */}
           <SecurePayment />
-          <Package />
+          {/* <Package /> */}
           <Faq />
         </Layout>
       </StickyProvider>

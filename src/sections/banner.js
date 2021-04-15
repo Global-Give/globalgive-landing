@@ -45,7 +45,6 @@ export default function Banner() {
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
-        <Image src={DotWave} sx={styles.banner.bgImage} />
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
             Save lives with a single token.
@@ -64,24 +63,25 @@ export default function Banner() {
             You can find others listed on our crypto exchanges page.
           </Text>
           <Flex>
-            <Button variant="defaultBtn" aria-label="Get Started">
-              
-                <Container sx={{
-                  fontFamily: 'Jost',
-                  fontWeight: 500,
-                  fontSize: '20px'
-                }}
-                css={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
-                }}>
-                  White Paper
-                  <IoDownloadOutline sx={{
-                    mx: 2
-                  }} />
-                </Container>
-            </Button>
+            <a href="#">
+              <Button variant="defaultBtn" aria-label="Get Started">
+                  <Container sx={{
+                    fontFamily: 'Jost',
+                    fontWeight: 500,
+                    fontSize: '20px'
+                  }}
+                  css={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    White Paper
+                    <IoDownloadOutline sx={{
+                      mx: 2
+                    }} />
+                  </Container>
+              </Button>
+            </a>
             {/* <>
               <ModalVideo
                 channel="youtube"
@@ -118,6 +118,8 @@ export default function Banner() {
           <BannerIllustration />
         </Flex>
       </Container>
+      <Image src={DotWave} sx={styles.banner.bgImage} />
+
     </section>
   );
 }
@@ -134,10 +136,11 @@ const styles = {
       display: 'flex'
     },
     bgImage: {
+      pointerEvents: 'none',
       position: 'absolute',
       opacity: 0.15,
-      left: '16rem',
-      top: '0%',
+      left: 0,
+      top: '10%',
       margin: '0 8%',
       height: '56.563rem',
       width: '51.125rem'

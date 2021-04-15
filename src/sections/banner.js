@@ -115,7 +115,9 @@ export default function Banner() {
           alignItems: 'center',
           justifyContent: 'center'
         }}>
-          <BannerIllustration />
+          <BannerIllustration sx={{
+            zIndex: 0
+          }}/>
         </Flex>
       </Container>
       <Image src={DotWave} sx={styles.banner.bgImage} />

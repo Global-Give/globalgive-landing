@@ -12,33 +12,33 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear" x1="16.4112" y1="-16.6929" x2="10.5886" y2="20.6659" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0096D9"/>
-<stop offset="1" stop-color="#00C198"/>
+<stop stopColor="#0096D9"/>
+<stop offset="1" stopColor="#00C198"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="9.13634" y1="13.6186" x2="18.5055" y2="32.4253" gradientUnits="userSpaceOnUse">
-<stop stop-color="#002DD9"/>
-<stop offset="1" stop-color="#00B2AB"/>
+<stop stopColor="#002DD9"/>
+<stop offset="1" stopColor="#00B2AB"/>
 </linearGradient>
 <linearGradient id="paint2_linear" x1="23.8081" y1="-3.42383" x2="6.0835" y2="38.1718" gradientUnits="userSpaceOnUse">
-<stop stop-color="#3482C0"/>
-<stop offset="0.45" stop-color="#96BEDE"/>
-<stop offset="0.83" stop-color="#E1EDF6"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="#3482C0"/>
+<stop offset="0.45" stopColor="#96BEDE"/>
+<stop offset="0.83" stopColor="#E1EDF6"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint3_linear" x1="1361.37" y1="132.276" x2="-132.261" y2="2238.51" gradientUnits="userSpaceOnUse">
-<stop stop-color="#3482C0"/>
-<stop offset="0.45" stop-color="#96BEDE"/>
-<stop offset="0.83" stop-color="#E1EDF6"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="#3482C0"/>
+<stop offset="0.45" stopColor="#96BEDE"/>
+<stop offset="0.83" stopColor="#E1EDF6"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <linearGradient id="paint4_linear" x1="25.6742" y1="3.26857" x2="10.5961" y2="32.713" gradientUnits="userSpaceOnUse">
-<stop stop-color="#569FA1"/>
-<stop offset="0.36" stop-color="#97C4C5"/>
-<stop offset="0.8" stop-color="#E2EEEF"/>
-<stop offset="1" stop-color="white"/>
+<stop stopColor="#569FA1"/>
+<stop offset="0.36" stopColor="#97C4C5"/>
+<stop offset="0.8" stopColor="#E2EEEF"/>
+<stop offset="1" stopColor="white"/>
 </linearGradient>
 <radialGradient id="paint5_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21.5948 32.3825) scale(27.8184 27.5367)">
-<stop stop-color="#FFFF00"/>
+<stop stopColor="#FFFF00"/>
 <stop offset="1"/>
 </radialGradient>
 <clipPath id="clip0">

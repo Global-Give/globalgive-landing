@@ -11,8 +11,9 @@ export default {
     primary: '#00D3BA', // primary button and link color
     secondary: '#009288', // secondary color - can be used for hover states
     muted: '#7B8188', // muted color
-    accent: '#49A4CC', // a contrast color for emphasizing UI
+    accent: '#F9603E', // a contrast color for emphasizing UI
     yellow: '#F6C416',
+    white: '#FFFFFF'
 
     // highlight	a background color for highlighting text
     
@@ -236,9 +237,7 @@ export default {
       fontWeight: 500,
       color: 'background',
       bg: 'primary',
-      '&:focus': {
-        outline: 0,
-      },
+      outline: 'none',
       '&:hover': {
         border: 'solid primary',
         borderColor: 'primary',
@@ -253,9 +252,6 @@ export default {
       '&:hover': {
         boxShadow: 'rgba(31, 62, 118, 0.57) 0px 9px 20px -5px',
       },
-    },
-    outline: {
-
     },
     whiteButton: {
       variant: 'buttons.defaultBtn',
@@ -286,6 +282,17 @@ export default {
         mr: 2,
       },
     },
+    accentButton: {
+      variant: 'buttons.defaultBtn',
+      backgroundColor: 'accent',
+      color: 'white',
+      '&:hover': {
+        border: 'solid accent',
+        borderColor: 'accent',
+        backgroundColor: 'transparent',
+        color: 'accent'
+      }
+    }
   },
   cards: {
     primary: {

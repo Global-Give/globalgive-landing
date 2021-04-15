@@ -1,6 +1,6 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx, Heading, Box, Container, Text } from 'theme-ui';
+import { jsx, Heading, Box, Container, Text, Button } from 'theme-ui';
 import { Link } from 'components/link';
 import menuItems from './footer.data';
 export default function Footer() {
@@ -8,7 +8,32 @@ export default function Footer() {
     <footer sx={styles.footer}>
       <Container sx={styles.footer.container}>
         <Box sx={styles.footer.footerTopArea}>
-          {menuItems.map(({ header, items }, i) => (
+          <Box sx={styles.footer.menus}>
+
+          </Box>
+          <Box sx={styles.footer.menus}>
+            <Heading sx={styles.footer.heading}>
+              CONTACT US
+            </Heading>
+            <Heading as="h1" sx={{
+              color: 'white',
+              fontSize: '2rem',
+              fontFamily: "'Jost', 'DM Sans'"
+            }}>
+              We are on social media
+            </Heading>
+          </Box>
+          <Box sx={styles.footer.menus}>
+            <a href="https://t.me/globalgivetokencommunity" target="_blank" rel="noopener noreferrer">
+              <Button variant="accentButton" sx={{
+                width: 'max-content',
+                marginLeft: '10%'
+              }}>
+                Join Telegram
+              </Button>
+            </a>
+          </Box>
+          {/* {menuItems.map(({ header, items }, i) => (
             <Box sx={styles.footer.menus} key={i}>
               <Heading sx={styles.footer.heading}>{header}</Heading>
               <nav>
@@ -22,21 +47,22 @@ export default function Footer() {
                 ))}
               </nav>
             </Box>
-          ))}
+          ))} */}
         </Box>
       </Container>
-      <Text sx={styles.footer.copyright}>
+      {/* <Text sx={styles.footer.copyright}>
         All right reserved - Design & Developed by
         <Link path="https://redq.io/" target="_blank">
-          RedQ, Inc
+          The GlobalGive Organization
         </Link>
-      </Text>
+      </Text> */}
     </footer>
   );
 }
 
 const styles = {
   footer: {
+    backgroundColor: 'background_secondary',
     container: {
       width: '100%',
       alignItems: 'stretch',
@@ -49,9 +75,11 @@ const styles = {
       pt: [7, null, 8],
       pb: ['10px', null, null, '20px'],
       px: [0, null, null, null, 4],
+      alignItems: 'center',
+      justifyContent: 'center'
     },
     menus: {
-      width: ['50%', null, null, '25%'],
+      width: ['50%', null, null, '33%'],
       display: 'flex',
       flexDirection: 'column',
       mb: ['40px', null, null, '60px'],
@@ -59,10 +87,15 @@ const styles = {
 
     heading: {
       fontSize: [3, null, null, 4],
-      color: 'text_secondary',
+      background: 'linear-gradient(180deg, #5A82F6 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(91.34deg, #2698EA 11.48%, #FFB176 53.97%, #ED5158 100.98%)',
       fontWeight: '500',
+      fontFamily: "'Poppins', 'DM Sans'",
       mb: [3, 4, 5, null, 6],
       lineHeight: '1.35',
+      backgroundClip: 'text',
+	    '-webkit-background-clip': 'text',
+	    '-webkit-text-fill-color': '#0000',
+      width: 'max-content'
     },
 
     link: {
@@ -86,8 +119,7 @@ const styles = {
       fontSize: ['14px', null, 1],
       width: '100%',
       textAlign: 'center',
-      p: ['20px 20px'],
-      backgroundColor: '#FCFDFE',
+      p: ['0px 10px'],
       color: 'text',
       a: {
         textDecoration: 'none',

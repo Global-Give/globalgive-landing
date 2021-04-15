@@ -140,8 +140,10 @@ const styles = {
       position: 'absolute',
       opacity: 0.15,
       left: 0,
+      right: 0,
       top: '10%',
-      margin: '0 8%',
+      marginLeft: 'auto',
+      marginRight: 'auto',
       height: '56.563rem',
       width: '51.125rem'
     },

@@ -21,14 +21,12 @@ export default function SecurePayment() {
   return (
     <section sx={{ 
       variant: 'section.securePayment',
-      background: 'linear-gradient(0deg, rgba(29,31,41,1) 0%, rgba(23,25,33,1) 100%)'
-     }}>
+      background: 'linear-gradient(0deg, rgba(29,31,41,1) 0%, rgba(23,25,33,1) 100%)',
+     }} id="payment">
       <Box sx={styles.bgOverlay} />
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={SecurePaymentIllustration} alt={data.title} sx={{
-            paddingBottom: '100px'
-          }} />
+          <Image src={SecurePaymentIllustration} alt={data.title} />
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature
@@ -67,15 +65,16 @@ const styles = {
   },
   containerBox: {
     display: 'flex',
-    alignItems: 'flex-start',
-    justifyContent: 'space-between',
+    alignItems: 'center',
+    justifyContent: 'center',
     flexWrap: ['wrap', null, null, 'nowrap'],
   },
   thumbnail: {
     mb: -2,
-    ml: [-4, '-40px', null, null, 0],
+    ml: [0, 0, null, null, 0],
     order: [2, null, null, 0],
-    pr: [6, null, 7, 0],
+    pr: [0, null, 0, 0],
+    py: '30px'
   },
   contentBox: {
     width: ['100%', 420, 480, 380, 500, 570],

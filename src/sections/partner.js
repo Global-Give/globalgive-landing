@@ -17,7 +17,7 @@ const data = {
 
 export default function PartnerSection() {
   return (
-    <section sx={{ variant: 'section.partner' }}>
+    <section sx={{ variant: 'section.partner' }} id="mission" >
       <Container sx={styles.containerBox}>
         <Box sx={styles.contentBox}>
           <TextFeature

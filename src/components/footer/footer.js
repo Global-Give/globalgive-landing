@@ -1,15 +1,28 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx, Heading, Box, Container, Text, Button } from 'theme-ui';
+import { jsx, Heading, Box, Container, Text, Button, Grid, IconButton } from 'theme-ui';
+import { IoLogoFacebook, IoLogoInstagram, IoLogoReddit } from 'react-icons/io5';
 import { Link } from 'components/link';
 import menuItems from './footer.data';
+import { GlobalGiveLogo } from 'assets/logos/globalgive';
+import Logo from 'components/logo';
 export default function Footer() {
   return (
-    <footer sx={styles.footer}>
+    <footer sx={styles.footer} id="payment">
       <Container sx={styles.footer.container}>
         <Box sx={styles.footer.footerTopArea}>
-          <Box sx={styles.footer.menus}>
-
+          <Box sx={styles.footer.menus} css={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '1rem'
+          }} >
+            <Logo component={GlobalGiveLogo} />
+            <Text as="h2" sx={{
+              color: 'white'
+            }} >
+              GlobalGive
+            </Text>
           </Box>
           <Box sx={styles.footer.menus}>
             <Heading sx={styles.footer.heading}>
@@ -22,8 +35,34 @@ export default function Footer() {
             }}>
               We are on social media
             </Heading>
+            <Grid py="8px" gap={1} columns={[6, 6, 6, 6, 6]} >
+              <Box sx={styles.socialIconContainer} >
+                <a href="https://www.reddit.com/r/globalgive/" target="_blank" rel="noopener noreferrer" >
+                  <IconButton sx={styles.socialButton}>
+                    <IoLogoReddit sx={styles.socialIcon} />
+                  </IconButton>
+                </a>
+              </Box>
+              <Box sx={styles.socialIconContainer} >
+                <a href="https://www.reddit.com/r/globalgive/" target="_blank" rel="noopener noreferrer" >
+                  <IconButton sx={styles.socialButton}>
+                    <IoLogoInstagram sx={styles.socialIcon} />
+                  </IconButton>
+                </a>
+              </Box>
+              <Box sx={styles.socialIconContainer} >
+                <a href="https://www.reddit.com/r/globalgive/" target="_blank" rel="noopener noreferrer" >
+                  <IconButton sx={styles.socialButton}>
+                    <IoLogoFacebook sx={styles.socialIcon} />
+                  </IconButton>
+                </a>
+              </Box>
+            </Grid>
           </Box>
-          <Box sx={styles.footer.menus}>
+          <Box sx={styles.footer.menus} css={{
+            justifyContent: 'center',
+            alignItems: 'center'
+          }} >
             <a href="https://t.me/globalgivetokencommunity" target="_blank" rel="noopener noreferrer">
               <Button variant="accentButton" sx={{
                 width: 'max-content',
@@ -61,6 +100,19 @@ export default function Footer() {
 }
 
 const styles = {
+  socialIconContainer: {
+    backgroundColor: 'dark',
+    width: 'min-content',
+    borderRadius: '50%'
+  },
+  socialIcon: {
+    color: 'white'
+  },
+  socialButton: {
+    '&:hover': {
+      cursor: 'pointer'
+    }
+  },
   footer: {
     backgroundColor: 'background_secondary',
     container: {
@@ -74,12 +126,12 @@ const styles = {
       flexWrap: 'wrap',
       pt: [7, null, 8],
       pb: ['10px', null, null, '20px'],
-      px: [0, null, null, null, 4],
+      px: [5, null, null, null, 4],
       alignItems: 'center',
       justifyContent: 'center'
     },
     menus: {
-      width: ['50%', null, null, '33%'],
+      width: [, null, null, '33%'],
       display: 'flex',
       flexDirection: 'column',
       mb: ['40px', null, null, '60px'],

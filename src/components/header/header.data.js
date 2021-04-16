@@ -1,19 +1,19 @@
 export default [
   {
-    path: 'home',
-    label: 'Home',
-  },
-  {
-    path: 'feature',
+    path: 'features',
     label: 'Features',
   },
   {
-    path: 'testimonial',
-    label: 'Testimonial',
+    path: 'mission',
+    label: 'Our Mission',
   },
   {
-    path: 'pricing',
-    label: 'Pricing',
+    path: 'roadmap',
+    label: 'Roadmap',
+  },
+  {
+    path: 'payment',
+    label: 'Buy',
   },
   {
     path: 'faq',

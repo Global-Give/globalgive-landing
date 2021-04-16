@@ -4,7 +4,6 @@ import { jsx } from 'theme-ui';
 import { Container, Grid, Box, Heading, Text } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 
-import PatternBG from 'assets/patternBG.png';
 import ArrowOdd from 'assets/arrowOdd.png';
 import ArrowEven from 'assets/arrowEven.png';
 
@@ -63,8 +62,7 @@ export default function WorkFlow() {
 
 const styles = {
   workflow: {
-    backgroundColor: 'primary',
-    backgroundImage: `url(${PatternBG})`,
+    backgroundColor: 'background_secondary',
     backgroundRepeat: `no-repeat`,
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
@@ -75,8 +73,6 @@ const styles = {
       content: '""',
       top: 0,
       right: 0,
-      background:
-        'linear-gradient(-45deg, rgba(42,72,125, 0.3) 25%, transparent 25%, transparent 50%, rgba(42,72,125, 0.3) 50%, rgba(42,72,125, 0.3) 75%, transparent 75%, transparent)',
       width: '100%',
       backgroundSize: '350px 350px',
       height: '100%',

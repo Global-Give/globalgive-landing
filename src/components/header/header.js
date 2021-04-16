@@ -1,6 +1,6 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
+import { jsx, Container, Flex, Button, Text } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
@@ -18,7 +18,9 @@ export default function Header({ className }) {
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
           <Logo component={GlobalGiveLogo} />
-
+          <Text as="h2">
+            GlobalGive
+          </Text>
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link

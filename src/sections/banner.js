@@ -9,7 +9,7 @@ import { FaPlayCircle } from 'react-icons/fa';
 import { IoDownloadOutline } from 'react-icons/io5';
 import BannerBG from 'assets/dot_wave.png';
 import DotWave from 'assets/dot_wave.png';
-import { BannerIllustration } from 'assets/illustrations/banner-illustration';
+import BannerIllustration from 'assets/illustrations/bannerIllustration.png';
 
 import client1 from 'assets/sponsor/paypal.svg';
 import client2 from 'assets/sponsor/google.svg';
@@ -115,12 +115,18 @@ export default function Banner() {
           alignItems: 'center',
           justifyContent: 'center'
         }}>
-          <BannerIllustration sx={{
-            zIndex: 0
+          <Image src={BannerIllustration} css={{
+            'z-index': 1,
+            'user-drag': 'none',
+            'user-select': 'none'
           }}/>
         </Flex>
       </Container>
-      <Image src={DotWave} sx={styles.banner.bgImage} />
+      <Image src={DotWave} sx={styles.banner.bgImage} css={{
+        'z-index': 0,
+        'user-drag': 'none',
+        'user-select': 'none'
+      }}/>
 
     </section>
   );

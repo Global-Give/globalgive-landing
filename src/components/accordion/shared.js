@@ -74,7 +74,7 @@ export function AccordionContents({ isOpen, ...props }) {
         overflowY: 'hidden',
         fontSize: [1, null, 2],
         lineHeight: [1.85, null, null, 1.9, 2],
-        color: '#343D48',
+        color: 'text_secondary',
         paddingLeft: ['33px', null, '45px'],
         ' > div ': {
           paddingBottom: [1, 2],

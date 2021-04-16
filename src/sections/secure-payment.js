@@ -5,7 +5,7 @@ import { Container, Box } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 
-import PaymentThumb from 'assets/paymentThumb.png';
+import SecurePaymentIllustration from 'assets/illustrations/SecurePayment.png';
 import PaymentPattern from 'assets/payment-pattern.png';
 
 const data = {
@@ -19,11 +19,16 @@ const data = {
 
 export default function SecurePayment() {
   return (
-    <section sx={{ variant: 'section.securePayment' }}>
+    <section sx={{ 
+      variant: 'section.securePayment',
+      background: 'linear-gradient(0deg, rgba(29,31,41,1) 0%, rgba(23,25,33,1) 100%)'
+     }}>
       <Box sx={styles.bgOverlay} />
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={PaymentThumb} alt={data.title} />
+          <Image src={SecurePaymentIllustration} alt={data.title} sx={{
+            paddingBottom: '100px'
+          }} />
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature
@@ -56,7 +61,6 @@ const styles = {
       null,
       'calc(50% + 625px)',
     ],
-    backgroundImage: `url(${PaymentPattern})`,
     backgroundRepeat: `no-repeat`,
     backgroundPosition: 'top left',
     backgroundSize: 'cover',

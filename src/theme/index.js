@@ -3,7 +3,7 @@ export default {
   colors: {
     text: '#717584', // body color and primary color
     text_secondary: '#717584', // secondary body color
-    heading: '#244886', // primary heading color
+    heading: '#00D3BA', // primary heading color
     heading_secondary: '#FFFFFF', // heading color
     background: '#171921', // body background color
     background_secondary: '#1D1F29', // secondary background color

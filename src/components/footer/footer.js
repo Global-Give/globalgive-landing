@@ -1,10 +1,10 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx, Heading, Box, Container, Text, Button, Grid, IconButton } from 'theme-ui';
+import { jsx, Heading, Box, Container, Text, Button, Grid, IconButton, Image } from 'theme-ui';
 import { IoLogoFacebook, IoLogoInstagram, IoLogoReddit } from 'react-icons/io5';
 import { Link } from 'components/link';
 import menuItems from './footer.data';
-import { GlobalGiveLogo } from 'assets/logos/globalgive';
+import GlobalGiveLogo from 'assets/logos/gg_icon.svg';
 import Logo from 'components/logo';
 export default function Footer() {
   return (
@@ -17,7 +17,9 @@ export default function Footer() {
             alignItems: 'center',
             padding: '1rem'
           }} >
-            <Logo component={GlobalGiveLogo} />
+            <Image src={GlobalGiveLogo} sx={{
+              height: '100px'
+            }} />
             <Text as="h2" sx={{
               color: 'white'
             }} >

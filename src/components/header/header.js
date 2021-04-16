@@ -1,11 +1,11 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx, Container, Flex, Button, Text } from 'theme-ui';
+import { jsx, Container, Flex, Button, Text, Image } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
 import LogoDark from 'assets/logo-dark.svg';
-import { GlobalGiveLogo } from 'assets/logos/globalgive';
+import GlobalGiveLogo from 'assets/logos/gg_icon.svg';
 
 import LogoWhite from 'assets/logo.svg';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
@@ -17,8 +17,15 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo component={GlobalGiveLogo} />
-          <Text as="h2">
+          <Image src={GlobalGiveLogo} sx={{
+            height: '100px'
+          }} />
+          <Text as="h2" sx={{
+            display: 'none',
+            '@media screen and (min-width: 768px)': {
+              display: 'block',
+            },
+          }} >
             GlobalGive
           </Text>
           <Flex as="nav" sx={styles.nav}>

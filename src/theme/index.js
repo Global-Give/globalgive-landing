@@ -230,7 +230,7 @@ export default {
       borderRadius: '2px',
       fontSize: ['14px', 1, null, null, 2],
       letterSpacings: ['-0.5px', null, null, null, '-0.15px'],
-      padding: ['11px 18px 10px', null, null, null, '13px 30px'],
+      padding: ['11px 18px 10px', null, null, null, '10px 25px'],
       fontFamily: 'Jost',
       cursor: 'pointer',
       lineHeight: 1.2,
@@ -239,11 +239,25 @@ export default {
       color: 'background',
       bg: 'primary',
       outline: 'none',
+      mr: '0.8rem',
+      my: '0.3rem',
       '&:hover': {
         border: 'solid primary',
         borderColor: 'primary',
         backgroundColor: 'transparent',
         color: 'primary'
+      }
+    },
+    outlinePrimary: {
+      variant: 'buttons.defaultBtn',
+      bg: 'background',
+      color: 'primary',
+      borderColor: 'primary',
+
+      '&:hover': {
+        borderStyle: 'solid',
+        bg: 'primary',
+        color: 'background'
       }
     },
     primary: {

@@ -47,7 +47,7 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Save lives with a single token.
+            Global Give Live Stats
           </Heading>
           <Text as="p" variant="heroSecondary" sx={{
             color: "text"
@@ -56,15 +56,51 @@ export default function Banner() {
             GlobalGive is up 14.02% in the last 24 hours. 
             The current CoinMarketCap ranking is #2438.
           </Text>
-          <Text as="p" variant="heroSecondary" sx={{
+          {/* <Text as="p" variant="heroSecondary" sx={{
             color: "text"
           }}>
             The top exchanges for trading in GlobalGive are currently WhiteBIT, PancakeSwap, BitMart, and DODO BSC. 
             You can find others listed on our crypto exchanges page.
-          </Text>
-          <Flex>
+          </Text> */}
+          <Flex sx={{
+            flexWrap: 'wrap'
+          }} >
+            <a href="#" sx={{
+              cursor: 'auto',
+              pointerEvents: 'none'
+              // '&:hover > button > div > span': {
+              //   visibility: 'visible',
+              //   borderColor: 'primary',
+              //   borderWidth: '1.5px',
+              //   borderStyle: 'solid',
+              //   borderRadius: '2px',
+              //   backgroundColor: 'background',
+              //   color: 'primary'
+              // }
+            }} >
+              <Button variant="defaultBtn" aria-label="Get Started" sx={{
+                opacity: 0.5,
+                pointerEvents: 'none'
+              }} >
+                  <Container sx={{
+                    fontFamily: 'Jost',
+                    fontWeight: 500,
+                    fontSize: '20px'
+                  }}
+                  css={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    Buy (Coming Soon)
+                    {/* <span sx={styles.tooltiptext} >
+                      Coming soon!
+                    </span> */}
+                  </Container>
+              </Button>
+            </a>
             <a href="#">
-              <Button variant="defaultBtn" aria-label="Get Started">
+              <Button variant="outlinePrimary" aria-label="Get Started">
                   <Container sx={{
                     fontFamily: 'Jost',
                     fontWeight: 500,
@@ -79,6 +115,22 @@ export default function Banner() {
                     <IoDownloadOutline sx={{
                       mx: 2
                     }} />
+                  </Container>
+              </Button>
+            </a>
+            <a href="#" href="https://t.me/globalgivetokencommunity" target="_blank" rel="noopener noreferrer">
+              <Button variant="outlinePrimary" aria-label="Get Started">
+                  <Container sx={{
+                    fontFamily: 'Jost',
+                    fontWeight: 500,
+                    fontSize: '20px'
+                  }}
+                  css={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    Join Telegram
                   </Container>
               </Button>
             </a>
@@ -198,4 +250,18 @@ const styles = {
       },
     },
   },
+  // tooltiptext: {
+  //   visibility: 'hidden',
+  //   width: '120px',
+  //   'background-color': 'black',
+  //   color: '#fff',
+  //   'text-align': 'center',
+  //   padding: '5px 0',
+  //   'border-radius': '6px',
+  
+    
+  //   position: 'absolute',
+  //   'z-index': 1,
+  //   top: '20px',
+  // }
 };

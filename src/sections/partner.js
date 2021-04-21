@@ -7,12 +7,10 @@ import Image from 'components/image';
 import Meteor from 'assets/illustrations/Meteor.png';
 
 const data = {
-  subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  subTitle: 'What we do',
+  title: 'Our goal is to donate more to charities than any other token out there.',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
-  btnName: 'Get Started',
-  btnURL: '#',
+    " We have 6 Global charities that we support, and they will each receive 1 month’s tax redistribution on the Charity wallet, once a year. The other 6 months, we will choose charities in need, disaster funds if this unfortunate event should happen and we will hold competitions on our groups allowing our investors to choose a charity. Influencers will have the opportunity to show their skills off, allowing the most popular promotions by video, Tik Tok, Instagram and Reddit to be designated with choosing a charity too. We are here to make lives better, end hunger, save animals from the cruelty of man and show that Politicians are not the only ones who can do ‘stuff’. We can and we can do it without the fear of a public vote at the end of a term. We will see your vote on our progress related to our Token Price.",
 };
 
 export default function PartnerSection() {

@@ -4,61 +4,61 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
-import Smart from 'assets/feature/smart.svg';
-import Winner from 'assets/feature/winner.svg';
-import Cloud from 'assets/feature/cloud.svg';
-import Setting from 'assets/feature/setting.svg';
-import Design from 'assets/feature/design.svg';
-import Chat from 'assets/feature/chat.svg';
+import Money from 'assets/feature/money.png';
+import Charity from 'assets/feature/generous.png';
+import Burn from 'assets/feature/fire.png';
+import Redistribution from 'assets/feature/networking.png';
+import Whale from 'assets/feature/whale.png';
+import Lock from 'assets/feature/lock.png';
 
 const data = [
   {
     id: 1,
-    imgSrc: Smart,
-    altText: 'Smart',
-    title: 'Smart Features',
+    imgSrc: Money,
+    altText: 'Supply',
+    title: 'Supply',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'We have 120,000,000 tokens in total – 30% were sold in a 5-minute sell out.',
   },
   {
     id: 2,
-    imgSrc: Winner,
-    altText: 'Performance',
-    title: 'Fast Performance',
+    imgSrc: Charity,
+    altText: 'Charity',
+    title: 'Charity',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'Our Charity wallet has 5% of the total supply and will be part of the distribution.',
   },
   {
     id: 3,
-    imgSrc: Cloud,
-    altText: 'Content',
-    title: 'Unlimited Content',
+    imgSrc: Burn,
+    altText: 'Defi',
+    title: 'Defi',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      '2% redistributed to hodlers and 8% burnt to LP on each transaction.',
   },
   {
     id: 4,
-    imgSrc: Setting,
-    altText: 'Customization',
-    title: 'Unlimited Customization',
+    imgSrc: Redistribution,
+    altText: 'Redistribution',
+    title: 'Redistribution',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'The long you hold, the more you have. 2% redistributed to hodlers on each transaction.',
   },
   {
     id: 5,
-    imgSrc: Design,
-    altText: 'Productivity',
-    title: 'Boost Productivity',
+    imgSrc: Whale,
+    altText: 'Whale tax',
+    title: 'Whale tax',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      'Up to 10% extra tax on sales over 1% of the total supply.',
   },
   {
     id: 6,
-    imgSrc: Chat,
-    altText: 'Support',
-    title: 'Customer Support',
+    imgSrc: Lock,
+    altText: 'Liquidity & Burn',
+    title: 'Liquidity & Burn',
     text:
-      'Get your blood tests delivered at let home collect sample from the victory of the managements.',
+      ' LP locked for 4 years',
   },
 ];
 
@@ -67,8 +67,8 @@ export default function Feature() {
     <section sx={{ variant: 'section.feature' }} id="features" >
       <Container>
         <SectionHeader
-          slogan="Features"
-          title="Check the features"
+          slogan="Our proposal"
+          title="Tokenomics"
         />
 
         <Grid sx={styles.grid}>

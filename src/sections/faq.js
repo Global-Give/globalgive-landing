@@ -74,7 +74,7 @@ export default function Faq() {
     <section sx={{ variant: 'section.faq' }} id="faq">
       <Container>
         <SectionHeader
-          title="Frequently asked question"
+          title="Frequently asked questions"
           slogan="Get your question answer"
         />
         <Box

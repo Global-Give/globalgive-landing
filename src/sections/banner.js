@@ -9,7 +9,7 @@ import { FaPlayCircle } from 'react-icons/fa';
 import { IoDownloadOutline } from 'react-icons/io5';
 import BannerBG from 'assets/dot_wave.png';
 import DotWave from 'assets/dot_wave.png';
-import BannerIllustration from 'assets/illustrations/bannerIllustration.png';
+import BannerIllustration from 'assets/illustrations/banner-illustration.svg';
 
 import client1 from 'assets/sponsor/paypal.svg';
 import client2 from 'assets/sponsor/google.svg';

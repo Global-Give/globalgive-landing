@@ -65,7 +65,7 @@ export default function Banner() {
           <Flex sx={{
             flexWrap: 'wrap'
           }} >
-            <a href="#" sx={{
+            {/* <a href="#" sx={{
               cursor: 'auto',
               pointerEvents: 'none'
               // '&:hover > button > div > span': {
@@ -93,14 +93,12 @@ export default function Banner() {
                     justifyContent: 'center'
                   }}>
                     Buy (Coming Soon)
-                    {/* <span sx={styles.tooltiptext} >
-                      Coming soon!
-                    </span> */}
+                    
                   </Container>
               </Button>
-            </a>
+            </a> */}
             <a href="#">
-              <Button variant="outlinePrimary" aria-label="Get Started">
+              <Button variant="defaultBtn" aria-label="Get Started">
                   <Container sx={{
                     fontFamily: 'Jost',
                     fontWeight: 500,
@@ -119,7 +117,7 @@ export default function Banner() {
               </Button>
             </a>
             <a href="#" href="https://t.me/globalgivetokencommunity" target="_blank" rel="noopener noreferrer">
-              <Button variant="outlinePrimary" aria-label="Get Started">
+              <Button variant="accentButton" aria-label="Get Started">
                   <Container sx={{
                     fontFamily: 'Jost',
                     fontWeight: 500,

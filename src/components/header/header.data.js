@@ -13,7 +13,7 @@ export default [
   },
   {
     path: 'payment',
-    label: 'Buy',
+    label: 'How to Buy',
   },
   {
     path: 'faq',

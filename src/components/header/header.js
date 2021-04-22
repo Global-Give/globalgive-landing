@@ -43,13 +43,20 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-          <a href="#">
+          <a href="#" sx={{
+            cursor: 'auto',
+            pointerEvents: 'none'
+          }} >
             <Button
               className="donate__btn"
               variant="secondary"
               aria-label="Buy"
+              sx={{
+                opacity: 0.5,
+                pointerEvents: 'none'
+              }}
             >
-              Buy Now
+              Buy (Coming Soon)
             </Button>
           </a>
           <MobileDrawer />

@@ -47,14 +47,12 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Global Give Live Stats
+            Save lives with a single token
           </Heading>
           <Text as="p" variant="heroSecondary" sx={{
             color: "text"
           }}>
-            The live GlobalGive price today is $8.53e-7 USD with a 24-hour trading volume of $12,062,502 USD. 
-            GlobalGive is up 14.02% in the last 24 hours. 
-            The current CoinMarketCap ranking is #2438.
+            Hold GlobalGive, change the world!
           </Text>
           {/* <Text as="p" variant="heroSecondary" sx={{
             color: "text"

@@ -10,27 +10,48 @@ import ArrowEven from 'assets/arrowEven.png';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
+    title: 'April',
+    subtitle: 'Phase 1',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    checks: {
+      check1: "Objective 1",
+      check2: "Objective 2",
+      check3: "Objective 3",
+    }
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'April',
+    subtitle: 'Phase 2',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    checks: {
+      check1: "Objective 1",
+      check2: "Objective 2",
+    }
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'April',
+    subtitle: 'Phase 3',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    checks: {
+      check1: "Objective 1",
+      check2: "Objective 2",
+      check3: "Objective 3",
+    }
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'April',
+    subtitle: 'Phase 4',
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    checks: {
+      check1: "Objective 1",
+    }
   },
 ];
 
@@ -39,8 +60,8 @@ export default function WorkFlow() {
     <section sx={styles.workflow} id="roadmap">
       <Container>
         <SectionHeader
-          slogan="Whats the function"
-          title="Let’s see how it works"
+          slogan="Our Vision"
+          title="Roadmap"
           isWhite={true}
         />
 
@@ -50,7 +71,12 @@ export default function WorkFlow() {
               <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
               <Box sx={styles.wrapper}>
                 <Heading sx={styles.wrapper.title}>{item.title}</Heading>
-                <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
+                <Text sx={styles.wrapper.secondTitle}>{item.subtitle}</Text>
+                <Box sx={styles.objectiveBox}>
+                  {Object.keys(item["checks"]).map((check) => (
+                    <Box key={check} sx={styles.objectiveLine}><Text sx={styles.wrapper.objective}>{item["checks"][check]} </Text><div sx={styles.checkBox}></div></Box>
+                  ))}
+                </Box>
               </Box>
             </Box>
           ))}
@@ -67,6 +93,8 @@ const styles = {
     backgroundPosition: 'center center',
     backgroundSize: 'cover',
     position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
     py: [8, null, 9, null, null, 10],
     '&::before': {
       position: 'absolute',
@@ -81,6 +109,7 @@ const styles = {
     },
   },
   grid: {
+    marginLeft: "8rem",
     mb: -1,
     pt: 0,
     gridGap: [
@@ -115,22 +144,12 @@ const styles = {
       left: [0, null, null, null, null, 75, null, 100],
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'center center',
-      width: 215,
+      width: 200,
       height: 60,
       opacity: 0.3,
       '@media screen and (max-width:1220px)': {
         display: 'none',
       },
-    },
-    '&:nth-of-type(2n-1)::before': {
-      backgroundImage: `url(${ArrowOdd})`,
-    },
-    '&:nth-of-type(2n)::before': {
-      backgroundImage: `url(${ArrowEven})`,
-      top: 17,
-    },
-    '&:last-child::before': {
-      display: 'none',
     },
   },
 
@@ -149,17 +168,57 @@ const styles = {
     justifyContent: 'center',
     color: '#234582',
   },
+
+  objectiveBox: {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: "column",
+  },
+
+  objectiveLine: {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: "row",
+  },
+
+  checkBox: {
+    marginLeft:"1rem",
+    height: "1rem",
+    width: "1rem",
+    backgroundColor: "#555",
+  },
+
   wrapper: {
     width: '100%',
     display: 'flex',
+    marginLeft: "-6rem",
     flexDirection: 'column',
+    alignItems: 'center',
     mt: '-5px',
     title: {
-      fontSize: [3, null, 4, null, null, 5],
+      fontSize: 8,
       color: 'white',
-      lineHeight: [1.4, null, null, null, null, 1.55],
+      lineHeight: 1,
       pr: [0, null, null, null, null, 2],
       mb: [2, 3],
+    },
+
+    secondTitle: {
+      fontSize: 6,
+      fontWeight: 600,
+      lineHeight: 2,
+      color: '#00D3BA',
+      opacity: 0.65,
+      pr: [0, null, null, null, null, 5],
+    },
+
+    objective: {
+      fontSize: 3,
+      fontWeight: 600,
+      lineHeight: 2,
+      color: 'white',
+      opacity: 0.65,
+      pr: [0, null, null, null, null, 5],
     },
 
     subTitle: {

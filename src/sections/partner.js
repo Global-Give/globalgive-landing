@@ -7,12 +7,17 @@ import Image from 'components/image';
 import Meteor from 'assets/illustrations/Meteor.png';
 
 const data = {
-  subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  subTitle: 'What we do',
+  title: 'Our Mission',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
-  btnName: 'Get Started',
-  btnURL: '#',
+  `At Global Give, we are leading the field in using the power of decentralised finance to become the industry-standard for charities to acquire and receive donations – from grassroots non-profits and disaster relief funds to established charities with global reach. 
+    
+    Our goal is to provide a platform, driven by our community of Global Giver’s, to boost awareness to causes that need it most as well as donating to more charities monthly. 
+    
+    We are doing all of the above whilst rewarding investors for simply holding $GIVE and providing increased investor protection measures.
+    In case you need an extra one-liner anywhere : 
+    
+    Hold Global Give, change the world!`,
 };
 
 export default function PartnerSection() {

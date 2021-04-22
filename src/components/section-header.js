@@ -8,7 +8,7 @@ export default function SectionHeader({ title, slogan, isWhite }) {
         as="p"
         sx={{
           variant: 'sectionHeader.subTitle',
-          color: isWhite ? 'white' : 'heading',
+          color: isWhite ? '#00d3ba' : 'heading',
           opacity: isWhite ? 0.7 : 1,
         }}
       >

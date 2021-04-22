@@ -91,15 +91,13 @@ const MobileDrawer = () => {
 
 const styles = {
   handler: {
-    display: 'flex',
+    // display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: '0',
     width: '26px',
     cursor: 'pointer',
-    '@media screen and (min-width: 1024px)': {
-      display: 'none',
-    },
+    display: ['flex', 'flex', 'flex', 'flex', 'flex', 'none'],
   },
 
   drawer: {

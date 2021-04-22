@@ -46,12 +46,12 @@ export default function Banner() {
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary">
+          <Heading as="h1" variant="heroPrimary" sx={{
+            textAlign: ['center', 'center', 'center', 'left', 'left', 'left']
+          }} >
             Save lives with a single token
           </Heading>
-          <Text as="p" variant="heroSecondary" sx={{
-            color: "text"
-          }}>
+          <Text as="p" variant="heroSecondary" sx={styles.banner.description}>
             Hold GlobalGive, change the world!
           </Text>
           {/* <Text as="p" variant="heroSecondary" sx={{
@@ -60,10 +60,8 @@ export default function Banner() {
             The top exchanges for trading in GlobalGive are currently WhiteBIT, PancakeSwap, BitMart, and DODO BSC. 
             You can find others listed on our crypto exchanges page.
           </Text> */}
-          <Flex sx={{
-            flexWrap: 'wrap'
-          }} >
-            {/* <a href="#" sx={{
+          <Flex sx={styles.buttonsContainer} >
+            <a href="#" sx={{
               cursor: 'auto',
               pointerEvents: 'none'
               // '&:hover > button > div > span': {
@@ -94,26 +92,8 @@ export default function Banner() {
                     
                   </Container>
               </Button>
-            </a> */}
-            <a href="#">
-              <Button variant="defaultBtn" aria-label="Get Started">
-                  <Container sx={{
-                    fontFamily: 'Jost',
-                    fontWeight: 500,
-                    fontSize: '20px'
-                  }}
-                  css={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}>
-                    White Paper
-                    <IoDownloadOutline sx={{
-                      mx: 2
-                    }} />
-                  </Container>
-              </Button>
             </a>
+            
             <a href="#" href="https://t.me/globalgivetokencommunity" target="_blank" rel="noopener noreferrer">
               <Button variant="accentButton" aria-label="Get Started">
                   <Container sx={{
@@ -127,6 +107,22 @@ export default function Banner() {
                     justifyContent: 'center'
                   }}>
                     Join Telegram
+                  </Container>
+              </Button>
+            </a>
+            <a href="#" href="" target="_blank" rel="noopener noreferrer">
+              <Button variant="outlinePrimary" aria-label="Get Started">
+                  <Container sx={{
+                    fontFamily: 'Jost',
+                    fontWeight: 500,
+                    fontSize: '20px'
+                  }}
+                  css={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    See Chart
                   </Container>
               </Button>
             </a>
@@ -204,7 +200,7 @@ const styles = {
       width: '51.125rem'
     },
     contentBox: {
-      width: ['100%', null, '85%', '70%', '65%', '70%'],
+      width: ['100%','100%', '100%', '50%', '60%', '60%'],
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
@@ -212,7 +208,7 @@ const styles = {
       pt: [0, null, null, null, null, null, 5, 7],
     },
     imageBox: {
-      display: ['none', null, null, 'flex'],
+      display: ['none', 'flex', 'flex', 'flex'],
       justifyContent: 'center',
       ml: [0, null, null, '-110px', '-115px', '-150px', '-210px', '-270px'],
       mr: [0, null, null, '-145px', '-160px', '-180px', '-220px', '-290px'],
@@ -222,6 +218,18 @@ const styles = {
       textAlign: 'center',
       width: '100%',
     },
+    description: {
+      color: "text",
+      width: '100%',
+      textAlign: ['center', 'center', 'center', 'left', 'left', 'left']
+    }
+  },
+  buttonsContainer: {
+    flexWrap: 'wrap',
+    display: 'flex',
+    flexDirection: ['column', 'column', 'column', 'row', 'row', 'row'],
+    width: ['100%', '100%', '100%'],
+    alignItems: ['center', 'center', 'center', null, null, null]
   },
   sponsorTitle: {
     color: 'white',

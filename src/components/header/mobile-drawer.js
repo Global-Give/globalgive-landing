@@ -59,6 +59,21 @@ const MobileDrawer = () => {
       <Scrollbars autoHide>
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
+            <a
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              href="#"
+              href="https://google.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              sx={styles.item}
+              style={{'color': 'white', 'text-decoration': 'none'}}
+            >
+              Whitepaper
+            </a>
             {menuItems.map(({ path, label }, i) => (
               <Link
                 activeClass="active"
@@ -90,6 +105,10 @@ const MobileDrawer = () => {
 };
 
 const styles = {
+  item: {
+    color: 'white',
+    textDecoration: 'none'          
+  },
   handler: {
     // display: 'flex',
     alignItems: 'center',

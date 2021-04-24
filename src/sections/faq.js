@@ -8,7 +8,7 @@ const faqs = [
     title: 'Who is the team?',
     contents: (
       <div>
-        The Global Give Founders and Project Team will continue to grow. It is a requirement that if you want to be a team member of this project, then you must reveal your identity. All of our team members and all of our new additions will be added to the website so you can see for yourself who each and every one of us are. MANY other tokens in this space have dev teams that are choosing to remain anonymous. The Global Give Token Team are proud of this project and we are here for the long term. We feel that if you truly believe in what you are doing and are proud of what you are doing then you should have nothing to hide.
+        The GlobalGive Founders and Project Team will continue to grow. It is a requirement that if you want to be a team member of this project, then you must reveal your identity. All of our team members and all of our new additions will be added to the website so you can see for yourself who each and every one of us are. MANY other tokens in this space have dev teams that are choosing to remain anonymous. The GlobalGive Token Team are proud of this project and we are here for the long term. We feel that if you truly believe in what you are doing and are proud of what you are doing then you should have nothing to hide.
       </div>
     ),
   },
@@ -64,7 +64,7 @@ const faqs = [
     contents: (
       <div>
         This project is 100% safe to invest in.
-        When you add tokens and then add liquidity to those tokens, you receive something called an LP-Token, or Liquidity Provider token, in exchange. This allows you to remove the liquidity at any time, which is how rug pulls happen. Without the LP-tokens, you can’t remove the liquidity, which means you can’t rug pull. The Global Give Team sent our LP-Tokens to a "burn address" so they can’t be accessed or recovered. This is a method called “burning liquidity”, and it helps ensure the safety and stability of a project like ours.
+        When you add tokens and then add liquidity to those tokens, you receive something called an LP-Token, or Liquidity Provider token, in exchange. This allows you to remove the liquidity at any time, which is how rug pulls happen. Without the LP-tokens, you can’t remove the liquidity, which means you can’t rug pull. The GlobalGive Team sent our LP-Tokens to a "burn address" so they can’t be accessed or recovered. This is a method called “burning liquidity”, and it helps ensure the safety and stability of a project like ours.
       </div>
     ),
   },

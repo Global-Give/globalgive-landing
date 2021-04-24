@@ -15,9 +15,10 @@ const data = [
     text:
       'Get your blood tests delivered at home collect a sample from the your blood tests.',
     checks: {
-      check1: "Objective 1",
-      check2: "Objective 2",
-      check3: "Objective 3",
+      check1: "Selection and addition of first charities for donations",
+      check2: "First donation completed within 30 days of token launch",
+      check3: "Apply for price tracking on Coin Market Cap, Coin Gecko, Blockfolio.",
+      check4: "Begin application process for exchange listings",
     }
   },
   {
@@ -147,9 +148,6 @@ const styles = {
       width: 200,
       height: 60,
       opacity: 0.3,
-      '@media screen and (max-width:1220px)': {
-        display: 'none',
-      },
     },
   },
 
@@ -182,7 +180,7 @@ const styles = {
   },
 
   checkBox: {
-    marginLeft:"1rem",
+    marginLeft:"5px",
     height: "1rem",
     width: "1rem",
     backgroundColor: "#555",

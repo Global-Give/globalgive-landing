@@ -67,8 +67,8 @@ export default function Feature() {
     <section sx={{ variant: 'section.feature' }} id="features" >
       <Container>
         <SectionHeader
-          slogan="Our proposal"
-          title="Tokenomics"
+          slogan="Tokenomics"
+          title="Our Proposal"
         />
 
         <Grid sx={styles.grid}>

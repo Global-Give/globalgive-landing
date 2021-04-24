@@ -17,19 +17,41 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Image src={GlobalGiveLogo} sx={{
-            height: '100px'
-          }} />
-          <Text as="h2" sx={{
-            display: 'none',
-            '@media screen and (min-width: 768px)': {
-              display: 'block',
-            },
+          <div sx={{
+            display: 'flex',
+            alignItems: 'center'
           }} >
-            GlobalGive
-          </Text>
+            <Image src={GlobalGiveLogo} sx={{
+              height: '100px'
+            }} />
+            <Text as="h2" sx={{
+              display: 'none',
+              '@media screen and (min-width: 768px)': {
+                display: 'block',
+              },
+            }} >
+              GlobalGive
+            </Text>
+          </div>
           <Flex as="nav" sx={styles.nav}>
-            {menuItems.map(({ path, label }, i) => (
+            <a
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              href="#"
+              href="https://google.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              sx={{
+                color: 'white',
+                textDecoration: 'none'
+              }}
+            >
+              Whitepaper
+            </a>
+            {menuItems.map(({ path, label, rest }, i) => (
               <Link
                 activeClass="active"
                 to={path}
@@ -38,6 +60,7 @@ export default function Header({ className }) {
                 offset={-70}
                 duration={500}
                 key={i}
+                {...rest}
               >
                 {label}
               </Link>
@@ -129,10 +152,7 @@ const styles = {
   },
   nav: {
     mx: 'auto',
-    display: 'none',
-    '@media screen and (min-width: 1024px)': {
-      display: 'block',
-    },
+    display: ['none', 'none', 'none', 'none', 'none', 'block'],
     a: {
       fontSize: '16px',
       fontWeight: '400',

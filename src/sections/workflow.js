@@ -1,90 +1,196 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Container, Grid, Box, Heading, Text } from 'theme-ui';
-import SectionHeader from 'components/section-header';
+import {jsx, Image} from 'theme-ui'
+import {Container, Grid, div, Heading, Text} from 'theme-ui'
+import SectionHeader from 'components/section-header'
+import STYLES from './css/roadmap.module.css'
 
-import ArrowOdd from 'assets/arrowOdd.png';
-import ArrowEven from 'assets/arrowEven.png';
+import ArcIcon1 from 'assets/Arc1.svg'
+import ArcIcon2 from 'assets/Arc2.svg'
+import ArcIcon3 from 'assets/Arc3.svg'
 
-const data = [
-  {
-    id: 1,
-    title: 'April',
-    subtitle: 'Phase 1',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-    checks: {
-      check1: "Selection and addition of first charities for donations",
-      check2: "First donation completed within 30 days of token launch",
-      check3: "Apply for price tracking on Coin Market Cap, Coin Gecko, Blockfolio.",
-      check4: "Begin application process for exchange listings",
-    }
-  },
-  {
-    id: 2,
-    title: 'April',
-    subtitle: 'Phase 2',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-    checks: {
-      check1: "Objective 1",
-      check2: "Objective 2",
-    }
-  },
-  {
-    id: 3,
-    title: 'April',
-    subtitle: 'Phase 3',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-    checks: {
-      check1: "Objective 1",
-      check2: "Objective 2",
-      check3: "Objective 3",
-    }
-  },
-  {
-    id: 4,
-    title: 'April',
-    subtitle: 'Phase 4',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
-    checks: {
-      check1: "Objective 1",
-    }
-  },
-];
+import ArrowOdd from 'assets/arrowOdd.png'
+import ArrowEven from 'assets/arrowEven.png'
 
 export default function WorkFlow() {
   return (
-    <section sx={styles.workflow} id="roadmap">
+    <section sx={{...styles.workflow}} id='roadmap'>
       <Container>
-        <SectionHeader
-          slogan="Our Vision"
-          title="Roadmap"
-          isWhite={true}
-        />
+        <SectionHeader slogan='Our Vision' title='Roadmap' isWhite={true} />
 
-        <Grid sx={styles.grid}>
-          {data.map((item) => (
-            <Box sx={styles.card} key={item.id}>
-              <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
-              <Box sx={styles.wrapper}>
-                <Heading sx={styles.wrapper.title}>{item.title}</Heading>
-                <Text sx={styles.wrapper.secondTitle}>{item.subtitle}</Text>
-                <Box sx={styles.objectiveBox}>
-                  {Object.keys(item["checks"]).map((check) => (
-                    <Box key={check} sx={styles.objectiveLine}><Text sx={styles.wrapper.objective}>{item["checks"][check]} </Text><div sx={styles.checkBox}></div></Box>
-                  ))}
-                </Box>
-              </Box>
-            </Box>
-          ))}
-        </Grid>
+        <Container className={STYLES.gridContainer}>
+          <div className={STYLES.one}>
+            <div sx={styles.wrapper}>
+              <div sx={{display: 'flex'}}>
+                <div sx={styles.icondiv}>1</div>
+                <div>
+                  <Heading sx={styles.wrapper.title}>April 2021</Heading>
+                  <Text sx={styles.wrapper.secondTitle}>The Crust</Text>
+                </div>
+              </div>
+              <div sx={styles.objectivediv}>
+                <div sx={styles.objectiveLine}>
+                  <Text sx={styles.wrapper.objective}>
+                    <ul>Token launch </ul>
+                    <ul>Release of website and White Paper. </ul>
+                    <ul>Apply for listings (CMC, Coingeko etc) </ul>
+                  </Text>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div sx={styles.arrow} className={STYLES.arc1}>
+            <Image
+              src={ArcIcon1}
+              sx={{
+                position: 'absolute',
+                top: '20%',
+                maxWidth: '190%',
+                left: '-60%',
+                transform: 'rotate(5deg)',
+              }}
+            />
+          </div>
+
+          <div sx={styles.card} className={STYLES.two}>
+            <div sx={styles.wrapper}>
+              <div sx={{display: 'flex'}}>
+                <div sx={styles.icondiv}>2</div>
+                <div>
+                  <Heading sx={styles.wrapper.title}>May 2021</Heading>
+                  <Text sx={styles.wrapper.secondTitle}>Upper Mantle</Text>
+                </div>
+              </div>
+              <div sx={styles.objectivediv}>
+                <div sx={styles.objectiveLine}>
+                  <Text sx={styles.wrapper.objective}>
+                    <ul>First Charity Donation </ul>
+                    <ul>Charity Shop </ul>
+                    <ul>Community project donation </ul>
+                    <ul>Audit </ul>
+                    <ul>Whitebit and Bitmart listing </ul>
+                  </Text>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div sx={styles.arrow} className={STYLES.arc2}>
+            <Image
+              src={ArcIcon2}
+              sx={{
+                position: 'absolute',
+                top: '60%',
+                maxWidth: '85%',
+                left: '-80%',
+                transform: 'rotate(100deg)',
+              }}
+            />
+          </div>
+
+          <div sx={styles.card} className={STYLES.three}>
+            <div sx={styles.wrapper}>
+              <div sx={{display: 'flex'}}>
+                <div sx={styles.icondiv}>3</div>
+                <div>
+                  <Heading sx={styles.wrapper.title}>June 2021</Heading>
+                  <Text sx={styles.wrapper.secondTitle}>Lower Mantle</Text>
+                </div>
+              </div>
+              <div sx={styles.objectivediv}>
+                <div sx={styles.objectiveLine}>
+                  <Text sx={styles.wrapper.objective}>
+                    <ul>
+                      Add two more Global Charities to annual donation pool{' '}
+                    </ul>
+                    <ul>
+                      Create Charity Held Wallets for airdrop to charities.{' '}
+                    </ul>
+                    <ul>Community fundraising for Binance listing </ul>
+                  </Text>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div sx={styles.arrow} className={STYLES.arc3}>
+            <Image
+              src={ArcIcon3}
+              sx={{
+                position: 'absolute',
+                top: '120%',
+                maxWidth: '200%',
+                left: '-120%',
+                transform: 'rotate(-10deg)',
+              }}
+            />
+          </div>
+
+          <div sx={styles.card} className={STYLES.four}>
+            <div sx={styles.wrapper}>
+              <div sx={{display: 'flex'}}>
+                <div sx={styles.icondiv}>4</div>
+                <div>
+                  <Heading sx={styles.wrapper.title}>July 2021</Heading>
+                  <Text sx={styles.wrapper.secondTitle}>Outer Core</Text>
+                </div>
+              </div>
+              <div sx={styles.objectivediv}>
+                <div sx={styles.objectiveLine}>
+                  <Text sx={styles.wrapper.objective}>
+                    <ul>Start work on Charity Token Exchange </ul>
+                    <ul>CommCharity Tokens SAFU Project (CTS project) </ul>
+                    <ul>Create Charity Helpers Foundation </ul>
+                    <ul>Binance and Coinbase listing </ul>
+                  </Text>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div sx={styles.arrow} className={STYLES.arc4}>
+            <Image
+              src={ArcIcon1}
+              sx={{
+                position: 'absolute',
+                top: '120%',
+                maxWidth: '190%',
+                left: '-60%',
+                transform: 'rotate(135deg)',
+              }}
+            />
+          </div>
+
+          <div sx={styles.card} className={STYLES.five}>
+            <div sx={styles.wrapper}>
+              <div sx={{display: 'flex'}}>
+                <div sx={styles.icondiv}>5</div>
+                <div>
+                  <Heading sx={styles.wrapper.title}>August 2021</Heading>
+                  <Text sx={styles.wrapper.secondTitle}>Inner Core</Text>
+                </div>
+              </div>
+              <div sx={styles.objectivediv}>
+                <div sx={styles.objectiveLine}>
+                  <Text sx={styles.wrapper.objective}>
+                    <ul>Launch of Charity Exchange and CTS project </ul>
+                    <ul>Celebrity endorsements – UN certification </ul>
+                    <ul>
+                      Meet with Elon Musk to discuss us supporting his Global
+                      Charity
+                    </ul>
+                    <ul>Annual Helpers Foundation website goes live </ul>
+                    <ul>Integration with PayPal and other payment services </ul>
+                  </Text>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
       </Container>
     </section>
-  );
+  )
 }
 
 const styles = {
@@ -97,61 +203,54 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     py: [8, null, 9, null, null, 10],
-    '&::before': {
-      position: 'absolute',
-      content: '""',
-      top: 0,
-      right: 0,
-      width: '100%',
-      backgroundSize: '350px 350px',
-      height: '100%',
-      opacity: 0.3,
-      zIndex: 0,
-    },
-  },
-  grid: {
-    marginLeft: "8rem",
-    mb: -1,
-    pt: 0,
-    gridGap: [
-      '35px 0',
-      null,
-      '45px 50px',
-      null,
-      '50px 25px',
-      null,
-      null,
-      '50px 65px',
-    ],
-    gridTemplateColumns: [
-      'repeat(1,1fr)',
-      null,
-      'repeat(2,1fr)',
-      null,
-      'repeat(4,1fr)',
-    ],
-  },
-  card: {
-    display: 'flex',
-    flexDirection: 'column',
-    position: 'relative',
-    textAlign: ['center', null, 'left'],
-    width: ['100%', '80%', '100%'],
-    mx: 'auto',
-    '&::before': {
-      position: 'absolute',
-      content: '""',
-      top: 0,
-      left: [0, null, null, null, null, 75, null, 100],
-      backgroundRepeat: `no-repeat`,
-      backgroundPosition: 'center center',
-      width: 200,
-      height: 60,
-      opacity: 0.3,
-    },
+    // '&::before': {
+    //   position: 'absolute',
+    //   content: '""',
+    //   top: 0,
+    //   right: 0,
+    //   width: '100%',
+    //   backgroundSize: '320px 320px',
+    //   height: '100%',
+    //   opacity: 0.3,
+    //   zIndex: 0,
+    // },
   },
 
-  iconBox: {
+  // card: {
+  //   marginLeft: '4rem',
+  //   marginTop: '2rem',
+  //   width: '100%',
+  // },
+  // card: {
+  // display: 'flex',
+  // flexDirection: '',
+  // position: 'relative',
+  // textAlign: ['center', null, 'left'],
+  // width: ['100%', '100%', '100%'],
+  // mx: 'auto',
+  //   '&::before': {
+  //     position: 'absolute',
+  //     content: '""',
+  //     top: 0,
+  //     left: [0, null, null, null, null, 75, null, 100],
+  //     backgroundRepeat: `no-repeat`,
+  //     backgroundPosition: 'center center',
+  //     width: 180,
+  //     height: 57,
+  //     opacity: 0.3,
+  //     '@media screen and (max-width:1220px)': {
+  //       display: 'none',
+  //     },
+  //   },
+  // },
+  arrow: {
+    '@media screen and (max-width:600px)': {
+      display: 'none',
+    },
+    position: 'relative',
+  },
+
+  icondiv: {
     width: ['50px', null, '60px', null, null, '70px'],
     height: ['50px', null, '60px', null, null, '70px'],
     flexShrink: 0,
@@ -160,36 +259,36 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     mb: [5, null, null, null, null, 6],
-    mx: ['auto', null, 0],
+    mr: '7rem',
     fontSize: [6, null, 7, null, null, '30px'],
     fontWeight: 700,
     justifyContent: 'center',
     color: '#234582',
   },
 
-  objectiveBox: {
+  objectivediv: {
     display: 'flex',
     alignItems: 'center',
-    flexDirection: "column",
+    flexDirection: 'column',
   },
 
   objectiveLine: {
     display: 'flex',
     alignItems: 'center',
-    flexDirection: "row",
+    flexDirection: 'row',
   },
 
-  checkBox: {
-    marginLeft:"5px",
-    height: "1rem",
-    width: "1rem",
-    backgroundColor: "#555",
+  checkdiv: {
+    marginLeft: '1rem',
+    height: '1rem',
+    width: '1rem',
+    backgroundColor: '#555',
   },
 
   wrapper: {
     width: '100%',
     display: 'flex',
-    marginLeft: "-6rem",
+    // marginLeft: '-6rem',
     flexDirection: 'column',
     alignItems: 'center',
     mt: '-5px',
@@ -211,11 +310,11 @@ const styles = {
     },
 
     objective: {
-      fontSize: 3,
-      fontWeight: 600,
-      lineHeight: 2,
+      fontSize: 2,
+      fontWeight: 200,
+      lineHeight: 1.3,
       color: 'white',
-      opacity: 0.65,
+      opacity: 0.75,
       pr: [0, null, null, null, null, 5],
     },
 
@@ -228,4 +327,4 @@ const styles = {
       pr: [0, null, null, null, null, 5],
     },
   },
-};
+}

@@ -1,0 +1,52 @@
+.gridContainer {
+  display: grid;
+  grid-template-areas:
+    'one arc1 .'
+    '. arc2 two'
+    'three arc3 .'
+    '. arc4 four'
+    'five . .';
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+.arc1 {
+  grid-area: arc1;
+}
+.arc2 {
+  grid-area: arc2;
+}
+.arc3 {
+  grid-area: arc3;
+}
+.arc4 {
+  grid-area: arc4;
+}
+
+@media screen and (max-width: 600px) {
+  .gridContainer {
+    grid-template-areas:
+      'one'
+      'two'
+      'three'
+      'four'
+      'five';
+  }
+}

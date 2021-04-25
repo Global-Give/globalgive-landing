@@ -1,19 +1,20 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { IconButton, jsx } from 'theme-ui';
-import { Container, Flex, Box, Heading, Text, Image, Button } from 'theme-ui';
-import React, { useState } from 'react';
-import ModalVideo from 'react-modal-video';
-import { Link } from 'components/link';
-import { FaPlayCircle } from 'react-icons/fa';
-import { IoDownloadOutline } from 'react-icons/io5';
-import BannerBG from 'assets/dot_wave.png';
-import DotWave from 'assets/dot_wave.png';
-import BannerIllustration from 'assets/illustrations/banner-illustration.svg';
+import {IconButton, jsx} from 'theme-ui'
+import {Container, Flex, Box, Heading, Text, Image, Button} from 'theme-ui'
+import React, {useState} from 'react'
+import ModalVideo from 'react-modal-video'
+import {Link} from 'components/link'
+import {FaPlayCircle} from 'react-icons/fa'
+import {IoDownloadOutline} from 'react-icons/io5'
+import BannerBG from 'assets/dot_wave.png'
+import DotWave from 'assets/dot_wave.png'
+import BannerIllustration from 'assets/illustrations/banner-illustration.svg'
+import AlternateGlobalGiveLogo from 'assets/logos/alternatelogo.svg'
 
-import client1 from 'assets/sponsor/paypal.svg';
-import client2 from 'assets/sponsor/google.svg';
-import client3 from 'assets/sponsor/dropbox.svg';
+import client1 from 'assets/sponsor/paypal.svg'
+import client2 from 'assets/sponsor/google.svg'
+import client3 from 'assets/sponsor/dropbox.svg'
 
 const data = [
   {
@@ -34,25 +35,35 @@ const data = [
     image: client3,
     title: 'dropbox',
   },
-];
+]
 
 export default function Banner() {
-  const [videoOpen, setVideoOpen] = useState(false);
-  const handleClick = (e) => {
-    e.preventDefault();
-    setVideoOpen(true);
-  };
+  const [videoOpen, setVideoOpen] = useState(false)
+  const handleClick = e => {
+    e.preventDefault()
+    setVideoOpen(true)
+  }
   return (
-    <section sx={styles.banner} id="home">
+    <section sx={styles.banner} id='home'>
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary" sx={{
-            textAlign: ['center', 'center', 'center', 'left', 'left', 'left']
-          }} >
-            Save lives with a single token
+          <Heading
+            as='h1'
+            variant='heroPrimary'
+            sx={{
+              textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
+            }}
+          >
+            GlobalGive
           </Heading>
-          <Text as="p" variant="heroSecondary" sx={styles.banner.description}>
-            Hold GlobalGive, change the world!
+
+          <Text as='h3' variant='heroTertiary' sx={styles.banner.subtext}>
+            Save lives with a single token
+          </Text>
+          <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
+            Hold <Image src={AlternateGlobalGiveLogo} sx={{height: '15px'}} />
+            <span sx={styles.banner.alternateLogo}> GlobalGive</span>, change
+            the world!
           </Text>
           {/* <Text as="p" variant="heroSecondary" sx={{
             color: "text"
@@ -60,70 +71,64 @@ export default function Banner() {
             The top exchanges for trading in GlobalGive are currently WhiteBIT, PancakeSwap, BitMart, and DODO BSC. 
             You can find others listed on our crypto exchanges page.
           </Text> */}
-          <Flex sx={styles.buttonsContainer} >
-            <a href="#" sx={{
-              cursor: 'auto',
-              pointerEvents: 'none'
-              // '&:hover > button > div > span': {
-              //   visibility: 'visible',
-              //   borderColor: 'primary',
-              //   borderWidth: '1.5px',
-              //   borderStyle: 'solid',
-              //   borderRadius: '2px',
-              //   backgroundColor: 'background',
-              //   color: 'primary'
-              // }
-            }} >
-              <Button variant="defaultBtn" aria-label="Get Started" sx={{
-                opacity: 0.5,
-                pointerEvents: 'none'
-              }} >
-                  <Container sx={{
+          <Flex sx={styles.buttonsContainer}>
+            <a
+              href='#features'
+              sx={{
+                cursor: 'auto',
+                pointerEvents: 'none',
+                '&:hover > button > div > span': {
+                  visibility: 'visible',
+                  borderColor: 'primary',
+                  borderWidth: '1.5px',
+                  borderStyle: 'solid',
+                  borderRadius: '2px',
+                  backgroundColor: 'background',
+                  color: 'primary',
+                },
+              }}
+            >
+              <Button
+                variant='defaultBtn'
+                aria-label='Get Started'
+                sx={{
+                  opacity: 0.5,
+                  pointerEvents: 'none',
+                }}
+              >
+                <Container
+                  sx={{
                     fontFamily: 'Jost',
                     fontWeight: 500,
-                    fontSize: '20px'
+                    fontSize: '20px',
                   }}
                   css={{
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center'
-                  }}>
-                    Buy (Coming Soon)
-                    
-                  </Container>
+                    justifyContent: 'center',
+                    color: '#ffffff',
+                  }}
+                >
+                  For Investors
+                </Container>
               </Button>
             </a>
-            
-            <a href="#" href="https://t.me/globalgivetokencommunity" target="_blank" rel="noopener noreferrer">
-              <Button variant="accentButton" aria-label="Get Started">
-                  <Container sx={{
+            <a href='#payment' rel='noopener noreferrer'>
+              <Button variant='outlinePrimary' aria-label='Get Started'>
+                <Container
+                  sx={{
                     fontFamily: 'Jost',
                     fontWeight: 500,
-                    fontSize: '20px'
+                    fontSize: '20px',
                   }}
                   css={{
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center'
-                  }}>
-                    Join Telegram
-                  </Container>
-              </Button>
-            </a>
-            <a href="#" href="" target="_blank" rel="noopener noreferrer">
-              <Button variant="outlinePrimary" aria-label="Get Started">
-                  <Container sx={{
-                    fontFamily: 'Jost',
-                    fontWeight: 500,
-                    fontSize: '20px'
+                    justifyContent: 'center',
                   }}
-                  css={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}>
-                    See Chart
-                  </Container>
+                >
+                  For Charity
+                </Container>
               </Button>
             </a>
             {/* <>
@@ -154,38 +159,50 @@ export default function Banner() {
           </Flex> */}
         </Box>
 
-        <Flex sx={styles.banner.imageBox} css={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}>
-          <Image src={BannerIllustration} css={{
-            'z-index': 1,
-            'user-drag': 'none',
-            'user-select': 'none'
-          }}/>
+        <Flex
+          sx={styles.banner.imageBox}
+          css={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Image
+            src={BannerIllustration}
+            css={{
+              'z-index': 1,
+              'user-drag': 'none',
+              'user-select': 'none',
+            }}
+          />
         </Flex>
       </Container>
-      <Image src={DotWave} sx={styles.banner.bgImage} css={{
-        'z-index': 0,
-        'user-drag': 'none',
-        'user-select': 'none'
-      }}/>
-
+      <Image
+        src={DotWave}
+        sx={styles.banner.bgImage}
+        css={{
+          'z-index': 0,
+          'user-drag': 'none',
+          'user-select': 'none',
+        }}
+      />
     </section>
-  );
+  )
 }
 
 const styles = {
   banner: {
+    alternateLogo: {
+      color: 'white',
+    },
     overflow: ['hidden', 'initial', null, 'hidden'],
-    
+
     borderBottomRightRadius: [100, 150, null, null, null, 250],
     pt: ['150px', null, null, null, null, null, '140px', '130px'],
     pb: ['100px', null, null, '110px', null, 10, '150px'],
     backgroundColor: 'background',
     container: {
-      display: 'flex'
+      display: 'flex',
     },
     bgImage: {
       pointerEvents: 'none',
@@ -197,10 +214,10 @@ const styles = {
       marginLeft: 'auto',
       marginRight: 'auto',
       height: '56.563rem',
-      width: '51.125rem'
+      width: '51.125rem',
     },
     contentBox: {
-      width: ['100%','100%', '100%', '50%', '60%', '60%'],
+      width: ['100%', '100%', '100%', '50%', '60%', '60%'],
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'flex-start',
@@ -219,17 +236,22 @@ const styles = {
       width: '100%',
     },
     description: {
-      color: "text",
+      color: 'text',
       width: '100%',
-      textAlign: ['center', 'center', 'center', 'left', 'left', 'left']
-    }
+
+      textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
+    },
+    subtext: {
+      width: '100%',
+      textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
+    },
   },
   buttonsContainer: {
     flexWrap: 'wrap',
     display: 'flex',
     flexDirection: ['column', 'column', 'column', 'row', 'row', 'row'],
     width: ['100%', '100%', '100%'],
-    alignItems: ['center', 'center', 'center', null, null, null]
+    alignItems: ['center', 'center', 'center', null, null, null],
   },
   sponsorTitle: {
     color: 'white',
@@ -262,10 +284,9 @@ const styles = {
   //   'text-align': 'center',
   //   padding: '5px 0',
   //   'border-radius': '6px',
-  
-    
+
   //   position: 'absolute',
   //   'z-index': 1,
   //   top: '20px',
   // }
-};
+}

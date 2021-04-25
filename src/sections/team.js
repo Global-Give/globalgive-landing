@@ -67,7 +67,6 @@ const data = [
     description: (
         <div sx={{width: '100%', padding: '0'}}>
             <h4>Technical Director</h4>
-            Damian is our organisation's liaison to all charities. His years of experience running companies in Europe, as well as his excellent professional attitude  make for easier  communication with large Charity organisations. We encourage all interested charities to get in touch with Damian, who will gladly explain the application procedure. 
             If humans had super-powers, Nic's would be the ability to control computers with his mind. Nic provides the needed technological backbone for the GlobalGive project. He feels at home caged-in, working on backend. Rare sightings occur in the spring and summer months.
         </div>
     ),

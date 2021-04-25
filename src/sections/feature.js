@@ -90,7 +90,7 @@ export default function Feature() {
                   justifyContent: 'center',
                 }}
               >
-                For Charity
+                See Chart
               </Container>
             </Button>
           </a>

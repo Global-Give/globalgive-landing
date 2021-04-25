@@ -15,7 +15,7 @@ const data = {
     'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
   btnName: 'Learn More',
   btnURL: '#',
-  btnNameTwo: 'Buy More',
+  btnNameTwo: 'How to buy',
   btnURLTwo: '#',
 }
 

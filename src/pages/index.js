@@ -35,9 +35,10 @@ export default function IndexPage() {
           <WorkFlow />
           {/* <TestimonialCard /> */}
           <SecurePayment />
+          <HowToBuy />
           {/* <Package /> */}
           <Faq />
-          {/* <HowToBuy /> */}
+          
           <Team />
         </Layout>
       </StickyProvider>

@@ -4,63 +4,69 @@ import {jsx} from 'theme-ui'
 import {Container, Grid, Button} from 'theme-ui'
 import SectionHeader from 'components/section-header'
 import FeatureCard from 'components/feature-card.js'
+import Link from 'next/link'
 
 const data = [
   {
     id: 1,
     text: 'How to buy BNB(YouTube Video link)',
+    link: '#'
   },
   {
     id: 2,
     text: 'How to Buy BNB(downloadable PDF)',
+    link: 'https://pdfhost.io/v/qY5QS1inZ_EN_How2Buy_GIVE_steps.pdf',
   },
   {
     id: 3,
-    text:
-      'How to Load and use Trust Wallet onto your Phone (YouTube Video link)',
+    text: 'How to Load and use Trust Wallet onto your Phone (YouTube Video link)',
+    link: '#'
   },
   {
     id: 4,
     text: 'How to Load and use Trust Wallet onto your phone (downloadable PDF)',
+    link: '#'
   },
   {
     id: 5,
     text: 'How to Buy GlobalGive on Pancake Swap (YouTube Video Link) ',
+    link: '#'
   },
   {
     id: 6,
     text: 'How to Buy GlobalGive on pancake Swap (downloadable PDF)',
+    link: '#'
   },
 ]
 
 export default function HowToBuy() {
   return (
-    <section sx={styles.workflow} id='features'>
+    <section sx={styles.workflow} id='how-to-buy'>
       <Container>
         <SectionHeader slogan='' title='How to buy' />
 
         <Grid sx={styles.grid}>
           {data.map(item => (
             <div>
-              <a href='#' href='' target='_blank' rel='noopener noreferrer'>
-                <Button variant='outlinePrimary' aria-label='Get Started'>
-                  <Container
-                    sx={{
-                      fontFamily: 'Jost',
-                      fontWeight: 500,
-                      fontSize: '20px',
-                    }}
-                    css={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                    }}
-                  >
-                    BUY
-                  </Container>
-                </Button>
-              </a>
-              <FeatureCard text={item.text} />
+                <a href="#" href={item.link} target='_blank' rel='noopener noreferrer'>
+                    <Button variant='outlinePrimary' aria-label={item.text}>
+                        <Container
+                            sx={{
+                            fontFamily: 'Jost',
+                            fontWeight: 500,
+                            fontSize: '20px',
+                            }}
+                            css={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            }}
+                        >
+                            BUY
+                        </Container>
+                    </Button>
+                </a>
+                <FeatureCard text={item.text} />
             </div>
           ))}
         </Grid>

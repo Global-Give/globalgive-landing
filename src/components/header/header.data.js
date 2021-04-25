@@ -26,7 +26,7 @@ export default [
     label: 'Roadmap',
   },
   {
-    path: 'payment',
+    path: 'how-to-buy',
     label: 'How to Buy',
   },
   {

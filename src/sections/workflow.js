@@ -25,7 +25,7 @@ export default function WorkFlow() {
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
                     <img src={globalIcon} sx={{
-                        height: '55px',
+                        height: '50px',
                         width: 'auto',
                     }}></img>
                 </div>
@@ -65,7 +65,7 @@ export default function WorkFlow() {
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
                     <img src={globalIcon} sx={{
-                        height: '55px',
+                        height: '50px',
                         width: 'auto',
                     }}></img>
                 </div>
@@ -105,7 +105,7 @@ export default function WorkFlow() {
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
                     <img src={globalIcon} sx={{
-                        height: '55px',
+                        height: '50px',
                         width: 'auto',
                     }}></img>
                 </div>
@@ -146,7 +146,7 @@ export default function WorkFlow() {
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
                     <img src={globalIcon} sx={{
-                        height: '55px',
+                        height: '50px',
                         width: 'auto',
                     }}></img>
                 </div>

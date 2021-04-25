@@ -4,7 +4,7 @@ import {jsx, Container, Box} from 'theme-ui'
 import TextFeature from 'components/text-feature'
 import Image from 'components/image'
 
-import Moon from 'assets/illustrations/moon.svg'
+import Moon from 'assets/logos/gg_icon.svg'
 
 const data = {
   subTitle: 'What we do',

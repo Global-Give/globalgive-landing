@@ -9,7 +9,6 @@ import {FaPlayCircle} from 'react-icons/fa'
 import {IoDownloadOutline} from 'react-icons/io5'
 import BannerBG from 'assets/dot_wave.png'
 import DotWave from 'assets/dot_wave.png'
-import BannerIllustration from 'assets/illustrations/banner-illustration.svg'
 import AlternateGlobalGiveLogo from 'assets/logos/alternatelogo.svg'
 
 import client1 from 'assets/sponsor/paypal.svg'
@@ -58,19 +57,19 @@ export default function Banner() {
           </Heading>
 
           <Text as='h3' variant='heroTertiary' sx={styles.banner.subtext}>
-            Save lives with a single token
+          The Token of Choice for Global Charities
+          </Text>
+          <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
+          GlobalGive is a deflationary token built on the Binance Smart Chain. Investing in this token does not only grow your wealth, but, hopefully, makes the world a better place, as we donate a percentage of proceeds to a charity to be determined every month. GlobalGive is therefore a Rotatory Charity Token represents a ground-breaking option for Charities to raise funds in an ever changing world.
+          </Text>
+          <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
+          Invest in the world while investing in your future!
           </Text>
           <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
             Hold <Image src={AlternateGlobalGiveLogo} sx={{height: '15px'}} />
             <span sx={styles.banner.alternateLogo}> GlobalGive</span>, change
             the world!
           </Text>
-          {/* <Text as="p" variant="heroSecondary" sx={{
-            color: "text"
-          }}>
-            The top exchanges for trading in GlobalGive are currently WhiteBIT, PancakeSwap, BitMart, and DODO BSC. 
-            You can find others listed on our crypto exchanges page.
-          </Text> */}
           <Flex sx={styles.buttonsContainer}>
             <a href='#features' rel='noopener noreferrer'>
               <Button variant='defaultBtn' aria-label='Get Started'>
@@ -108,51 +107,9 @@ export default function Banner() {
                 </Container>
               </Button>
             </a>
-            {/* <>
-              <ModalVideo
-                channel="youtube"
-                isOpen={videoOpen}
-                videoId="dQw4w9WgXcQ"
-                onClose={() => setVideoOpen(false)}
-              />
-              <Button
-                variant="textButton"
-                aria-label="Watch Video"
-                onClick={handleClick}
-              >
-                <FaPlayCircle /> Watch Video
-              </Button>
-            </> */}
           </Flex>
-          {/* <Flex sx={styles.sponsorBox}>
-            <Text sx={styles.sponsorTitle}>Sponsored by:</Text>
-            <Box sx={styles.sponsorBox.sponsor}>
-              {data.map((item, index) => (
-                <Link path={item.path} key={`client-key${index}`}>
-                  <Image src={item.image} alt={item.title} />
-                </Link>
-              ))}
-            </Box>
-          </Flex> */}
         </Box>
 
-        <Flex
-          sx={styles.banner.imageBox}
-          css={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <Image
-            src={BannerIllustration}
-            css={{
-              'z-index': 1,
-              'user-drag': 'none',
-              'user-select': 'none',
-            }}
-          />
-        </Flex>
       </Container>
       <Image
         src={DotWave}
@@ -180,6 +137,7 @@ const styles = {
     backgroundColor: 'background',
     container: {
       display: 'flex',
+      justifyContent: 'center',
     },
     bgImage: {
       pointerEvents: 'none',
@@ -194,38 +152,30 @@ const styles = {
       width: '51.125rem',
     },
     contentBox: {
-      width: ['100%', '100%', '100%', '50%', '60%', '60%'],
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-      flexShrink: 0,
-      pt: [0, null, null, null, null, null, 5, 7],
-    },
-    imageBox: {
-      display: ['none', 'flex', 'flex', 'flex'],
-      justifyContent: 'center',
-      ml: [0, null, null, '-110px', '-115px', '-150px', '-210px', '-270px'],
-      mr: [0, null, null, '-145px', '-160px', '-180px', '-220px', '-290px'],
-      mt: [0, null, null, '40px', 4, 7, 0],
-      mb: [0, null, null, null, '-45px', '-70px', null, '-115px'],
-      overflow: 'hidden',
-      textAlign: 'center',
       width: '100%',
+      display: 'flex',
+      justifyContent: 'center',
+      justifySelf: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      flexShrink: 0,
+      textAlign: 'center',
+      pt: [0, null, null, null, null, null, 5, 7],
     },
     description: {
       color: 'text',
       width: '100%',
-
-      textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
+      textAlign: 'center',
     },
     subtext: {
       width: '100%',
-      textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
+      textAlign: 'center',
     },
   },
   buttonsContainer: {
     flexWrap: 'wrap',
     display: 'flex',
+    justifyContent: 'center',
     flexDirection: ['column', 'column', 'column', 'row', 'row', 'row'],
     width: ['100%', '100%', '100%'],
     alignItems: ['center', 'center', 'center', null, null, null],

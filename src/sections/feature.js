@@ -67,7 +67,7 @@ export default function Feature() {
   return (
     <section sx={{variant: 'section.feature'}} id='features'>
       <Container>
-        <SectionHeader slogan='Tokenomics' title='Our Proposal' />
+        <SectionHeader slogan='' title='Tokenomics' />
 
         <Grid sx={styles.grid}>
           {data.map(item => (
@@ -123,6 +123,25 @@ export default function Feature() {
               </Container>
             </Button>
           </CopyToClipboard>
+
+          <a href='#' rel='noopener noreferrer'>
+            <Button variant='outlinePrimary' aria-label='Get Started'>
+              <Container
+                sx={{
+                  fontFamily: 'Jost',
+                  fontWeight: 500,
+                  fontSize: '20px',
+                }}
+                css={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                Read more on Whale Tax
+              </Container>
+            </Button>
+          </a>
         </Grid>
       </Container>
     </section>

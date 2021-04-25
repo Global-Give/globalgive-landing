@@ -1,7 +1,7 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
 import {jsx, Image} from 'theme-ui'
-import {Container, Grid, div, Heading, Text} from 'theme-ui'
+import {Container, Grid, div, Heading, Text, Button} from 'theme-ui'
 import SectionHeader from 'components/section-header'
 import STYLES from './css/roadmap.module.css'
 
@@ -166,21 +166,26 @@ export default function WorkFlow() {
               </div>
             </div>
           </div>
-
-          <div sx={styles.arrow} className={STYLES.arc4}>
-            <Image
-              src={ArcIcon1}
-              sx={{
-                position: 'absolute',
-                top: '120%',
-                maxWidth: '190%',
-                left: '-60%',
-                transform: 'rotate(135deg)',
-              }}
-            />
-          </div>
-
+    
         </Container>
+        <a href='#' rel='noopener noreferrer'>
+            <Button variant='outlinePrimary' aria-label='Get Started'>
+              <Container
+                sx={{
+                  fontFamily: 'Jost',
+                  fontWeight: 500,
+                  fontSize: '20px',
+                }}
+                css={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                See Detailed Roadmap
+              </Container>
+            </Button>
+        </a>
       </Container>
     </section>
   )

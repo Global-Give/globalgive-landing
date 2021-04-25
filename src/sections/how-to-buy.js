@@ -50,7 +50,7 @@ export default function HowToBuy() {
       <Container>
         <SectionHeader slogan='' title='How to buy' />
         <p sx={{marginTop: '-5rem'}}>If you are already set up with TrustWallet and have BNB ready, simply use the <a href="#features" rel='noopener noreferrer' sx={{color: '#fff'}}>GlobalGive Token contract address</a> on PancakeSwap V2 to purchase GlobalGive Token </p>
-        <div sx={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '-2rem'}}>
+        <div sx={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '1.5rem', marginBottom: '2.5rem'}}>
             <div sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
                 <p>Tips for ensuring your transactions go through:</p>
                 <ul sx={{textAlign:'center', marginTop: '-1rem', listStyle: 'none'}}>
@@ -62,7 +62,7 @@ export default function HowToBuy() {
         </div>
         <Grid sx={styles.grid}>
           {data.map(item => (
-            <div>
+            <div sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
                 <a href={item.link} 
                     target='_blank' 
                     rel='noopener noreferrer'

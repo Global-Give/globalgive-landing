@@ -87,6 +87,7 @@ export default function Feature() {
                   fontFamily: 'Jost',
                   fontWeight: 500,
                   fontSize: '20px',
+                  width: '300px'
                 }}
                 css={{
                   display: 'flex',
@@ -113,6 +114,7 @@ export default function Feature() {
                   fontFamily: 'Jost',
                   fontWeight: 500,
                   fontSize: '20px',
+                  width: '300px'
                 }}
                 css={{
                   display: 'flex',
@@ -132,6 +134,7 @@ export default function Feature() {
                   fontFamily: 'Jost',
                   fontWeight: 500,
                   fontSize: '20px',
+                  width: '300px'
                 }}
                 css={{
                   display: 'flex',

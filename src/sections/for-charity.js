@@ -3,11 +3,12 @@
 import {jsx, Container, Box, Flex} from 'theme-ui'
 import TextFeature from 'components/text-feature'
 import Image from 'components/image'
+import Logo from 'assets/logos/gg_icon.svg'
 
 // import Charity from 'assets/illustrations/charity.svg'
 
 const data = {
-  subTitle: 'GlobalGive',
+  subTitle: (<span sx={{display:'flex', justifyContent:'center', alignItems: 'center'}}><img src={Logo} sx={{height: '30px', width: '30px', marginRight: '1rem'}}></img> GlobalGive</span>),
   title: 'For Charity',
   description: (
     <div>

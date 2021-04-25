@@ -158,7 +158,7 @@ export default {
       fontSize: [2, 3, 4, '17px', null, 3, '19px', 4],
       lineHeight: ['32px', '32px', '32px', '32px', '32px'],
       fontWeight: 400,
-      pr: [0, null, null, null, null, '100px', null, '125px'],
+      pr: [0, null, null, null, null, null, null, null],
       mb: ['30px', null, null, null, '35px', null, null, 7],
     },
     heroTertiary: {
@@ -166,7 +166,7 @@ export default {
       fontSize: '25px',
       lineHeight: ['32px', '32px', '32px', '32px', '32px'],
       fontWeight: 400,
-      pr: [0, null, null, null, null, '100px', null, '125px'],
+      pr: [0, null, null, null, null, null, null, null],
       mb: ['30px', null, null, null, '35px', null, null, 7],
     },
     title: {

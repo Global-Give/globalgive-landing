@@ -72,30 +72,8 @@ export default function Banner() {
             You can find others listed on our crypto exchanges page.
           </Text> */}
           <Flex sx={styles.buttonsContainer}>
-            <a
-              href='#features'
-              sx={{
-                cursor: 'auto',
-                pointerEvents: 'none',
-                '&:hover > button > div > span': {
-                  visibility: 'visible',
-                  borderColor: 'primary',
-                  borderWidth: '1.5px',
-                  borderStyle: 'solid',
-                  borderRadius: '2px',
-                  backgroundColor: 'background',
-                  color: 'primary',
-                },
-              }}
-            >
-              <Button
-                variant='defaultBtn'
-                aria-label='Get Started'
-                sx={{
-                  opacity: 0.5,
-                  pointerEvents: 'none',
-                }}
-              >
+            <a href='#features' rel='noopener noreferrer'>
+              <Button variant='defaultBtn' aria-label='Get Started'>
                 <Container
                   sx={{
                     fontFamily: 'Jost',
@@ -106,7 +84,6 @@ export default function Banner() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: '#ffffff',
                   }}
                 >
                   For Investors

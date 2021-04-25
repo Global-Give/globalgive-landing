@@ -43,7 +43,7 @@ const data = [
 
 export default function Team() {
   return (
-    <section sx={styles.workflow} id='features'>
+    <section sx={styles.workflow} id='team'>
       <Container>
         <SectionHeader slogan='GlobalGive' title='Our Team' />
 
@@ -106,6 +106,10 @@ const styles = {
     ],
     width: ['100%', '80%', '100%'],
     mx: 'auto',
+    justifyContent: 'space-evenly',
+    justifyItems: 'center',
+    alignContent: 'space-evenly',
+    alignItems: 'center',
     gridTemplateColumns: [
       'repeat(1,1fr)',
       null,

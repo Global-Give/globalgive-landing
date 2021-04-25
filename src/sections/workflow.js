@@ -25,7 +25,7 @@ export default function WorkFlow() {
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
                     <img src={globalIcon} sx={{
-                        height: '50px',
+                        height: '55px',
                         width: 'auto',
                     }}></img>
                 </div>
@@ -37,10 +37,10 @@ export default function WorkFlow() {
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul>Selection and addition of first charities for donations</ul>
-                    <ul>First donation completed within 30 days of token launch</ul>
-                    <ul>Price tracking various platforms</ul>
-                    <ul>Begin application process for exchange listings</ul>
+                    <ul><li>Selection and addition of first charities for donations</li></ul>
+                    <ul><li>First donation completed within 30 days of token launch</li></ul>
+                    <ul><li>Price tracking various platforms</li></ul>
+                    <ul><li>Begin application process for exchange listings</li></ul>
                   </Text>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function WorkFlow() {
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
                     <img src={globalIcon} sx={{
-                        height: '50px',
+                        height: '55px',
                         width: 'auto',
                     }}></img>
                 </div>
@@ -77,10 +77,10 @@ export default function WorkFlow() {
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul>Enable monthly donation selection by the community </ul>
-                    <ul>Create charity HODLers foundation</ul>
-                    <ul>Charity organization cross promotion</ul>
-                    <ul>Move Global Give Token into its own mainnet</ul>
+                    <ul><li>Enable monthly donation selection by the community </li></ul>
+                    <ul><li>Create charity HODLers foundation</li></ul>
+                    <ul><li>Charity organization cross promotion</li></ul>
+                    <ul><li>Move Global Give Token into its own mainnet</li></ul>
                   </Text>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function WorkFlow() {
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
                     <img src={globalIcon} sx={{
-                        height: '50px',
+                        height: '55px',
                         width: 'auto',
                     }}></img>
                 </div>
@@ -118,10 +118,10 @@ export default function WorkFlow() {
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul>Enable HODLer direct charity donation {' '}</ul>
-                    <ul>Enable users to write off donation activity within our ecosystem {' '}</ul>
-                    <ul>Work with Leonardo Di Caprio foundation for donations and cross promotion {' '}</ul>
-                    <ul>United Nations certification as a global charitable organization {' '}</ul>
+                    <ul><li>Enable HODLer direct charity donation {' '}</li></ul>
+                    <ul><li>Enable users to write off donation activity within our ecosystem {' '}</li></ul>
+                    <ul><li>Work with Leonardo Di Caprio foundation for donations and cross promotion {' '}</li></ul>
+                    <ul><li>United Nations certification as a global charitable organization {' '}</li></ul>
                   </Text>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function WorkFlow() {
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
                     <img src={globalIcon} sx={{
-                        height: '50px',
+                        height: '55px',
                         width: 'auto',
                     }}></img>
                 </div>
@@ -158,9 +158,9 @@ export default function WorkFlow() {
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul>Global Give will be the choice for Charity donations around the world with hundreds of charities using the Global Give token as a means to raise funds.  </ul>
-                    <ul>Global Give will establish itself as a pivotal  and critical crypto asset for decentralized donations worldwide. </ul>
-                    <ul>The founders and HOLDers will continue to work in saving millions from poverty, increasing education in areas that need it and helping people move up from living on the street. We strive to carry on the great works of all those environmentalists who we so proudly stand on the shoulders of.</ul>
+                    <ul><li>Global Give will be the choice for Charity donations around the world with hundreds of charities using the Global Give token as a means to raise funds.  </li></ul>
+                    <ul><li>Global Give will establish itself as a pivotal  and critical crypto asset for decentralized donations worldwide. </li></ul>
+                    <ul><li>The founders and HOLDers will continue to work in saving millions from poverty, increasing education in areas that need it and helping people move up from living on the street. We strive to carry on the great works of all those environmentalists who we so proudly stand on the shoulders of.</li></ul>
                   </Text>
                 </div>
               </div>

@@ -53,24 +53,23 @@ export default function HowToBuy() {
         <Grid sx={styles.grid}>
           {data.map(item => (
             <div>
-                <a 
-                    href={item.link} 
+                <a href={item.link} 
                     target='_blank' 
                     rel='noopener noreferrer'
                 >
                     <Button variant='outlinePrimary' aria-label={item.text}>
                         <Container
                             sx={{
-                            fontFamily: 'Jost',
-                            fontWeight: 500,
-                            fontSize: '20px',
+                                fontFamily: 'Jost',
+                                fontWeight: 500,
+                                fontSize: '20px',
                             }}
                             css={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
                             }}
-                        >
+                            >
                             BUY
                         </Container>
                     </Button>

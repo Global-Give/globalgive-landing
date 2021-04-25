@@ -13,10 +13,10 @@ export default [
   //   },
   //   label: 'Whitepaper'
   // },
-  {
-    path: 'features',
-    label: 'Features',
-  },
+//   {
+//     path: 'features',
+//     label: 'Our Proposal',
+//   },
   {
     path: 'mission',
     label: 'Our Mission',

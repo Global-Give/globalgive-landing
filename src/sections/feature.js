@@ -18,7 +18,7 @@ const data = [
     altText: 'Supply',
     title: 'Supply',
     text:
-      'We have 120,000,000 tokens in total – 30% were sold in a 5-minute sell out.',
+      'We have 150,000,000 tokens in total – 30% were sold in a 5-minute sell out.',
   },
   {
     id: 2,

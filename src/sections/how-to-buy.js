@@ -10,32 +10,32 @@ const data = [
   {
     id: 1,
     text: 'How to buy BNB(YouTube Video link)',
-    link: '#'
+    link: 'https://youtu.be/atfGsZY5sqo'
   },
   {
     id: 2,
     text: 'How to Buy BNB(downloadable PDF)',
-    link: 'https://pdfhost.io/v/qY5QS1inZ_EN_How2Buy_GIVE_steps.pdf',
+    link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf',
   },
   {
     id: 3,
     text: 'How to Load and use Trust Wallet onto your Phone (YouTube Video link)',
-    link: '#'
+    link: 'https://youtu.be/BdWCVKINwKc'
   },
   {
     id: 4,
     text: 'How to Load and use Trust Wallet onto your phone (downloadable PDF)',
-    link: '#'
+    link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf'
   },
   {
     id: 5,
     text: 'How to Buy GlobalGive on Pancake Swap (YouTube Video Link) ',
-    link: '#'
+    link: 'https://youtu.be/a8d9VBT--Hw'
   },
   {
     id: 6,
     text: 'How to Buy GlobalGive on pancake Swap (downloadable PDF)',
-    link: '#'
+    link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf'
   },
 ]
 
@@ -49,7 +49,17 @@ export default function HowToBuy() {
       }} id='how-to-buy'>
       <Container>
         <SectionHeader slogan='' title='How to buy' />
-
+        <p sx={{marginTop: '-5rem'}}>If you are already set up with TrustWallet and have BNB ready, simply use the <a href="#features" rel='noopener noreferrer' sx={{color: '#fff'}}>GlobalGive Token contract address</a> on PancakeSwap V2 to purchase GlobalGive Token </p>
+        <div sx={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '-2rem'}}>
+            <div sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
+                <p>Tips for ensuring your transactions go through:</p>
+                <ul sx={{textAlign:'center', marginTop: '-1rem', listStyle: 'none'}}>
+                    <li>- Increase the slippage </li>
+                    <li>- Use round values of coins</li>
+                    <li>- Use smaller value of coins</li>
+                </ul>
+            </div>
+        </div>
         <Grid sx={styles.grid}>
           {data.map(item => (
             <div>

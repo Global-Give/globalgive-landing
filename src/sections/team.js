@@ -23,11 +23,14 @@ const data = [
   },
   {
     id: 2,
-    name: 'John',
+    name: 'John Ikwuobe',
     description: (
         <div sx={{width: '100%', padding: '0'}}>
-            OK with people, prefers animals. Happy to throw herself off a cliff and build the plane on the way down 
-            YOLO ✌
+        <h4>Head of Development</h4>
+        With an uncanny eye for details, an intuitive sense of direction, as well as a never-ending curiosity for the new and exciting, John couldn't be in a better niche than that of Head of Development. Here he will be at the coalface forging partnerships with businesses and spearheading innovation in the area of token adoption. In other words doing the type of duties that will be indispensable for the heights to which GlobalGive aspires. 
+        <br></br>I will be the liaison with businesses and spearhead the token adoption
+
+        <br></br>I love eating Red crayons 😁
         </div>
     ),
     picture: John,

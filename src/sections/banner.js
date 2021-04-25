@@ -178,7 +178,7 @@ const styles = {
     justifyContent: 'center',
     flexDirection: ['column', 'column', 'column', 'row', 'row', 'row'],
     width: ['100%', '100%', '100%'],
-    alignItems: ['center', 'center', 'center', null, null, null],
+    alignItems: ['center', 'center', 'center', 'center', 'center', 'center'],
   },
   sponsorTitle: {
     color: 'white',

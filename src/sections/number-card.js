@@ -9,12 +9,12 @@ const data = [
   {
     id: 1,
     text: 'Amount donated to charities',
-    number: '1,023,179',
+    number: '0',
   },
   {
     id: 2,
     text: 'Number of Holders',
-    number: '50,258',
+    number: '100',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const data = [
   {
     id: 4,
     text: 'Amount of $GIVE burn',
-    number: '1,548,486',
+    number: '0',
   },
 ]
 
@@ -102,13 +102,14 @@ const styles = {
       'repeat(2,1fr)',
       null,
       'repeat(3,1fr)',
+      'repeat(4,1fr)',
     ],
   },
   card: {
     background: '#ffffff',
     borderRadius: '11px',
-    width: '90%',
-    height: '180px',
+    width: '100%',
+    height: '120px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',

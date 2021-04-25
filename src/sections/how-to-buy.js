@@ -41,14 +41,23 @@ const data = [
 
 export default function HowToBuy() {
   return (
-    <section sx={styles.workflow} id='how-to-buy'>
+    <section sx={{
+        paddingBottom: '3rem',
+        variant: 'section.securePayment',
+        background:
+          'linear-gradient(0deg, rgba(29,31,41,1) 0%, rgba(23,25,33,1) 100%)',
+      }} id='how-to-buy'>
       <Container>
         <SectionHeader slogan='' title='How to buy' />
 
         <Grid sx={styles.grid}>
           {data.map(item => (
             <div>
-                <a href="#" href={item.link} target='_blank' rel='noopener noreferrer'>
+                <a 
+                    href={item.link} 
+                    target='_blank' 
+                    rel='noopener noreferrer'
+                >
                     <Button variant='outlinePrimary' aria-label={item.text}>
                         <Container
                             sx={{

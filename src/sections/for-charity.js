@@ -25,7 +25,7 @@ const data = {
       part of the future, raise funds and support a group of investors who have
       committed to making the World a better place, please get in touch today.
       Don’t wait, email us now:{' '}
-      <a href='mailto:Charity@globalgive.finance? subject=Reaching out concerning for charity'>
+      <a css={{color: '#fff', fontSize: '18px'}} href='mailto:Charity@globalgive.finance? subject=Reaching out concerning for charity'>
         Charity@globalgive.finance.
       </a>
     </div>
@@ -34,7 +34,7 @@ const data = {
 
 export default function ForCharity() {
   return (
-    <section sx={{variant: 'section.partner'}} id='mission'>
+    <section sx={{variant: 'section.partner'}} id='for-charity'>
       <Container sx={styles.containerBox}>
         <Box sx={styles.contentBox}>
           <TextFeature

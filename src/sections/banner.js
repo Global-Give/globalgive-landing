@@ -113,7 +113,7 @@ export default function Banner() {
                 </Container>
               </Button>
             </a>
-            <a href='#payment' rel='noopener noreferrer'>
+            <a href='#for-charity' rel='noopener noreferrer'>
               <Button variant='outlinePrimary' aria-label='Get Started'>
                 <Container
                   sx={{

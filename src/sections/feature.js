@@ -10,6 +10,7 @@ import Burn from 'assets/feature/fire.png'
 import Redistribution from 'assets/feature/networking.png'
 import Whale from 'assets/feature/whale.png'
 import Lock from 'assets/feature/lock.png'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const data = [
   {
@@ -94,11 +95,8 @@ export default function Feature() {
               </Container>
             </Button>
           </a>
-          <a
-            href='https://bscscan.com/token/0x00d01af5e11f9b218accdcab75d31440c4858a70'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          
+        <CopyToClipboard text="0x00D01af5e11F9b218AccdcAb75d31440C4858A70">
             <Button variant='outlinePrimary' aria-label='Get Started'>
               <Container
                 sx={{
@@ -112,10 +110,10 @@ export default function Feature() {
                   justifyContent: 'center',
                 }}
               >
-                Contract Address
+                Copy Contract Address
               </Container>
             </Button>
-          </a>
+        </CopyToClipboard>
         </Grid>
       </Container>
     </section>

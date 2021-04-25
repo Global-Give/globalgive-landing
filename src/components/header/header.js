@@ -38,7 +38,6 @@ export default function Header({className}) {
                 },
               }}
             >
-              GlobalGive
             </Text>
           </div>
           <Flex as='nav' sx={styles.nav}>

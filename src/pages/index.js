@@ -34,7 +34,7 @@ export default function IndexPage() {
           <ForCharity />
           <WorkFlow />
           {/* <TestimonialCard /> */}
-          <SecurePayment />
+          {/* <SecurePayment /> */}
           <HowToBuy />
           {/* <Package /> */}
           <Faq />

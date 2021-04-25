@@ -4,7 +4,7 @@ import {jsx, Container, Box} from 'theme-ui'
 import TextFeature from 'components/text-feature'
 import Image from 'components/image'
 
-import Moon from 'assets/logos/gg_icon.svg'
+import Logo from 'assets/logos/gg_icon.svg'
 
 const data = {
   subTitle: 'What we do',
@@ -41,7 +41,7 @@ export default function PartnerSection() {
             height: '100%',
           }}
         >
-          <Image src={Moon} alt='moon' />
+          <img src={Logo} alt='Globalgive Finance' sx={{height: '30%', width:'30%'}}></img>
         </Box>
       </Container>
     </section>

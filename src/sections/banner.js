@@ -50,7 +50,7 @@ export default function Banner() {
             as='h1'
             variant='heroPrimary'
             sx={{
-              textAlign: ['center', 'center', 'center', 'left', 'left', 'left'],
+              textAlign: ['center', 'center', 'center', 'center', 'center', 'center'],
             }}
           >
             GlobalGive
@@ -160,16 +160,18 @@ const styles = {
       flexDirection: 'column',
       flexShrink: 0,
       textAlign: 'center',
-      pt: [0, null, null, null, null, null, 5, 7],
+    //   pt: [0, null, null, null, null, null, 5, 7],
     },
     description: {
       color: 'text',
       width: '100%',
       textAlign: 'center',
+      paddingRight: '0px'
     },
     subtext: {
       width: '100%',
       textAlign: 'center',
+      paddingRight: '0px'
     },
   },
   buttonsContainer: {

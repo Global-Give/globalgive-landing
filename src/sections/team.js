@@ -1,6 +1,6 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import {jsx} from 'theme-ui'
+import {Flex, jsx} from 'theme-ui'
 import {Container, Grid, Image, Text} from 'theme-ui'
 import SectionHeader from 'components/section-header'
 import Nadia from 'assets/team/nadia.jpeg'
@@ -47,10 +47,10 @@ export default function Team() {
       <Container>
         <SectionHeader slogan='GlobalGive' title='Our Team' />
 
-        <Grid sx={styles.grid}>
+        <Flex sx={styles.grid}>
           {data.map(person => (
-            <Container sx={{display: 'flex', flexDirection: 'column'}}>
-              <Image src={person.picture} variant='teammember' />
+            <Container sx={{display: 'flex', flexDirection: 'column', flex: '1 0 30%', margin: '1rem', maxWidth: '348px', maxHeight: '345px'}}>
+              <Image src={person.picture} variant='teammember' sx={{maxHeight: '300px', maxWidth: '288px'}} />
               <Text
                 sx={{
                   fontSize: '25px',
@@ -63,7 +63,7 @@ export default function Team() {
               </Text>
             </Container>
           ))}
-        </Grid>
+        </Flex>
       </Container>
     </section>
   )
@@ -93,29 +93,10 @@ const styles = {
     },
   },
   grid: {
-    pt: [0, null, null, null, null, null, null, 3],
-    gridGap: [
-      '37px 0',
-      null,
-      '45px 30px',
-      null,
-      '50px 30px',
-      null,
-      null,
-      '90px 70px',
-    ],
-    width: ['100%', '80%', '100%'],
-    mx: 'auto',
-    justifyContent: 'space-evenly',
-    justifyItems: 'center',
-    alignContent: 'space-evenly',
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
     alignItems: 'center',
-    gridTemplateColumns: [
-      'repeat(1,1fr)',
-      null,
-      'repeat(2,1fr)',
-      null,
-      'repeat(3,1fr)',
-    ],
+    alignContent: 'center'
   },
 }

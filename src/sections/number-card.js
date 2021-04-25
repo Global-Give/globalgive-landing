@@ -123,6 +123,9 @@ const styles = {
     alignItems: 'center',
     padding: '1rem',
     paddingBottom: '1.5rem',
+    '@media screen and (max-width: 768px)': {
+        width: '100%'
+    }
   },
   number: {
     fontFamily: 'Jost',

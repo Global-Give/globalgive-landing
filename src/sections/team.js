@@ -49,7 +49,7 @@ export default function Team() {
 
         <Flex sx={styles.grid}>
           {data.map(person => (
-            <Container sx={{display: 'flex', flexDirection: 'column', flex: '1 0 30%', margin: '1rem', maxWidth: '348px', maxHeight: '345px'}}>
+            <Container sx={styles.gridContainer}>
               <Image src={person.picture} variant='teammember' sx={{maxHeight: '300px', maxWidth: '288px'}} />
               <Text
                 sx={{
@@ -99,4 +99,15 @@ const styles = {
     alignItems: 'center',
     alignContent: 'center'
   },
+  gridContainer: {
+    display: 'flex', 
+    flexDirection: 'column', 
+    flex: '1 0 30%', 
+    margin: '1rem', 
+    maxWidth: '348px', 
+    maxHeight: '345px',
+    '@media screen and (max-width: 768px)': {
+        flex: '1 0 48%'
+    }
+  }
 }

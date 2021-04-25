@@ -8,6 +8,7 @@ import STYLES from './css/roadmap.module.css'
 import ArcIcon1 from 'assets/Arc1.svg'
 import ArcIcon2 from 'assets/Arc2.svg'
 import ArcIcon3 from 'assets/Arc3.svg'
+import globalIcon from 'assets/worldwide.svg'
 
 import ArrowOdd from 'assets/arrowOdd.png'
 import ArrowEven from 'assets/arrowEven.png'
@@ -22,7 +23,12 @@ export default function WorkFlow() {
           <div className={STYLES.one}>
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
-                <div sx={styles.icondiv}>1</div>
+                <div sx={styles.icondiv}>
+                    <img src={globalIcon} sx={{
+                        height: '50px',
+                        width: 'auto',
+                    }}></img>
+                </div>
                 <div>
                   <Heading sx={styles.wrapper.title}>April 2021</Heading>
                   <Text sx={styles.wrapper.secondTitle}>The Crust</Text>
@@ -31,9 +37,10 @@ export default function WorkFlow() {
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul>Token launch </ul>
-                    <ul>Release of website and White Paper. </ul>
-                    <ul>Apply for listings (CMC, Coingeko etc) </ul>
+                    <ul>Selection and addition of first charities for donations</ul>
+                    <ul>First donation completed within 30 days of token launch</ul>
+                    <ul>Price tracking various platforms</ul>
+                    <ul>Begin application process for exchange listings</ul>
                   </Text>
                 </div>
               </div>
@@ -56,20 +63,24 @@ export default function WorkFlow() {
           <div sx={styles.card} className={STYLES.two}>
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
-                <div sx={styles.icondiv}>2</div>
+                <div sx={styles.icondiv}>
+                    <img src={globalIcon} sx={{
+                        height: '50px',
+                        width: 'auto',
+                    }}></img>
+                </div>
                 <div>
                   <Heading sx={styles.wrapper.title}>May 2021</Heading>
-                  <Text sx={styles.wrapper.secondTitle}>Upper Mantle</Text>
+                  <Text sx={styles.wrapper.secondTitle}>The Mantle</Text>
                 </div>
               </div>
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul>First Charity Donation </ul>
-                    <ul>Charity Shop </ul>
-                    <ul>Community project donation </ul>
-                    <ul>Audit </ul>
-                    <ul>Whitebit and Bitmart listing </ul>
+                    <ul>Enable monthly donation selection by the community </ul>
+                    <ul>Create charity HODLers foundation</ul>
+                    <ul>Charity organization cross promotion</ul>
+                    <ul>Move Global Give Token into its own mainnet</ul>
                   </Text>
                 </div>
               </div>
@@ -92,22 +103,25 @@ export default function WorkFlow() {
           <div sx={styles.card} className={STYLES.three}>
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
-                <div sx={styles.icondiv}>3</div>
+                <div sx={styles.icondiv}>
+                    <img src={globalIcon} sx={{
+                        height: '50px',
+                        width: 'auto',
+                    }}></img>
+                </div>
                 <div>
                   <Heading sx={styles.wrapper.title}>June 2021</Heading>
-                  <Text sx={styles.wrapper.secondTitle}>Lower Mantle</Text>
+                  <Text sx={styles.wrapper.secondTitle}>Outer Core</Text>
                 </div>
               </div>
+              
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul>
-                      Add two more Global Charities to annual donation pool{' '}
-                    </ul>
-                    <ul>
-                      Create Charity Held Wallets for airdrop to charities.{' '}
-                    </ul>
-                    <ul>Community fundraising for Binance listing </ul>
+                    <ul>Enable HODLer direct charity donation {' '}</ul>
+                    <ul>Enable users to write off donation activity within our ecosystem {' '}</ul>
+                    <ul>Work with Leonardo Di Caprio foundation for donations and cross promotion {' '}</ul>
+                    <ul>United Nations certification as a global charitable organization {' '}</ul>
                   </Text>
                 </div>
               </div>
@@ -130,19 +144,23 @@ export default function WorkFlow() {
           <div sx={styles.card} className={STYLES.four}>
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
-                <div sx={styles.icondiv}>4</div>
+                <div sx={styles.icondiv}>
+                    <img src={globalIcon} sx={{
+                        height: '50px',
+                        width: 'auto',
+                    }}></img>
+                </div>
                 <div>
                   <Heading sx={styles.wrapper.title}>July 2021</Heading>
-                  <Text sx={styles.wrapper.secondTitle}>Outer Core</Text>
+                  <Text sx={styles.wrapper.secondTitle}>Inner Core</Text>
                 </div>
               </div>
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul>Start work on Charity Token Exchange </ul>
-                    <ul>CommCharity Tokens SAFU Project (CTS project) </ul>
-                    <ul>Create Charity Helpers Foundation </ul>
-                    <ul>Binance and Coinbase listing </ul>
+                    <ul>Global Give will be the choice for Charity donations around the world with hundreds of charities using the Global Give token as a means to raise funds.  </ul>
+                    <ul>Global Give will establish itself as a pivotal  and critical crypto asset for decentralized donations worldwide. </ul>
+                    <ul>The founders and HOLDers will continue to work in saving millions from poverty, increasing education in areas that need it and helping people move up from living on the street. We strive to carry on the great works of all those environmentalists who we so proudly stand on the shoulders of.</ul>
                   </Text>
                 </div>
               </div>
@@ -162,31 +180,6 @@ export default function WorkFlow() {
             />
           </div>
 
-          <div sx={styles.card} className={STYLES.five}>
-            <div sx={styles.wrapper}>
-              <div sx={{display: 'flex'}}>
-                <div sx={styles.icondiv}>5</div>
-                <div>
-                  <Heading sx={styles.wrapper.title}>August 2021</Heading>
-                  <Text sx={styles.wrapper.secondTitle}>Inner Core</Text>
-                </div>
-              </div>
-              <div sx={styles.objectivediv}>
-                <div sx={styles.objectiveLine}>
-                  <Text sx={styles.wrapper.objective}>
-                    <ul>Launch of Charity Exchange and CTS project </ul>
-                    <ul>Celebrity endorsements – UN certification </ul>
-                    <ul>
-                      Meet with Elon Musk to discuss us supporting his Global
-                      Charity
-                    </ul>
-                    <ul>Annual Helpers Foundation website goes live </ul>
-                    <ul>Integration with PayPal and other payment services </ul>
-                  </Text>
-                </div>
-              </div>
-            </div>
-          </div>
         </Container>
       </Container>
     </section>

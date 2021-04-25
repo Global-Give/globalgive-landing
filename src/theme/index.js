@@ -14,10 +14,9 @@ export default {
     accent: '#F9603E', // a contrast color for emphasizing UI
     yellow: '#F6C416',
     white: '#FFFFFF',
-    dark: '#2F3142'
+    dark: '#2F3142',
 
     // highlight	a background color for highlighting text
-    
   },
   breakpoints: [
     '480px',
@@ -37,7 +36,7 @@ export default {
     body: 'normal',
     heading: 500,
     bold: 700,
-    normal: 'body'
+    normal: 'body',
   },
   lineHeights: {
     body: 1.8,
@@ -162,6 +161,14 @@ export default {
       pr: [0, null, null, null, null, '100px', null, '125px'],
       mb: ['30px', null, null, null, '35px', null, null, 7],
     },
+    heroTertiary: {
+      color: 'white',
+      fontSize: '25px',
+      lineHeight: ['32px', '32px', '32px', '32px', '32px'],
+      fontWeight: 400,
+      pr: [0, null, null, null, null, '100px', null, '125px'],
+      mb: ['30px', null, null, null, '35px', null, null, 7],
+    },
     title: {
       // extends the text.heading styles
       variant: 'text.heading',
@@ -216,6 +223,15 @@ export default {
       height: 48,
       borderRadius: 99999,
     },
+    teamavatar: {
+      width: 60,
+      height: 60,
+      borderRadius: 99999,
+    },
+    teammember: {
+      width: 390,
+      height: 350,
+    },
   },
   // variants for buttons
   buttons: {
@@ -245,8 +261,8 @@ export default {
         border: 'solid primary',
         borderColor: 'primary',
         backgroundColor: 'transparent',
-        color: 'primary'
-      }
+        color: 'primary',
+      },
     },
     outlinePrimary: {
       variant: 'buttons.defaultBtn',
@@ -257,8 +273,8 @@ export default {
       '&:hover': {
         borderStyle: 'solid',
         bg: 'primary',
-        color: 'background'
-      }
+        color: 'background',
+      },
     },
     primary: {
       variant: 'buttons.defaultBtn',
@@ -305,9 +321,9 @@ export default {
         border: 'solid accent',
         borderColor: 'accent',
         backgroundColor: 'transparent',
-        color: 'accent'
-      }
-    }
+        color: 'accent',
+      },
+    },
   },
   cards: {
     primary: {
@@ -344,7 +360,7 @@ export default {
       height: 60,
       '&:focus': {
         borderColor: 'primary',
-        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
+        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
         outline: 'none',
       },
     },
@@ -408,4 +424,4 @@ export default {
       whiteSpace: 'nowrap !important',
     },
   },
-};
+}

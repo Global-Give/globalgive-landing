@@ -1,12 +1,12 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Container, Box } from 'theme-ui';
-import TextFeature from 'components/text-feature';
-import Image from 'components/image';
+import {jsx} from 'theme-ui'
+import {Container, Box} from 'theme-ui'
+import TextFeature from 'components/text-feature'
+import Image from 'components/image'
 
-import SecurePaymentIllustration from 'assets/illustrations/SecurePayment.png';
-import PaymentPattern from 'assets/payment-pattern.png';
+import SecurePaymentIllustration from 'assets/illustrations/SecurePayment.png'
+import PaymentPattern from 'assets/payment-pattern.png'
 
 const data = {
   subTitle: 'PAYMENT SECURITY',
@@ -15,14 +15,20 @@ const data = {
     'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
   btnName: 'Learn More',
   btnURL: '#',
-};
+  btnNameTwo: 'How to buy',
+  btnURLTwo: '#',
+}
 
 export default function SecurePayment() {
   return (
-    <section sx={{ 
-      variant: 'section.securePayment',
-      background: 'linear-gradient(0deg, rgba(29,31,41,1) 0%, rgba(23,25,33,1) 100%)',
-     }} id="payment">
+    <section
+      sx={{
+        variant: 'section.securePayment',
+        background:
+          'linear-gradient(0deg, rgba(29,31,41,1) 0%, rgba(23,25,33,1) 100%)',
+      }}
+      id='payment'
+    >
       <Box sx={styles.bgOverlay} />
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
@@ -35,11 +41,13 @@ export default function SecurePayment() {
             description={data.description}
             btnName={data.btnName}
             btnURL={data.btnURL}
+            btnNameTwo={data.btnNameTwo}
+            btnURLTwo={data.btnURLTwo}
           />
         </Box>
       </Container>
     </section>
-  );
+  )
 }
 
 const styles = {
@@ -74,7 +82,7 @@ const styles = {
     ml: [0, 0, null, null, 0],
     order: [2, null, null, 0],
     pr: [0, null, 0, 0],
-    py: '30px'
+    py: '30px',
   },
   contentBox: {
     width: ['100%', 420, 480, 380, 500, 570],
@@ -86,4 +94,4 @@ const styles = {
     pb: [7, null, null, 9],
     pr: [0, null, null, null, null, 6],
   },
-};
+}

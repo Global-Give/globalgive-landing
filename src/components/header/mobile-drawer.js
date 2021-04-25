@@ -14,10 +14,22 @@ import {
 import menuItems from './header.data';
 
 const social = [
-  // {
-  //   path: 'https://www.reddit.com/r/globalgive/',
-  //   icon: <FaFacebookF />,
-  // }
+  {
+    path: '/',
+    icon: <FaFacebookF />,
+  },
+  {
+    path: '/',
+    icon: <FaTwitter />,
+  },
+  {
+    path: '/',
+    icon: <FaGithubAlt />,
+  },
+  {
+    path: '/',
+    icon: <FaDribbble />,
+  },
 ];
 
 const MobileDrawer = () => {

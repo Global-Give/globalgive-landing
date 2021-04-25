@@ -1,15 +1,16 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Container, Grid } from 'theme-ui';
-import SectionHeader from 'components/section-header';
-import FeatureCard from 'components/feature-card.js';
-import Money from 'assets/feature/money.png';
-import Charity from 'assets/feature/generous.png';
-import Burn from 'assets/feature/fire.png';
-import Redistribution from 'assets/feature/networking.png';
-import Whale from 'assets/feature/whale.png';
-import Lock from 'assets/feature/lock.png';
+import {jsx} from 'theme-ui'
+import {Container, Grid, Button} from 'theme-ui'
+import SectionHeader from 'components/section-header'
+import FeatureCard from 'components/feature-card.js'
+import Money from 'assets/feature/money.png'
+import Charity from 'assets/feature/generous.png'
+import Burn from 'assets/feature/fire.png'
+import Redistribution from 'assets/feature/networking.png'
+import Whale from 'assets/feature/whale.png'
+import Lock from 'assets/feature/lock.png'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const data = [
   {
@@ -33,8 +34,7 @@ const data = [
     imgSrc: Burn,
     altText: 'Defi',
     title: 'Defi',
-    text:
-      '2% redistributed to hodlers and 8% burnt to LP on each transaction.',
+    text: '2% redistributed to hodlers and 8% burnt to LP on each transaction.',
   },
   {
     id: 4,
@@ -49,31 +49,27 @@ const data = [
     imgSrc: Whale,
     altText: 'Whale tax',
     title: 'Whale tax',
-    text:
-      'Up to 10% extra tax on sales over 1% of the total supply.',
+    text: 'Up to 10% extra tax on sales over 1% of the total supply.',
   },
   {
     id: 6,
     imgSrc: Lock,
     altText: 'Liquidity & Burn',
     title: 'Liquidity & Burn',
-    text:
-      ' LP locked for 4 years',
+    text: ' LP locked for 4 years',
   },
-];
+]
 
 export default function Feature() {
   return (
-    <section sx={{ variant: 'section.feature' }} id="features" >
+    <section sx={{variant: 'section.feature'}} id='features'>
       <Container>
-        <SectionHeader
-          slogan="Tokenomics"
-          title="Our Proposal"
-        />
+        <SectionHeader slogan='Tokenomics' title='Our Proposal' />
 
         <Grid sx={styles.grid}>
-          {data.map((item) => (
+          {data.map(item => (
             <FeatureCard
+              img
               key={item.id}
               src={item.imgSrc}
               alt={item.title}
@@ -81,10 +77,47 @@ export default function Feature() {
               text={item.text}
             />
           ))}
+          <a href='#payment' rel='noopener noreferrer'>
+            <Button variant='outlinePrimary' aria-label='Get Started'>
+              <Container
+                sx={{
+                  fontFamily: 'Jost',
+                  fontWeight: 500,
+                  fontSize: '20px',
+                }}
+                css={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                See Chart
+              </Container>
+            </Button>
+          </a>
+          
+        <CopyToClipboard text="0x00D01af5e11F9b218AccdcAb75d31440C4858A70">
+            <Button variant='outlinePrimary' aria-label='Get Started'>
+              <Container
+                sx={{
+                  fontFamily: 'Jost',
+                  fontWeight: 500,
+                  fontSize: '20px',
+                }}
+                css={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                Copy Contract Address
+              </Container>
+            </Button>
+        </CopyToClipboard>
         </Grid>
       </Container>
     </section>
-  );
+  )
 }
 
 const styles = {
@@ -110,4 +143,4 @@ const styles = {
       'repeat(3,1fr)',
     ],
   },
-};
+}

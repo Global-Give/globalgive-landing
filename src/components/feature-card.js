@@ -1,23 +1,24 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx, Image, Box, Heading, Text } from 'theme-ui';
+import {jsx, Image, Box, Heading, Text} from 'theme-ui'
 
 export default function FeatureCard({
   src,
   altText = 'default alt text',
   title,
   text,
+  img,
 }) {
   return (
     <Box sx={styles.card}>
-      <Image src={src} alt={altText} sx={styles.img} />
+      {img && <Image src={src} alt={altText} sx={styles.img} />}
 
       <Box sx={styles.wrapper}>
         <Heading sx={styles.wrapper.title}>{title}</Heading>
         <Text sx={styles.wrapper.subTitle}>{text}</Text>
       </Box>
     </Box>
-  );
+  )
 }
 
 const styles = {
@@ -51,4 +52,4 @@ const styles = {
       lineHeight: [1.85, null, 2],
     },
   },
-};
+}

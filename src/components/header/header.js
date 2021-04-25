@@ -1,59 +1,66 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx, Container, Flex, Button, Text, Image } from 'theme-ui';
-import { keyframes } from '@emotion/react';
-import { Link } from 'react-scroll';
-import Logo from 'components/logo';
-import LogoDark from 'assets/logo-dark.svg';
-import GlobalGiveLogo from 'assets/logos/gg_icon.svg';
+import {jsx, Container, Flex, Button, Text, Image} from 'theme-ui'
+import {keyframes} from '@emotion/react'
+import {Link} from 'react-scroll'
+import Logo from 'components/logo'
+import LogoDark from 'assets/logo-dark.svg'
+import GlobalGiveLogo from 'assets/logos/gg_icon.svg'
 
-import LogoWhite from 'assets/logo.svg';
-import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
-import MobileDrawer from './mobile-drawer';
-import menuItems from './header.data';
+import LogoWhite from 'assets/logo.svg'
+import {DrawerProvider} from '../../contexts/drawer/drawer.provider'
+import MobileDrawer from './mobile-drawer'
+import menuItems from './header.data'
 
-export default function Header({ className }) {
+export default function Header({className}) {
   return (
     <DrawerProvider>
-      <header sx={styles.header} className={className} id="header">
+      <header sx={styles.header} className={className} id='header'>
         <Container sx={styles.container}>
-          <div sx={{
-            display: 'flex',
-            alignItems: 'center'
-          }} >
-            <Image src={GlobalGiveLogo} sx={{
-              height: '100px'
-            }} />
-            <Text as="h2" sx={{
-              display: 'none',
-              '@media screen and (min-width: 768px)': {
-                display: 'block',
-              },
-            }} >
-              GlobalGive
+          <div
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
+            <Image
+              src={GlobalGiveLogo}
+              sx={{
+                height: '115px',
+              }}
+            />
+            <Text
+              as='h2'
+              sx={{
+                display: 'none',
+                '@media screen and (min-width: 768px)': {
+                  display: 'block',
+                },
+              }}
+            >
             </Text>
           </div>
-          <Flex as="nav" sx={styles.nav}>
+          <Flex as='nav' sx={styles.nav}>
             <a
-              activeClass="active"
+              activeClass='active'
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
-              href="#"
-              href="https://google.com"
-              rel="noopener noreferrer"
-              target="_blank"
+              href='#'
+              href='https://google.com'
+              rel='noopener noreferrer'
+              target='_blank'
               sx={{
                 color: 'white',
-                textDecoration: 'none'
+                textDecoration: 'none',
               }}
             >
               Whitepaper
             </a>
-            {menuItems.map(({ path, label, rest }, i) => (
+            {menuItems.map(({path, label, rest}, i) => (
               <Link
-                activeClass="active"
+                activeClass='active'
                 to={path}
                 spy={true}
                 smooth={true}
@@ -66,17 +73,20 @@ export default function Header({ className }) {
               </Link>
             ))}
           </Flex>
-          <a href="#" sx={{
-            cursor: 'auto',
-            pointerEvents: 'none'
-          }} >
+          <a
+            href='#'
+            sx={{
+              cursor: 'auto',
+              pointerEvents: 'none',
+            }}
+          >
             <Button
-              className="donate__btn"
-              variant="secondary"
-              aria-label="Buy"
+              className='donate__btn'
+              variant='secondary'
+              aria-label='Buy'
               sx={{
                 opacity: 0.5,
-                pointerEvents: 'none'
+                pointerEvents: 'none',
               }}
             >
               Buy (Coming Soon)
@@ -86,7 +96,7 @@ export default function Header({ className }) {
         </Container>
       </header>
     </DrawerProvider>
-  );
+  )
 }
 
 const positionAnim = keyframes`
@@ -99,7 +109,7 @@ const positionAnim = keyframes`
     opacity: 1;
     transition: all 0.4s ease;
   }
-`;
+`
 
 const styles = {
   header: {
@@ -164,4 +174,4 @@ const styles = {
       },
     },
   },
-};
+}

@@ -76,6 +76,7 @@ const MobileDrawer = () => {
             </a>
             {menuItems.map(({ path, label }, i) => (
               <Link
+                onClick={toggleHandler}
                 activeClass="active"
                 to={path}
                 spy={true}

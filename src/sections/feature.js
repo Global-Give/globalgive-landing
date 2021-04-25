@@ -10,7 +10,8 @@ import Burn from 'assets/feature/fire.png'
 import Redistribution from 'assets/feature/networking.png'
 import Whale from 'assets/feature/whale.png'
 import Lock from 'assets/feature/lock.png'
-import {CopyToClipboard} from 'react-copy-to-clipboard';
+import {CopyToClipboard} from 'react-copy-to-clipboard'
+import {useState} from 'react'
 
 const data = [
   {
@@ -61,10 +62,12 @@ const data = [
 ]
 
 export default function Feature() {
+  const [CopyAddress, setCopyAddress] = useState(false)
+
   return (
     <section sx={{variant: 'section.feature'}} id='features'>
       <Container>
-        <SectionHeader slogan='Tokenomics' title='Our Proposal' />
+        <SectionHeader slogan='' title='Tokenomics' />
 
         <Grid sx={styles.grid}>
           {data.map(item => (
@@ -95,8 +98,33 @@ export default function Feature() {
               </Container>
             </Button>
           </a>
-          
-        <CopyToClipboard text="0x00D01af5e11F9b218AccdcAb75d31440C4858A70">
+
+          <CopyToClipboard text='0x00D01af5e11F9b218AccdcAb75d31440C4858A70'>
+            <Button
+              onClick={() => {
+                setCopyAddress(true)
+              }}
+              variant='outlinePrimary'
+              aria-label='Get Started'
+            >
+              <Container
+                sx={{
+                  fontFamily: 'Jost',
+                  fontWeight: 500,
+                  fontSize: '20px',
+                }}
+                css={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                {CopyAddress ? 'COPIED' : 'Copy Contract Address'}
+              </Container>
+            </Button>
+          </CopyToClipboard>
+
+          <a href='#' rel='noopener noreferrer'>
             <Button variant='outlinePrimary' aria-label='Get Started'>
               <Container
                 sx={{
@@ -110,10 +138,10 @@ export default function Feature() {
                   justifyContent: 'center',
                 }}
               >
-                Copy Contract Address
+                Read more on Whale Tax
               </Container>
             </Button>
-        </CopyToClipboard>
+          </a>
         </Grid>
       </Container>
     </section>

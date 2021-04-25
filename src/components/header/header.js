@@ -26,7 +26,7 @@ export default function Header({className}) {
             <Image
               src={GlobalGiveLogo}
               sx={{
-                height: '115px',
+                height: '115px'
               }}
             />
             <Text
@@ -57,6 +57,23 @@ export default function Header({className}) {
               }}
             >
               Whitepaper
+            </a>
+            <a
+              activeClass='active'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              href='#'
+              href='https://bscscan.com/token/0x00d01af5e11f9b218accdcab75d31440c4858a70'
+              rel='noopener noreferrer'
+              target='_blank'
+              sx={{
+                color: 'white',
+                textDecoration: 'none',
+              }}
+            >
+              Contract Address
             </a>
             {menuItems.map(({path, label, rest}, i) => (
               <Link

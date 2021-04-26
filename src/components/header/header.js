@@ -65,7 +65,7 @@ export default function Header({className}) {
               offset={-70}
               duration={500}
               href='#'
-              href='https://bscscan.com/token/0x00d01af5e11f9b218accdcab75d31440c4858a70'
+              // href='https://bscscan.com/token/0x00d01af5e11f9b218accdcab75d31440c4858a70'
               rel='noopener noreferrer'
               target='_blank'
               sx={{

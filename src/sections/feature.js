@@ -99,8 +99,26 @@ export default function Feature() {
               </Container>
             </Button>
           </a>
-
-          <CopyToClipboard text='0x00D01af5e11F9b218AccdcAb75d31440C4858A70'>
+          <a href='#' rel='noopener noreferrer'>
+            <Button variant='outlinePrimary' aria-label='Get Started'>
+              <Container
+                  sx={{
+                    fontFamily: 'Jost',
+                    fontWeight: 500,
+                    fontSize: '20px',
+                    width: '300px'
+                  }}
+                  css={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+              >
+                Read more on Whale Tax
+              </Container>
+            </Button>
+          </a>
+          <CopyToClipboard text='Coming Soon!'>
             <Button
               onClick={() => {
                 setCopyAddress(true)
@@ -127,25 +145,7 @@ export default function Feature() {
             </Button>
           </CopyToClipboard>
 
-          <a href='#' rel='noopener noreferrer'>
-            <Button variant='outlinePrimary' aria-label='Get Started'>
-              <Container
-                sx={{
-                  fontFamily: 'Jost',
-                  fontWeight: 500,
-                  fontSize: '20px',
-                  width: '300px'
-                }}
-                css={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                Read more on Whale Tax
-              </Container>
-            </Button>
-          </a>
+
         </Grid>
       </Container>
     </section>

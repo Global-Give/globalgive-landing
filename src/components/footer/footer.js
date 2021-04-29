@@ -11,18 +11,18 @@ export default function Footer() {
     <footer sx={styles.footer} id="payment">
       <Container sx={styles.footer.container}>
         
-          <Box sx={styles.footer.menus} css={{
-            flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
-            padding: '1.5rem'
-          }} >
-            <Image src={GlobalGiveLogo} sx={{ height: '100px' }} />
-            <Text as="h2" sx={{
-              color: 'white'
-            }} >
-              GlobalGive
-            </Text>
+          <Box sx={styles.footer.menus} css={{flexDirection: 'row',
+                                              justifyContent: 'center',
+                                              alignItems: 'center',
+                                              padding: '1.5rem'
+                                            }} >                  
+            <a href='#home'>
+              <Image src={GlobalGiveLogo} sx={{ height: '100px' }} /> 
+            </a>
+            <a href='#home'>
+              <Text as="h2" sx={{ color: 'white' }} > GlobalGive
+              </Text>
+            </a>
           </Box>
           <Box sx={styles.footer.menus}>
            

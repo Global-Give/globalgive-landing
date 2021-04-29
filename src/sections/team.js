@@ -38,7 +38,7 @@ const data = [
     title: 'CHARITY DIRECTOR',
     description: (
         <div sx={{width: '100%', padding: '0',  textAlign: 'center'}}>
-          As the Charity Director, Damian is our organisation's liaison to all charities. His years of experience running companies in Europe, as well as his excellent professional attitude  makes for easier communication with largeer Charity organisations. We encourage all interested parties to get in touch with Damian, who will gladly explain the application procedure.
+          As the Charity Director, Damian is our organisation's liaison to all charities. His years of experience running companies in Europe, as well as his excellent professional attitude  makes for easier communication with larger Charity organisations. We encourage all interested parties to get in touch with Damian, who will gladly explain the application procedure.
         </div>
     ),
     picture: Damian,

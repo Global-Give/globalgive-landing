@@ -23,12 +23,12 @@ export default function Header({className}) {
               margin: '0 auto',
             }}
           >
-            <Image
+           <a href='#home'> <Image
               src={GlobalGiveLogo}
               sx={{
                 height: '115px'
               }}
-            />
+            /> </a>
             <Text
               as='h2'
               sx={{

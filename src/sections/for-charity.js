@@ -21,7 +21,7 @@ const data = {
       Finding new ways to raise important funds is essential in an ever 
       changing world. We have created an innovative way to do this and 
       believe this is the future of fundraising for every charity. Please get in 
-      touch today, to find out the many ways we can support your important work.
+      touch today to find out the many ways we can support your important work.
 
       <br></br>Contact our Charity Director – Damian, at:{' '}
       <a css={{color: '#fff', fontSize: '18px'}} href='mailto:Charity@globalgive.finance? subject=Reaching out concerning for charity'>

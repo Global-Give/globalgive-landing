@@ -27,12 +27,12 @@ const faqs = [
       <div>
         There is no single person that can access these wallets. The team has
         created a security protocol in which none of these funds can be accessed
-        unless 4 out of the 5 board members separately authorize a withdraw of
+        unless 4 out of the 5 board members separately authorise a withdrawal of
         the funds. The 5 board members are the founders of the project. They are
-        located in the US, UK and Argentina. Furthermore, the Charity Donation
-        Wallet will have a mechanic that will only allow a monthly withdraw
-        limit, that be exclusively designated for donations. All of the wallet
-        activity can be tracked in BSCScan and we will always be excited to
+        located in the US, UK and France. Furthermore, the Charity Donation
+        Wallet will have a mechanic that will only allow a monthly withdrawal
+        limit, that exclusively designated for donations. All of the wallet
+        activity can be tracked on BSCScan and we will always be excited to
         share with the community what we are using the funds from these wallets
         for.
       </div>
@@ -42,7 +42,7 @@ const faqs = [
     title: `Are you doing and Airdrop?    `,
     contents: (
       <div>
-        Yes, an initial one time air drop of 1000 tokens to the first 100
+        Yes, an initial one time air drop of 10 000  tokens to the first 100
         members to join the project will be executed.
       </div>
     ),

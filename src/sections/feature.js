@@ -1,7 +1,7 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
 import {jsx} from 'theme-ui'
-import {Container, Grid, Button} from 'theme-ui'
+import {Container, Grid, Button, Box} from 'theme-ui'
 import SectionHeader from 'components/section-header'
 import FeatureCard from 'components/feature-card.js'
 import Money from 'assets/feature/money.png'
@@ -10,6 +10,8 @@ import Burn from 'assets/feature/fire.png'
 import Redistribution from 'assets/feature/networking.png'
 import Whale from 'assets/feature/whale.png'
 import Lock from 'assets/feature/lock.png'
+import Development from 'assets/feature/development.png'
+import Transparent from 'assets/feature/transparent.png'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import {useState} from 'react'
 
@@ -31,13 +33,20 @@ const data = [
   },
   {
     id: 3,
-    imgSrc: Burn,
-    altText: 'Defi',
-    title: 'Defi',
-    text: '2% redistributed to hodlers and 8% burnt to LP on each transaction.',
+    imgSrc: Development,
+    altText: 'Development',
+    title: 'Development',
+    text: 'This wallet has 5% of total supply and will be used to fund marketing and go towards other project costs like exchange listings.'
   },
   {
     id: 4,
+    imgSrc: Burn,
+    altText: 'Defi',
+    title: 'Defi',
+    text: '2% redistributed to hodlers and 8% sent to locked LP on pancakeswap on each transaction.',
+  },
+  {
+    id: 5,
     imgSrc: Redistribution,
     altText: 'Redistribution',
     title: 'Redistribution',
@@ -45,18 +54,25 @@ const data = [
       'The longer you hold, the more you receive. There is a 2% tax on each sale and purchase which is redistributed to present hodlers based on the ratio of tokens they own.',
   },
   {
-    id: 5,
+    id: 6,
     imgSrc: Whale,
     altText: 'Whale tax',
     title: 'Whale tax',
     text: 'Up to 10% extra tax on sales over 1% of the total supply (see Whale tax document)',
   },
   {
-    id: 6,
+    id: 7,
+    imgSrc: Transparent,
+    altText: '',
+    title: '',
+    text: '',
+  },
+  {
+    id: 8,
     imgSrc: Lock,
     altText: 'Liquidity & Burn',
     title: 'Liquidity & Burn',
-    text: ' LP locked for 4 years',
+    text: 'LP locked for 4 months to begin with and reviewed for extension to mitigate any issues with pancakeswap upgrades and migration',
   },
 ]
 
@@ -67,6 +83,7 @@ export default function Feature() {
     <section sx={{variant: 'section.feature'}} id='features'>
       <Container sx={{marginTop:'120px'}}>
         <SectionHeader slogan='' title='Tokenomics' />
+      
         <Grid sx={styles.grid}>
           {data.map(item => (
             <FeatureCard
@@ -78,6 +95,9 @@ export default function Feature() {
               text={item.text}
             />
           ))}
+          </Grid>
+
+          <Grid sx={styles.grid} >
           <a href='#' rel='noopener noreferrer'>
             <Button variant='outlinePrimary' aria-label='Get Started'>
               <Container
@@ -142,8 +162,7 @@ export default function Feature() {
               </Container>
             </Button>
           </CopyToClipboard>
-
-
+        
         </Grid>
       </Container>
     </section>
@@ -152,6 +171,7 @@ export default function Feature() {
 
 const styles = {
   grid: {
+    marginBottom: '60px',
     pt: [0, null, null, null, null, null, null, 3],
     gridGap: [
       '37px 0',

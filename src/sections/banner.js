@@ -103,7 +103,7 @@ export default function Banner() {
                     justifyContent: 'center',
                   }}
                 >
-                  For Charity
+                  For Charities
                 </Container>
               </Button>
             </a>
@@ -125,6 +125,7 @@ export default function Banner() {
 }
 
 const styles = {
+  
   banner: {
     alternateLogo: {
       color: 'white',
@@ -138,6 +139,7 @@ const styles = {
     container: {
       display: 'flex',
       justifyContent: 'center',
+      marginBottom:'-120px'
     },
     bgImage: {
       pointerEvents: 'none',

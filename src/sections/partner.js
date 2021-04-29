@@ -58,6 +58,7 @@ const styles = {
   },
   contentBox: {
     paddingTop: '5rem',
+    marginBottom: '-120px',
     flexShrink: 0,
     px: [0, null, '30px', 0],
     textAlign: ['center', null, null, 'left'],

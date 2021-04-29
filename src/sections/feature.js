@@ -27,8 +27,7 @@ const data = [
     imgSrc: Charity,
     altText: 'Charity',
     title: 'Charity',
-    text:
-      'Our Charity wallet has 5% of the total supply and will be part of the distribution.',
+    text: 'Our Charity wallet has 5% of the total supply and will be where all charity donations come from.',
   },
   {
     id: 3,
@@ -43,14 +42,14 @@ const data = [
     altText: 'Redistribution',
     title: 'Redistribution',
     text:
-      'The long you hold, the more you have. 2% redistributed to hodlers on each transaction.',
+      'The longer you hold, the more you receive. There is a 2% tax on each sale and purchase which is redistributed to present hodlers based on the ratio of tokens they own.',
   },
   {
     id: 5,
     imgSrc: Whale,
     altText: 'Whale tax',
     title: 'Whale tax',
-    text: 'Up to 10% extra tax on sales over 1% of the total supply.',
+    text: 'Up to 10% extra tax on sales over 1% of the total supply (see Whale tax document)',
   },
   {
     id: 6,
@@ -66,9 +65,8 @@ export default function Feature() {
 
   return (
     <section sx={{variant: 'section.feature'}} id='features'>
-      <Container>
+      <Container sx={{marginTop:'120px'}}>
         <SectionHeader slogan='' title='Tokenomics' />
-
         <Grid sx={styles.grid}>
           {data.map(item => (
             <FeatureCard
@@ -80,7 +78,7 @@ export default function Feature() {
               text={item.text}
             />
           ))}
-          <a href='#payment' rel='noopener noreferrer'>
+          <a href='#' rel='noopener noreferrer'>
             <Button variant='outlinePrimary' aria-label='Get Started'>
               <Container
                 sx={{

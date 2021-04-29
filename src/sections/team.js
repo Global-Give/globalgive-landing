@@ -4,6 +4,7 @@ import {Flex, jsx} from 'theme-ui'
 import {Container, Grid, Image, Text} from 'theme-ui'
 import SectionHeader from 'components/section-header'
 import Nic from 'assets/team/nic.jpg'
+import Nadia from 'assets/team/nadia.jpg'
 import Damian from 'assets/team/damian.jpeg'
 import Lee from 'assets/team/lee.jpeg'
 import John from 'assets/team/john.jpeg'
@@ -22,6 +23,17 @@ const data = [
   },
   {
     id: 2,
+    name: 'Nadïa Monem',
+    title: 'BRAND DIRECTOR',
+    description: (
+        <div sx={{width: '100%', padding: '0',  textAlign: 'center'}}>       
+          Nadïa brings over a decade of experience, having worked closely with numerous start-ups, prominent individuals and the occasional celebrity. But it's her passion for connecting purpose-driven businesses to a wider audience that bought her to GlobalGive where she's constantly looking for new and exciting ways to help share our vision globally.
+        </div>
+    ),
+    picture: Nadia,
+  },
+  {
+    id: 3,
     name: 'Damian Knight',
     title: 'CHARITY DIRECTOR',
     description: (
@@ -32,7 +44,7 @@ const data = [
     picture: Damian,
   },
   {
-    id: 3,
+    id: 4,
     name: 'Lee Culp',
     title: 'COMMUNICATIONS DIRECTOR',
     description: (
@@ -43,7 +55,7 @@ const data = [
     picture: Lee,
   },
   {
-    id: 4,
+    id: 5,
     name: 'Nic Davidson',
     title: 'TECHNICAL DIRECTOR',
     description: (
@@ -118,9 +130,9 @@ const styles = {
   gridContainer: {
     display: 'flex', 
     flexDirection: 'column', 
-    flex: '1 0 40%', 
+    flex: '1 0 30%', 
     margin: '1rem', 
-    width: '448px', 
+    width: '348px', 
     height: 'auto',
     '@media screen and (max-width: 768px)': {
         flex: '1 0 48%'

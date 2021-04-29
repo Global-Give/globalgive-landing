@@ -10,31 +10,37 @@ const data = [
   {
     id: 1,
     text: 'How to buy BNB (YouTube Video link)',
+    title: 'Click',
     link: 'https://youtu.be/atfGsZY5sqo'
   },
   {
     id: 2,
     text: 'How to Buy BNB (downloadable PDF)',
+    title: 'Click',
     link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf',
   },
   {
     id: 3,
     text: 'How to Load and use Trust Wallet onto your Phone (YouTube Video link)',
+    title:'Click',
     link: 'https://youtu.be/BdWCVKINwKc'
   },
   {
     id: 4,
     text: 'How to Load and use Trust Wallet onto your phone (downloadable PDF)',
+    title: 'Click',
     link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf'
   },
   {
     id: 5,
-    text: 'How to Buy GlobalGive on Pancake Swap (YouTube Video Link) ',
+    text: 'How to Buy GlobalGive on Pancake Swap (YouTube Video Link)',
+    title: 'Click',
     link: 'https://youtu.be/a8d9VBT--Hw'
   },
   {
     id: 6,
     text: 'How to Buy GlobalGive on pancake Swap (downloadable PDF)',
+    title: 'Click',
     link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf'
   },
 ]
@@ -49,14 +55,14 @@ export default function HowToBuy() {
       }} id='how-to-buy'>
       <Container>
         <SectionHeader slogan='' title='How to buy' />
-        <p sx={{marginTop: '-5rem', textAlign:'center'}}>If you are already set up with TrustWallet and have BNB ready, simply use the <a href="#features" rel='noopener noreferrer' sx={{color: '#fff'}}>GlobalGive Token contract address</a> on PancakeSwap V2 to purchase GlobalGive Token </p>
+        <p sx={{marginTop: '-5rem', textAlign:'center'}}>If you already have Smart Chain BNB in a Trust Wallet simply use the  <a href="#features" rel='noopener noreferrer' sx={{color: '#fff'}}>GlobalGive Token contract address</a> on PancakeSwap V2 to purchase GlobalGive Tokens. </p>
         <div sx={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '1.5rem', marginBottom: '2.5rem'}}>
             <div sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
-                <p sx={{textAlign:'center'}}>Tips for ensuring your transactions go through:</p>
+                <p sx={{textAlign:'center'}}>If you are having issues buying:</p>
                 <ul sx={{textAlign:'center', marginTop: '-1rem', listStyle: 'none'}}>
-                    <li>- Increase the slippage </li>
-                    <li>- Use round values of coins</li>
-                    <li>- Use smaller value of coins</li>
+                    <li>- Increase the slippage – going to up to 12 can help</li>
+                    <li>- Change the amount of tokens you are buying to a round number (500,000 for example)</li>
+                    <li>- Make sure you have enough bnb for the fees (this is the case for buying and selling)</li>
                 </ul>
             </div>
         </div>
@@ -73,6 +79,7 @@ export default function HowToBuy() {
                                 fontFamily: 'Jost',
                                 fontWeight: 500,
                                 fontSize: '20px',
+                                height: '60px'
                             }}
                             css={{
                                 display: 'flex',
@@ -80,7 +87,7 @@ export default function HowToBuy() {
                                 justifyContent: 'center',
                             }}
                             >
-                            BUY
+                            {item.title}
                         </Container>
                     </Button>
                 </a>

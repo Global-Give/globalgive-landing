@@ -15,7 +15,7 @@ export default function Footer() {
             flexDirection: 'row',
             justifyContent: 'center',
             alignItems: 'center',
-            padding: '1rem'
+            padding: '1.5rem'
           }} >
             <Image src={GlobalGiveLogo} sx={{ height: '100px' }} />
             <Text as="h2" sx={{

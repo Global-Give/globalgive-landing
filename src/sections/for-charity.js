@@ -51,6 +51,7 @@ export default function ForCharity() {
 
 const styles = {
   containerBox: {
+    marginTop: '110px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

@@ -9,12 +9,12 @@ import Link from 'next/link'
 const data = [
   {
     id: 1,
-    text: 'How to buy BNB(YouTube Video link)',
+    text: 'How to buy BNB (YouTube Video link)',
     link: 'https://youtu.be/atfGsZY5sqo'
   },
   {
     id: 2,
-    text: 'How to Buy BNB(downloadable PDF)',
+    text: 'How to Buy BNB (downloadable PDF)',
     link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf',
   },
   {
@@ -84,7 +84,9 @@ export default function HowToBuy() {
                         </Container>
                     </Button>
                 </a>
+                <a sx={{height:'70px'}}>
                 <FeatureCard text={item.text} />
+                </a>
             </div>
           ))}
         </Grid>

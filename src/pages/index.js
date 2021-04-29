@@ -43,5 +43,6 @@ export default function IndexPage() {
         </Layout>
       </StickyProvider>
     </ThemeProvider>
+    
   )
 }

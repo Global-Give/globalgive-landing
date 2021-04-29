@@ -60,7 +60,7 @@ export default function Banner() {
           The Token of Choice for Global Charities
           </Text>
           <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
-          GlobalGive is a deflationary token built on the Binance Smart Chain. Investing in this token does not only grow your wealth, but, hopefully, makes the world a better place, as we donate a percentage of proceeds to a charity to be determined every month. GlobalGive is therefore a Rotatory Charity Token represents a ground-breaking option for Charities to raise funds in an ever changing world.
+          GlobalGive is a deflationary token built on the Binance Smart Chain. Investing in this token does not only grow your wealth, but hopefully makes the world a better place, as we donate a percentage of proceeds to a charity to be determined every month. GlobalGive is therefore a Rotatory Charity Token representing a ground-breaking option for Charities to raise funds in an ever changing world.
           </Text>
           <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
           Invest in the world while investing in your future!
@@ -72,7 +72,7 @@ export default function Banner() {
           </Text>
           <Flex sx={styles.buttonsContainer}>
             <a href='#features' rel='noopener noreferrer'>
-              <Button variant='defaultBtn' aria-label='Get Started'>
+              <Button variant='outlinePrimary' aria-label='Get Started'>
                 <Container
                   sx={{
                     fontFamily: 'Jost',

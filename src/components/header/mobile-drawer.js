@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Button} from 'theme-ui'
 import { Box } from 'theme-ui';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
@@ -88,6 +89,18 @@ const MobileDrawer = () => {
                 {label}
               </Link>
             ))}
+            <Button
+              className='donate__btn'
+              variant='secondary'
+              aria-label='Buy'
+              sx={{
+                marginTop: '20px',
+                opacity: 0.5,
+                pointerEvents: 'none',
+              }}
+            >
+              Buy (Coming Soon)
+            </Button>
           </Box>
 
           <Box sx={styles.menuFooter}>

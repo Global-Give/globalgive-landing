@@ -27,12 +27,10 @@ export default function Footer() {
             </Text>
           </Box>
           <Box sx={styles.footer.menus}>
-            <Heading sx={styles.footer.heading}>
-              CONTACT US
-            </Heading>
+           
             <Heading as="h1" sx={{
               color: 'white',
-              fontSize: '2rem',
+              fontSize: '1.5rem',
               fontFamily: "'Jost', 'DM Sans'"
             }}>
               We are on social media
@@ -46,14 +44,14 @@ export default function Footer() {
                 </a>
               </Box>
               <Box sx={styles.socialIconContainer} >
-                <a href="https://www.reddit.com/r/globalgive/" target="_blank" rel="noopener noreferrer" >
+                <a href="#" target="_blank" rel="noopener noreferrer" >
                   <IconButton sx={styles.socialButton}>
                     <IoLogoInstagram sx={styles.socialIcon} />
                   </IconButton>
                 </a>
               </Box>
               <Box sx={styles.socialIconContainer} >
-                <a href="https://www.reddit.com/r/globalgive/" target="_blank" rel="noopener noreferrer" >
+                <a href="#" target="_blank" rel="noopener noreferrer" >
                   <IconButton sx={styles.socialButton}>
                     <IoLogoFacebook sx={styles.socialIcon} />
                   </IconButton>
@@ -70,7 +68,7 @@ export default function Footer() {
                 width: 'max-content',
                 marginLeft: '10%'
               }}>
-                Join Telegram
+                Join Us on Telegram
               </Button>
             </a>
           </Box>

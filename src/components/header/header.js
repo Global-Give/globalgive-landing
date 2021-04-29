@@ -19,8 +19,8 @@ export default function Header({className}) {
         <Container sx={styles.container}>
           <div
             sx={{
-              display: 'flex',
-              alignItems: 'center',
+              display: 'block',
+              margin: '0 auto',
             }}
           >
             <Image
@@ -48,7 +48,7 @@ export default function Header({className}) {
               offset={-70}
               duration={500}
               href='#'
-              href='https://google.com'
+              //href='https://google.com'
               rel='noopener noreferrer'
               target='_blank'
               sx={{
@@ -89,14 +89,6 @@ export default function Header({className}) {
                 {label}
               </Link>
             ))}
-          </Flex>
-          <a
-            href='#'
-            sx={{
-              cursor: 'auto',
-              pointerEvents: 'none',
-            }}
-          >
             <Button
               className='donate__btn'
               variant='secondary'
@@ -108,6 +100,15 @@ export default function Header({className}) {
             >
               Buy (Coming Soon)
             </Button>
+          </Flex>
+          <a
+            href='#'
+            sx={{
+              cursor: 'auto',
+              pointerEvents: 'none',
+            }}
+          >
+            
           </a>
           <MobileDrawer />
         </Container>

@@ -33,28 +33,9 @@ export default [
     path: 'faq',
     label: 'FAQ',
   },
+  {
+    path: 'team',
+    label: 'Team'
+  }
 ];
 
-
-// {
-//   path: 'home',
-//   label: 'Home',
-// },
-// {
-//   path: 'token',
-//   label: 'Token',
-// },
-// {
-//   path: 'roadmap',
-//   label: 'Roadmap',
-// },
-// {
-//   path: 'news',
-//   label: 'News',
-// },
-
-// {
-//   path: 'about us',
-//   label: 'About Us',
-// }
-// ];

@@ -124,15 +124,12 @@ const faqs = [
     title: ` Is this safe to invest in? / can this be rug pulled?`,
     contents: (
       <div>
-        This project is 100% safe to invest in. When you add tokens and then add
-        liquidity to those tokens, you receive something called an LP-Token, or
-        Liquidity Provider token, in exchange. This allows you to remove the
-        liquidity at any time, which is how rug pulls happen. Without the
-        LP-tokens, you can’t remove the liquidity, which means you can’t rug
-        pull. The GlobalGive Team sent our LP-Tokens to a "burn address" so they
-        can’t be accessed or recovered. This is a method called “burning
-        liquidity”, and it helps ensure the safety and stability of a project
-        like ours.
+        This project is 100% safe to invest in. When you add tokens and then add liquidity to those tokens, 
+        you receive something called an LP-Token, or Liquidity Provider token, in exchange. This allows you 
+        to remove the liquidity at any time, which is how rug pulls happen. Without the LP-tokens, you can’t 
+        remove the liquidity, which means you can’t rug pull. The GlobalGive Team will be putting a timed 
+        lock on our LP Tokens so they can not be accessed. This is a much preferable to the burn method because
+         it gives the team more options to protect the tokens value in the event that the defi exchange has any kind of issues.
       </div>
     ),
   },

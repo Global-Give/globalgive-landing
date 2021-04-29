@@ -1,7 +1,7 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
 import { jsx, Heading, Box, Container, Text, Button, Grid, IconButton, Image } from 'theme-ui';
-import { IoLogoFacebook, IoLogoInstagram, IoLogoReddit } from 'react-icons/io5';
+import { IoLogoTwitter, IoLogoInstagram, IoLogoReddit } from 'react-icons/io5';
 import { Link } from 'components/link';
 import menuItems from './footer.data';
 import GlobalGiveLogo from 'assets/logos/gg_icon.svg';
@@ -10,16 +10,14 @@ export default function Footer() {
   return (
     <footer sx={styles.footer} id="payment">
       <Container sx={styles.footer.container}>
-        <Box sx={styles.footer.footerTopArea}>
+        
           <Box sx={styles.footer.menus} css={{
             flexDirection: 'row',
             justifyContent: 'center',
             alignItems: 'center',
             padding: '1rem'
           }} >
-            <Image src={GlobalGiveLogo} sx={{
-              height: '100px'
-            }} />
+            <Image src={GlobalGiveLogo} sx={{ height: '100px' }} />
             <Text as="h2" sx={{
               color: 'white'
             }} >
@@ -28,14 +26,14 @@ export default function Footer() {
           </Box>
           <Box sx={styles.footer.menus}>
            
-            <Heading as="h1" sx={{
-              color: 'white',
-              fontSize: '1.5rem',
-              fontFamily: "'Jost', 'DM Sans'"
-            }}>
+            <Heading as="h1" sx={{color: 'white',
+                                  fontSize: '1.5rem',
+                                  textAlign: 'center',
+                                  fontFamily: "'Jost', 'DM Sans'"
+                                }}>
               We are on social media
             </Heading>
-            <Grid py="8px" gap={1} columns={[6, 6, 6, 6, 6]} >
+            <Grid py="10px" columns={[3, 3, 3]}  >
               <Box sx={styles.socialIconContainer} >
                 <a href="https://www.reddit.com/r/globalgive/" target="_blank" rel="noopener noreferrer" >
                   <IconButton sx={styles.socialButton}>
@@ -44,57 +42,31 @@ export default function Footer() {
                 </a>
               </Box>
               <Box sx={styles.socialIconContainer} >
-                <a href="#" target="_blank" rel="noopener noreferrer" >
+                <a href="https://www.instagram.com/globalgivetoken/" target="_blank" rel="noopener noreferrer" >
                   <IconButton sx={styles.socialButton}>
                     <IoLogoInstagram sx={styles.socialIcon} />
                   </IconButton>
                 </a>
               </Box>
               <Box sx={styles.socialIconContainer} >
-                <a href="#" target="_blank" rel="noopener noreferrer" >
+                <a href="https://www.twitter.com/globalgivetoken" target="_blank" rel="noopener noreferrer" >
                   <IconButton sx={styles.socialButton}>
-                    <IoLogoFacebook sx={styles.socialIcon} />
+                    <IoLogoTwitter sx={styles.socialIcon} />
                   </IconButton>
                 </a>
               </Box>
             </Grid>
           </Box>
-          <Box sx={styles.footer.menus} css={{
-            justifyContent: 'center',
-            alignItems: 'center'
-          }} >
+          <Box sx={styles.footer.menus} css={{ justifyContent: 'center', alignItems: 'center' }} >
             <a href="https://t.me/globalgivetokencommunity" target="_blank" rel="noopener noreferrer">
-              <Button variant="accentButton" sx={{
-                width: 'max-content',
-                marginLeft: '10%'
-              }}>
+              <Button variant="accentButton" sx={{ width: 'max-content', marginLeft:'20px' }}>
                 Join Us on Telegram
               </Button>
             </a>
-          </Box>
-          {/* {menuItems.map(({ header, items }, i) => (
-            <Box sx={styles.footer.menus} key={i}>
-              <Heading sx={styles.footer.heading}>{header}</Heading>
-              <nav>
-                {items.map(({ path, label }, i) => (
-                  <Link
-                    path={path}
-                    key={i}
-                    label={label}
-                    sx={styles.footer.link}
-                  />
-                ))}
-              </nav>
-            </Box>
-          ))} */}
-        </Box>
+          </Box>         
+        
       </Container>
-      {/* <Text sx={styles.footer.copyright}>
-        All right reserved - Design & Developed by
-        <Link path="https://redq.io/" target="_blank">
-          The GlobalGive Organization
-        </Link>
-      </Text> */}
+      
     </footer>
   );
 }
@@ -102,8 +74,10 @@ export default function Footer() {
 const styles = {
   socialIconContainer: {
     backgroundColor: 'dark',
-    width: 'min-content',
-    borderRadius: '50%'
+    //width: 'min-content',
+    borderRadius: '30%',
+    display: 'block',
+    margin: '0 auto'
   },
   socialIcon: {
     color: 'white'
@@ -117,9 +91,7 @@ const styles = {
     backgroundColor: 'background_secondary',
     container: {
       width: '100%',
-      alignItems: 'stretch',
-    },
-    footerTopArea: {
+      alignItems: 'stretch',    
       borderTop: '1px solid',
       borderTopColor: 'border_color',
       display: 'flex',
@@ -131,7 +103,7 @@ const styles = {
       justifyContent: 'center'
     },
     menus: {
-      width: [, null, null, '33%'],
+      width: [ null, null, '33.3%'],
       display: 'flex',
       flexDirection: 'column',
       mb: ['40px', null, null, '60px'],

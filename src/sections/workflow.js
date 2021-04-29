@@ -30,7 +30,7 @@ export default function WorkFlow() {
                     }}></img>
                 </div>
                 <div>
-                  <Heading sx={styles.wrapper.title}>April 2021</Heading>
+                  
                   <Text sx={styles.wrapper.secondTitle}>The Crust</Text>
                 </div>
               </div>
@@ -70,7 +70,7 @@ export default function WorkFlow() {
                     }}></img>
                 </div>
                 <div>
-                  <Heading sx={styles.wrapper.title}>May 2021</Heading>
+                  
                   <Text sx={styles.wrapper.secondTitle}>The Mantle</Text>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function WorkFlow() {
                     }}></img>
                 </div>
                 <div>
-                  <Heading sx={styles.wrapper.title}>June 2021</Heading>
+                  
                   <Text sx={styles.wrapper.secondTitle}>Outer Core</Text>
                 </div>
               </div>
@@ -151,7 +151,7 @@ export default function WorkFlow() {
                     }}></img>
                 </div>
                 <div>
-                  <Heading sx={styles.wrapper.title}>July 2021</Heading>
+                  
                   <Text sx={styles.wrapper.secondTitle}>Inner Core</Text>
                 </div>
               </div>
@@ -299,7 +299,7 @@ const styles = {
     },
 
     secondTitle: {
-      fontSize: 6,
+      fontSize: 8,
       fontWeight: 600,
       lineHeight: 2,
       color: '#00D3BA',

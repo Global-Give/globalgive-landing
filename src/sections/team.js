@@ -147,6 +147,9 @@ const styles = {
     maxWidth: '288px',
     display: 'block',
     margin: '0 auto',
+    '@media screen and (max-width: 380px)': {
+      paddingRight: '20px'
+    },
   },
   personsName:{
     fontSize: '25px',

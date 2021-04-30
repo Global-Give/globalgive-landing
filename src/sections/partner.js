@@ -6,8 +6,7 @@ import Image from 'components/image'
 
 import Logo from 'assets/logos/gg_icon.svg'
 
-const data = {
-  
+const data = {  
   title: 'Our Mission',
   subTitle: 'What we do',
   description: `At GlobalGive, we are leading the field in using the power of decentralised finance to become the industry-standard for charities to acquire and receive donations – from grassroots non-profits and disaster relief funds to established charities with global reach. 
@@ -35,11 +34,15 @@ export default function PartnerSection() {
         <Box
           sx={{px: [0, null, '40px', 0]}}
           css={{
+            paddingTop: '12rem',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             width: '50%',
             height: '100%',
+            '@media screen and (max-width: 775px)': {
+              paddingTop: '3rem',
+            },
           }}
         >
           <img src={Logo} alt='Globalgive Finance' sx={{height: '25%', width:'25%'}}></img>
@@ -66,6 +69,9 @@ const styles = {
     pb: ['30px', null, null, 0],
     '.description': {
       pr: [0, null, null, null, 4],
+    },
+    '@media screen and (max-width: 775px)': {
+      marginBottom: '0px',
     },
   },
 }

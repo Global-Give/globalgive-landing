@@ -8,7 +8,7 @@ import STYLES from './css/roadmap.module.css'
 import ArcIcon1 from 'assets/Arc1.svg'
 import ArcIcon2 from 'assets/Arc2.svg'
 import ArcIcon3 from 'assets/Arc3.svg'
-import globalIcon from 'assets/worldwide.svg'
+import globalIcon from 'assets/world.png'
 
 import ArrowOdd from 'assets/arrowOdd.png'
 import ArrowEven from 'assets/arrowEven.png'
@@ -24,10 +24,7 @@ export default function WorkFlow() {
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
-                    <img src={globalIcon} sx={{
-                        height: '50px',
-                        width: 'auto',
-                    }}></img>
+                    <img src={globalIcon} sx={styles.iconImg}></img>
                 </div>
                 <div>
                   
@@ -64,10 +61,7 @@ export default function WorkFlow() {
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
-                    <img src={globalIcon} sx={{
-                        height: '50px',
-                        width: 'auto',
-                    }}></img>
+                    <img src={globalIcon} sx={styles.iconImg}></img>
                 </div>
                 <div>
                   
@@ -104,10 +98,7 @@ export default function WorkFlow() {
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
-                    <img src={globalIcon} sx={{
-                        height: '50px',
-                        width: 'auto',
-                    }}></img>
+                    <img src={globalIcon} sx={styles.iconImg}></img>
                 </div>
                 <div>
                   
@@ -146,10 +137,7 @@ export default function WorkFlow() {
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
-                    <img src={globalIcon} sx={{
-                        height: '50px',
-                        width: 'auto',
-                    }}></img>
+                    <img src={globalIcon} sx={styles.iconImg}></img>
                 </div>
                 <div>                  
                   <Text sx={styles.wrapper.secondTitle}>Inner Core</Text>
@@ -168,8 +156,8 @@ export default function WorkFlow() {
           </div>
     
         </Container>
-        <a href='#' rel='noopener noreferrer'>
-            <Button variant='outlinePrimary' aria-label='Get Started'>
+        <a href='#' rel='noopener noreferrer' sx={styles.mobileCentered}>
+            <Button variant='outlinePrimary' aria-label='Get Started' >
               <Container
                 sx={{
                   fontFamily: 'Jost',
@@ -192,6 +180,14 @@ export default function WorkFlow() {
 }
 
 const styles = {
+  mobileCentered:{
+    '@media screen and (max-width: 380px)': {
+      paddingLeft: '30px'
+    },
+    '@media screen and (min-width: 385px) and (max-width: 480px)': {
+      paddingLeft: '50px'
+    },
+  },
   workflow: {
     backgroundColor: 'background_secondary',
     backgroundRepeat: `no-repeat`,
@@ -213,34 +209,6 @@ const styles = {
     //   zIndex: 0,
     // },
   },
-
-  // card: {
-  //   marginLeft: '4rem',
-  //   marginTop: '2rem',
-  //   width: '100%',
-  // },
-  // card: {
-  // display: 'flex',
-  // flexDirection: '',
-  // position: 'relative',
-  // textAlign: ['center', null, 'left'],
-  // width: ['100%', '100%', '100%'],
-  // mx: 'auto',
-  //   '&::before': {
-  //     position: 'absolute',
-  //     content: '""',
-  //     top: 0,
-  //     left: [0, null, null, null, null, 75, null, 100],
-  //     backgroundRepeat: `no-repeat`,
-  //     backgroundPosition: 'center center',
-  //     width: 180,
-  //     height: 57,
-  //     opacity: 0.3,
-  //     '@media screen and (max-width:1220px)': {
-  //       display: 'none',
-  //     },
-  //   },
-  // },
   arrow: {
     '@media screen and (max-width:600px)': {
       display: 'none',
@@ -248,26 +216,41 @@ const styles = {
     position: 'relative',
   },
 
+  iconImg: {
+    height: '100px',
+    width: 'auto',
+    paddingLeft: '30px',
+    '@media screen and (max-width: 800px)': {
+      height: '70px',      
+    },
+  },
+
   icondiv: {
-    width: ['50px', null, '60px', null, null, '70px'],
-    height: ['50px', null, '60px', null, null, '70px'],
+    width: ['100px', null, '60px', null, null, '50px'],
+    height: ['100px', null, '60px', null, null, '50px'],
     flexShrink: 0,
     borderRadius: [15, null, 23, null, null, 30],
-    backgroundColor: 'white',
+   // backgroundColor: 'white',
     display: 'flex',
     alignItems: 'center',
     mb: [5, null, null, null, null, 6],
-    mr: '7rem',
+    mr: '5rem',
     fontSize: [6, null, 7, null, null, '30px'],
     fontWeight: 700,
     justifyContent: 'center',
     color: '#234582',
+    '@media screen and (max-width: 800px)': {
+      width: ['50px', null, '50px', null, null, '50px'],
+      height: ['50px', null, '50px', null, null, '50px'],  
+      mr: '3rem',   
+    },
   },
 
   objectivediv: {
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
+    paddingBottom: '50px'
   },
 
   objectiveLine: {
@@ -305,6 +288,10 @@ const styles = {
       color: '#00D3BA',
       opacity: 0.65,
       pr: [0, null, null, null, null, 5],
+      '@media screen and (max-width: 800px)': {
+        fontSize: 6,
+        fontWeight: 400,
+      },
     },
 
     objective: {
@@ -324,5 +311,6 @@ const styles = {
       opacity: 0.65,
       pr: [0, null, null, null, null, 5],
     },
+   
   },
 }

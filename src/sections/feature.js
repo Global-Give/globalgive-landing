@@ -59,14 +59,7 @@ const data = [
     altText: 'Whale tax',
     title: 'Whale tax',
     text: 'Up to 10% extra tax on sales over 1% of the total supply (see Whale tax document)',
-  },
-  {
-    id: 7,
-    imgSrc: Transparent,
-    altText: '',
-    title: '',
-    text: '',
-  },
+  }, 
   {
     id: 8,
     imgSrc: Lock,
@@ -98,71 +91,85 @@ export default function Feature() {
           </Grid>
 
           <Grid sx={styles.grid} >
-          <a href='#' rel='noopener noreferrer'>
-            <Button variant='outlinePrimary' aria-label='Get Started'>
-              <Container
-                sx={{
-                  fontFamily: 'Jost',
-                  fontWeight: 500,
-                  fontSize: '20px',
-                  width: '300px'
-                }}
-                css={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                See Chart
-              </Container>
-            </Button>
-          </a>
-          <a href='#' rel='noopener noreferrer'>
-            <Button variant='outlinePrimary' aria-label='Get Started'>
-              <Container
+            <a href='#' rel='noopener noreferrer' sx={styles.borderAnchor}>
+              <Button variant='outlinePrimary' aria-label='Get Started'>
+                <Container
                   sx={{
                     fontFamily: 'Jost',
                     fontWeight: 500,
                     fontSize: '20px',
-                    width: '300px'
+                    width: '300px',
+                    '@media screen and (max-width: 1215px)': {
+                      fontSize: '15px',
+                      width: '250px',
+                    },
+                    
                   }}
                   css={{
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                   }}
+                >
+                  See Chart
+                </Container>
+              </Button>
+            </a>
+            <a href='#' rel='noopener noreferrer'  sx={styles.borderAnchor}>
+              <Button variant='outlinePrimary' aria-label='Get Started'>
+                <Container
+                    sx={{
+                      fontFamily: 'Jost',
+                      fontWeight: 500,
+                      fontSize: '20px',
+                      width: '300px',
+                      '@media screen and (max-width: 1215px)': {
+                        fontSize: '15px',
+                        width: '250px',
+                      },
+                    }}
+                    css={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                >
+                  Read more on Whale Tax
+                </Container>
+              </Button>
+            </a>
+            <a rel='noopener noreferrer' sx={styles.borderAnchor}>
+            <CopyToClipboard text='Coming Soon!'>
+              <Button
+                onClick={() => {
+                  setCopyAddress(true)
+                }}
+                variant='outlinePrimary'
+                aria-label='Get Started'
+                id="contract-address"
               >
-                Read more on Whale Tax
-              </Container>
-            </Button>
+                <Container
+                  sx={{
+                    fontFamily: 'Jost',
+                    fontWeight: 500,
+                    fontSize: '20px',
+                    width: '300px',
+                    '@media screen and (max-width: 1215px)': {
+                      fontSize: '15px',
+                      width: '250px',
+                    },
+                  }}
+                  css={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  {CopyAddress ? 'COPIED' : 'Copy Contract Address'}
+                </Container>
+              </Button>
+            </CopyToClipboard>
           </a>
-          <CopyToClipboard text='Coming Soon!'>
-            <Button
-              onClick={() => {
-                setCopyAddress(true)
-              }}
-              variant='outlinePrimary'
-              aria-label='Get Started'
-              id="contract-address"
-            >
-              <Container
-                sx={{
-                  fontFamily: 'Jost',
-                  fontWeight: 500,
-                  fontSize: '20px',
-                  width: '300px'
-                }}
-                css={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                {CopyAddress ? 'COPIED' : 'Copy Contract Address'}
-              </Container>
-            </Button>
-          </CopyToClipboard>
-        
         </Grid>
       </Container>
     </section>
@@ -192,5 +199,13 @@ const styles = {
       null,
       'repeat(3,1fr)',
     ],
+    
   },
+  borderAnchor:{
+    textAlign: 'center',
+    '@media screen and (max-width: 530px)': {
+      paddingLeft: '20px'
+    },
+  }
+
 }

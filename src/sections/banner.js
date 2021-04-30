@@ -43,7 +43,7 @@ export default function Banner() {
     setVideoOpen(true)
   }
   return (
-    <section sx={styles.banner} id='home'>
+    <section sx={styles.banner} id='home' sx={{variant: 'section.feature'}}>
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading
@@ -126,12 +126,13 @@ export default function Banner() {
 
 const styles = {
   
+
   banner: {
     alternateLogo: {
       color: 'white',
     },
     overflow: ['hidden', 'initial', null, 'hidden'],
-
+    
     borderBottomRightRadius: [100, 150, null, null, null, 250],
     pt: ['150px', null, null, null, null, null, '140px', '130px'],
     pb: ['100px', null, null, '110px', null, 10, '150px'],
@@ -139,7 +140,10 @@ const styles = {
     container: {
       display: 'flex',
       justifyContent: 'center',
-      marginBottom:'-120px'
+      marginBottom:'-120px',
+      '@media screen and (max-width: 1024px)': {
+        marginTop: '140px'
+      },
     },
     bgImage: {
       pointerEvents: 'none',

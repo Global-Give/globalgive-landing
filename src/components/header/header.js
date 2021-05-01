@@ -63,8 +63,7 @@ export default function Header({className}) {
               smooth={true}
               offset={-70}
               duration={500}
-              href='#'
-              // href='https://bscscan.com/token/0x00d01af5e11f9b218accdcab75d31440c4858a70'
+              href='https://bscscan.com/token/0x60e9880daef10e960da3c45b076dbdac4f111edf'
               rel='noopener noreferrer'
               target='_blank'
               sx={{

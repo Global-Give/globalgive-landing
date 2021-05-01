@@ -43,7 +43,7 @@ const data = [
     imgSrc: Burn,
     altText: 'Defi',
     title: 'Defi',
-    text: '2% redistributed to hodlers and 8% sent to locked LP on pancakeswap on each transaction.',
+    text: '2% redistributed to hodlers and 8% sent to locked LP on pancakeswap on each sale.',
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const data = [
     altText: 'Redistribution',
     title: 'Redistribution',
     text:
-      'The longer you hold, the more you receive. There is a 2% tax on each sale and purchase which is redistributed to present hodlers based on the ratio of tokens they own.',
+      'The longer you hold, the more you receive. There is a 2% tax on each sale which is redistributed to present hodlers based on the ratio of tokens they own.',
   },
   {
     id: 6,
@@ -139,7 +139,7 @@ export default function Feature() {
               </Button>
             </a>
             <a rel='noopener noreferrer' sx={styles.borderAnchor}>
-            <CopyToClipboard text='Coming Soon!'>
+            <CopyToClipboard text='0x60e9880daef10e960da3c45b076dbdac4f111edf'>
               <Button
                 onClick={() => {
                   setCopyAddress(true)

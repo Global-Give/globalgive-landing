@@ -13,7 +13,7 @@ const data = [
   {
     id: 1,
     name: 'John Ikwuobe',
-    title: 'HEAD OF DEVELOPMENT',
+    title: 'DEVELOPMENT DIRECTOR',
     description: (
         <div sx={{width: '100%', padding: '0',  textAlign: 'center'}}>       
           As the Head of Development, John will be at the coalface; forging partnerships with businesses and spearheading innovation in the area of token adoption. With an uncanny eye for details, an intuitive sense of direction, as well as a never-ending curiosity for the new and exciting, he is committed to do the type of duties that will be indispensable for the heights to which GlobalGive aspires.

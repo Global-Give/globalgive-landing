@@ -74,7 +74,7 @@ export default function WorkFlow() {
                     <ul><li>Start of Community competitions – winners choose Charity of the month</li></ul>
                     <ul><li>Create charity HODLers foundation</li></ul>
                     <ul><li>Partnerships creating with several Charities</li></ul>
-                    <ul><li>Move Global Give Token into its own mainnet</li></ul>
+                    <ul><li>Move GlobalGive Token into its own mainnet</li></ul>
                   </Text>
                 </div>
               </div>
@@ -146,8 +146,8 @@ export default function WorkFlow() {
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul><li>Global Give will be the choice for Charity donations around the world with hundreds of charities using the Global Give token as a means to raise funds.</li></ul>
-                    <ul><li>Global Give will establish itself as a pivotal and critical crypto asset for decentralized donations worldwide.</li></ul>
+                    <ul><li>GlobalGive will be the choice for Charity donations around the world with hundreds of charities using the GlobalGive token as a means to raise funds.</li></ul>
+                    <ul><li>GlobalGive will establish itself as a pivotal and critical crypto asset for decentralized donations worldwide.</li></ul>
                     <ul><li>The founders and HOLDers will continue to work in saving millions from poverty, increasing education in areas that need it and helping people move up from living on the street. We strive to carry on the great works of all those environmentalists who we so proudly stand on the shoulders of.</li></ul>
                   </Text>
                 </div>

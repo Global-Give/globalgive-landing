@@ -35,7 +35,7 @@ export default function WorkFlow() {
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
                     <ul><li>Announcements of First Charity Donation and organisation</li></ul>
-                    <ul><li>FFirst donation completed within 30 days of token launch</li></ul>
+                    <ul><li>First donation completed within 30 days of token launch</li></ul>
                     <ul><li>Listed with Price tracking sites</li></ul>
                     <ul><li>Begin application process for exchange listings</li></ul>
                   </Text>

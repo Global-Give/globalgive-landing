@@ -47,8 +47,7 @@ export default function Header({className}) {
               smooth={true}
               offset={-70}
               duration={500}
-              href='#'
-              //href='https://google.com'
+              href='https://pdfhost.io/v/GNoFVV13X_GlobalGive_Whitepaper.pdf'
               rel='noopener noreferrer'
               target='_blank'
               sx={{

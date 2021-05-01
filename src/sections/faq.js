@@ -161,7 +161,7 @@ const faqs = [
         </ol> 
       
       <p>Your GlobalGive balance will automatically be added to your TrustWallet. Head back to your wallet to see your tokens. You may need to activate GlobalGive token by selecting the toggle icon in the top right corner and entering the contract address into ‘Search Tokens’.</p>
-      <p>If you need a little more help buying GlobalGive, download our Beginner’s Guide here</p></div>
+      <p>If you need a little more help buying GlobalGive, <a href="https://pdfhost.io/v/96bCYDaWN_EN_How2Buy_Beginners_Guide.pdf" rel='noopener noreferrer' target='_blank' sx={{color: '#fff'}}>download our Beginner’s Guide here </a></p></div>
       ),
   },
 ]

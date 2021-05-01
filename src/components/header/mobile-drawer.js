@@ -65,9 +65,8 @@ const MobileDrawer = () => {
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
-              href="#"
-              href="https://google.com"
+              duration={500}     
+              href="https://pdfhost.io/v/GNoFVV13X_GlobalGive_Whitepaper.pdf"
               rel="noopener noreferrer"
               target="_blank"
               sx={styles.item}

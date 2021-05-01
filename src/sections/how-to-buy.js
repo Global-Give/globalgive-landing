@@ -6,50 +6,13 @@ import SectionHeader from 'components/section-header'
 import FeatureCard from 'components/feature-card.js'
 import Link from 'next/link'
 
-const data = [
-  {
-    id: 1,
-    title: 'Watch on Youtube ',
-    link: 'https://youtu.be/atfGsZY5sqo'
-  },
-  {
-    id: 2,
-    text: 'How to Buy BNB (downloadable PDF)',
-    title: 'Click',
-    link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf',
-  },
-  {
-    id: 3,
-    text: 'How to Load and use Trust Wallet onto your Phone (YouTube Video link)',
-    title:'Click',
-    link: 'https://youtu.be/BdWCVKINwKc'
-  },
-  {
-    id: 4,
-    text: 'How to Load and use Trust Wallet onto your phone (downloadable PDF)',
-    title: 'Click',
-    link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf'
-  },
-  {
-    id: 5,
-    text: 'How to Buy GlobalGive on Pancake Swap (YouTube Video Link)',
-    title: 'Click',
-    link: 'https://youtu.be/a8d9VBT--Hw'
-  },
-  {
-    id: 6,
-    text: 'How to Buy GlobalGive on pancake Swap (downloadable PDF)',
-    title: 'Click',
-    link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf'
-  },
-]
 
-const data2 = [
+const data = [
   {
     id: 1,
     title: 'Buying BNB on Binance (for mobile)',
     btn1:  'Download PDF',
-    link1: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf',
+    link1: 'https://pdfhost.io/v/wNnKu2h78_Buying_BNB_Binance.pdf',
     btn2:  'Watch on Youtube',
     link:  'https://youtu.be/atfGsZY5sqo'
   },
@@ -109,7 +72,7 @@ export default function HowToBuy() {
             <p sx={{marginTop: '2rem', fontSize:'20px', color:'#e5e5e5', fontWeight:'300'}}> Helpful guides meant to assist you if you're new to crypto or need a little extra guidance</p>
           </div> 
         <Grid sx={styles.grid}> 
-          {data2.map(item => (
+          {data.map(item => (
             <Box>
               <div sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
                 <a sx={{height:'110px'}}>

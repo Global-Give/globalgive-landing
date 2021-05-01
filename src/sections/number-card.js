@@ -29,7 +29,7 @@ const data = [
   },
   {
     id: 4,
-    text: 'Amount of $GIVE burnt ',
+    text: 'Amount of $GGIVE burnt ',
     number: 'Coming Soon',
     icon: '  🔥',
     img: null

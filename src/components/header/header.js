@@ -87,6 +87,7 @@ export default function Header({className}) {
                 {label}
               </Link>
             ))}
+            <a href='https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x60e9880daef10e960da3c45b076dbdac4f111edf' target='_blank' rel='noopener noreferrer'>
             <Button
               className='donate__btn'
               variant='secondary'
@@ -96,18 +97,11 @@ export default function Header({className}) {
                 pointerEvents: 'none',
               }}
             >
-              Buy (Coming Soon)
+              Buy $GGIVE
             </Button>
+            </a>
           </Flex>
-          <a
-            href='#'
-            sx={{
-              cursor: 'auto',
-              pointerEvents: 'none',
-            }}
-          >
-            
-          </a>
+         
           <MobileDrawer />
         </Container>
       </header>

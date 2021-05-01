@@ -13,7 +13,7 @@ const data = {
     
     Our goal is to provide a platform, driven by our community of GlobalGiver’s, to boost awareness to causes that need it most as well as donating to more charities monthly. 
     
-    We are doing all of the above whilst rewarding investors for simply holding $GIVE and providing increased investor protection measures.
+    We are doing all of the above whilst rewarding investors for simply holding $GGIVE and providing increased investor protection measures.
     
     Hold GlobalGive, change the world!`,
 }

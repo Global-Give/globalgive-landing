@@ -60,7 +60,7 @@ const data = [
     title: 'TECHNICAL DIRECTOR',
     description: (
         <div sx={{width: '100%', padding: '0',  textAlign: 'center'}}>
-            If humans had super-powers, Nic's would be the ability to control computers with his mind. He provides the needed technological backbone for the GlobalGive project. He feels at home caged-in, working on backend. Rare sightings occur in the spring and summer months.
+            Nic forms the technical backbone for the GlobalGive project. While we usually keep his ugly mug working on backend and integrations, when we hear expletives and maniacal laughter, we usually know he solved the problem.
         </div>
     ),
     picture: Nic,

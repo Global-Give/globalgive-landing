@@ -47,6 +47,7 @@ export default function SEO({
       {metaData.map(({ name, content }, i) => (
         <meta key={i} name={name} content={content} />
       ))}
+      <link rel="icon" href="/favicon.png" type="image" sizes="50x50"/>
     </Head>
   );
 }

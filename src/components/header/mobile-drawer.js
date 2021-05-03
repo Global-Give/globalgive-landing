@@ -88,18 +88,25 @@ const MobileDrawer = () => {
                 {label}
               </Link>
             ))}
-            <Button
-              className='donate__btn'
-              variant='secondary'
-              aria-label='Buy'
+            <a 
+              href='https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x60e9880daef10e960da3c45b076dbdac4f111edf' 
+              target='_blank' 
+              rel='noopener noreferrer'
               sx={{
-                marginTop: '20px',
-                opacity: 0.5,
-                pointerEvents: 'none',
+                height: "min-content"
               }}
             >
-              Buy (Coming Soon)
-            </Button>
+              <Button
+                className='donate__btn'
+                variant='secondary'
+                aria-label='Buy'
+                sx={{
+                  marginTop: '20px',
+                }}
+              >
+                Buy $GGIVE
+              </Button>
+            </a>
           </Box>
 
           <Box sx={styles.menuFooter}>
@@ -160,6 +167,18 @@ const styles = {
   },
 
   menu: {
+    ".donate__btn": {
+      mr: 0,
+      ml: 0,
+      borderColor: 'primary',
+      color: 'primary',
+      width: "100%",
+      '&:hover': {
+        boxShadow: 'rgba(0, 211, 186, 0.37) 0px 9px 20px -5px',
+        backgroundColor: 'primary',
+        color: 'white',
+      },
+    },
     width: '100%',
     display: 'flex',
     flexDirection: 'column',

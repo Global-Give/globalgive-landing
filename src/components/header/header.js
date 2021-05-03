@@ -92,10 +92,7 @@ export default function Header({className}) {
               className='donate__btn'
               variant='secondary'
               aria-label='Buy'
-              sx={{
-                opacity: 0.5,
-                pointerEvents: 'none',
-              }}
+              
             >
               Buy $GGIVE
             </Button>

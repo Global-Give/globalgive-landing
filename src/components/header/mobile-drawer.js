@@ -211,6 +211,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: '20px',
 
     icon: {
       display: 'flex',

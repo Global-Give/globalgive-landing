@@ -89,19 +89,10 @@ export default function Banner() {
                 </Container>
               </Button>
             </a>
-            <a href='#for-charity' rel='noopener noreferrer'>
+            <a href='#for-charity' rel='noopener noreferrer' sx={styles.charityA}>
               <Button variant='outlinePrimary' aria-label='Get Started'>
                 <Container
-                  sx={{
-                    fontFamily: 'Jost',
-                    fontWeight: 500,
-                    fontSize: '20px',
-                  }}
-                  css={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
+                  sx={styles.forCharityBtn}
                 >
                   For Charities
                 </Container>
@@ -125,7 +116,20 @@ export default function Banner() {
 }
 
 const styles = {
-  
+  forCharityBtn:{
+    fontFamily: 'Jost',
+    fontWeight: 500,
+    fontSize: '20px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',    
+  },
+
+  charityA:{
+    '@media screen and (max-width: 480px)': {
+      marginTop: '40px'
+    },
+  },
 
   banner: {
     alternateLogo: {

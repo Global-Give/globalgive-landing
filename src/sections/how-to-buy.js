@@ -26,11 +26,11 @@ const data = [
   },
   {
     id: 3,
-    title: 'Using PancakeSwap and buying GlobalGive(for mobile)',
+    title: 'Complete Guide to buying #GGIVE with BNB',
     btn1: 'Download PDF',
-    link1:'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf',
+    link1:'https://pdfhost.io/v/P20Dzda4Q_GlobalGive_Complete_Guide_to_Buyingpdf.pdf',
     btn2: 'Video tutorial coming soon',
-    link: 'https://youtu.be/a8d9VBT--Hw'
+    link: ''
   }, 
 ]
 

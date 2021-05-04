@@ -133,37 +133,6 @@ const faqs = [
       </div>
     ),
   },
-  {
-    title: 'How do I buy GlobalGive? ',
-    contents: (
-      <div>
-        <ol>
-          <li>Download TrustWallet app from Google Play or App Store and set up your wallet.</li>
-          <li>Activate BNB coin in your wallet - choosing the Smart Chain Token </li>
-          <li>Purchase BNB from Binance or your chosen Exchange.</li>
-          <li>Using BEP20 network, send your BNB to your Wallet and then swap it to Binance Smart Chain</li>
-          <li>Click DApps tab in TrustWallet. Scroll down and select PancakeSwap
-            <ul>
-              <li>iOS users: To enable DApps Browser:</li>
-              <li>Type trust://browser_enable into Safari and tap Go. Tap Open when prompted</li>
-              <li>For iOS users you’ll want to Enable DApp trust://browser_enable</li>
-            </ul>
-          </li>
-          <li>Select PancakeSwap V2.
-            <ul>
-              <li>In the ‘From’ box , ensure BNB is selected</li>
-              <li>In the ‘To’ box, tap select a currency. Enter the GlobalGive contract address and tap Add</li>
-            </ul>
-          </li>
-          <li>Adjust slippage %. to 11 – 13%. This can be adjusted by tapping the settings icon in the Exchange box </li>
-          <li>Choose the amount of BNB you want to swap to GlobalGive and hit Swap</li>
-          <li>Welcome to the community!</li>
-        </ol> 
-      
-      <p>Your GlobalGive balance will automatically be added to your TrustWallet. Head back to your wallet to see your tokens. You may need to activate GlobalGive token by selecting the toggle icon in the top right corner and entering the contract address into ‘Search Tokens’.</p>
-      <p>If you need a little more help buying GlobalGive, <a href="https://pdfhost.io/v/96bCYDaWN_EN_How2Buy_Beginners_Guide.pdf" rel='noopener noreferrer' target='_blank' sx={{color: '#fff'}}>download our Beginner’s Guide here </a></p></div>
-      ),
-  },
 ]
 export default function Faq() {
   return (

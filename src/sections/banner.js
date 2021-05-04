@@ -78,6 +78,10 @@ export default function Banner() {
                     fontFamily: 'Jost',
                     fontWeight: 500,
                     fontSize: '20px',
+                    '@media screen and (max-width: 1215px)': {
+                      fontSize: '15px',
+                      width: '250px',
+                    },
                   }}
                   css={{
                     display: 'flex',
@@ -122,7 +126,11 @@ const styles = {
     fontSize: '20px',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',    
+    justifyContent: 'center', 
+    '@media screen and (max-width: 1215px)': {
+      fontSize: '15px',
+      width: '250px',
+    },   
   },
 
   charityA:{

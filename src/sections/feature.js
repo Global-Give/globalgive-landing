@@ -43,7 +43,7 @@ const data = [
     imgSrc: Burn,
     altText: 'Defi',
     title: 'Defi',
-    text: '2% redistributed to hodlers and 8% sent to locked LP on pancakeswap on each sale.',
+    text: 'There is a 10% tax on sales; of which 2% is redistributed to HODlers, 2% is burnt, and 6% is added to the liquidity pool. LP tokens are locked on Dxsale to provide extra investor protection (see FAQ section "is this safe to invest in")',
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ const data = [
     imgSrc: Whale,
     altText: 'Whale tax',
     title: 'Whale tax',
-    text: 'Up to 10% extra tax on sales over 1% of the total supply (see Whale tax document)',
+    text: 'Up to 10% extra tax on sales over 0.1% of the total supply (see Whale tax document)',
   }, 
   {
     id: 8,

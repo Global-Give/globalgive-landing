@@ -163,6 +163,10 @@ export default function WorkFlow() {
                   fontFamily: 'Jost',
                   fontWeight: 500,
                   fontSize: '20px',
+                  '@media screen and (max-width: 1215px)': {
+                    fontSize: '15px',
+                    width: '250px',
+                  },
                 }}
                 css={{
                   display: 'flex',

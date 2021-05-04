@@ -59,7 +59,11 @@ export default function Footer() {
           </Box>
           <Box sx={styles.footer.menus} css={{ justifyContent: 'center', alignItems: 'center' }} >
             <a href="https://t.me/globalgivetokencommunity" target="_blank" rel="noopener noreferrer">
-              <Button variant="accentButton" sx={{ width: 'max-content', marginLeft:'20px' }}>
+              <Button variant="accentButton" sx={{ width: 'max-content', marginLeft:'20px',
+                                                  '@media screen and (max-width: 1215px)': {
+                                                    fontSize: '15px',
+                                                    width: '250px',
+                                                  },}}>
                 Join Us on Telegram
               </Button>
             </a>

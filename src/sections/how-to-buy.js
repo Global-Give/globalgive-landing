@@ -83,7 +83,11 @@ export default function HowToBuy() {
                         <Container sx={{ fontFamily: 'Jost',
                                           fontWeight: 300,
                                           fontSize: '17px', 
-                                          marginX:'10px', }}
+                                          marginX:'10px',
+                                          '@media screen and (max-width: 1215px)': {
+                                            fontSize: '15px',
+                                          }, 
+                                        }}
                                    css={{ display: 'flex',
                                           alignItems: 'center',
                                           justifyContent: 'center',}}  >
@@ -95,7 +99,11 @@ export default function HowToBuy() {
                     <Button variant='outlinePrimary' aria-label={item.title}>
                         <Container sx={{ fontFamily: 'Jost',
                                           fontWeight: 300,
-                                          fontSize: '17px', }}
+                                          fontSize: '17px', 
+                                          '@media screen and (max-width: 1215px)': {
+                                            fontSize: '15px',
+                                          },
+                                        }}
                                    css={{ display: 'flex',
                                           alignItems: 'center',
                                             justifyContent: 'center',}}  >

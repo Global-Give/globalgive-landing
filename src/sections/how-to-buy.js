@@ -20,7 +20,7 @@ const data = [
     id: 2,
     title: 'Setting TrustWallet and loading with BNB(for mobile)',
     btn1: 'Download PDF',
-    link1:'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf',
+    link1:'https://pdfhost.io/v/P20Dzda4Q_GlobalGive_Complete_Guide_to_Buyingpdf.pdf',
     btn2: 'Watch on Youtube',
     link2:'https://youtu.be/BdWCVKINwKc'
   },

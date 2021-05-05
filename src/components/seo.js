@@ -1,15 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
+import ogpImage from '../../public/ogpImage.png';
+
 
 export default function SEO({
-  description = 'Global-Give Token Official Webpage',
+  description = 'GlobalGive Token Official Webpage',
   author = 'GG Team',
   meta,
-  title = 'Global-Give Token - Charity Token',
+  title = 'GlobalGive Token - Charity Token',
+  domainName
 }) {
+
   const metaData = [
     {
-      name: `description`,
+      property: `description`,
       content: description,
     },
     {
@@ -25,27 +29,32 @@ export default function SEO({
       content: `website`,
     },
     {
-      name: `twitter:card`,
+      property: 'og:image',
+      content: "https://" + domainName + ogpImage
+    },
+    {
+      property: `twitter:card`,
       content: `summary`,
     },
     {
-      name: `twitter:creator`,
+      property: `twitter:creator`,
       content: author,
     },
     {
-      name: `twitter:title`,
+      property: `twitter:title`,
       content: title,
     },
     {
-      name: `twitter:description`,
+      property: `twitter:description`,
       content: description,
     },
   ].concat(meta);
   return (
     <Head>
+      {console.log("Domain: " + domainName)}
       <title>{title}</title>
-      {metaData.map(({ name, content }, i) => (
-        <meta key={i} name={name} content={content} />
+      {metaData.map(({ property, content }, i) => (
+        <meta key={i} property={property} content={content} />
       ))}
       <link rel="icon" href="/favicon.png" type="image" sizes="50x50"/>
     </Head>

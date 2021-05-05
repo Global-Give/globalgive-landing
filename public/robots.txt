@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Sitemap: https://example.io/sitemap.xml
+Allow: /
+
+# Host
+Host: https://globalgive.finance
+
+# Sitemaps
+Sitemap: https://globalgive.finance/sitemap.xml

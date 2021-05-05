@@ -19,12 +19,12 @@ import HowToBuy from 'sections/how-to-buy'
 import NumberCard from 'sections/number-card'
 import Team from 'sections/team'
 
-export default function IndexPage() {
+export default function IndexPage({domainName}) {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title='GlobalGive Token - Charity Token' />
+          <SEO title='GlobalGive Token - Charity Token' domainName={domainName} />
           <Banner />
           {/* <KeyFeature /> */}
           {/* <CoreFeature /> */}
@@ -45,4 +45,14 @@ export default function IndexPage() {
     </ThemeProvider>
     
   )
+}
+
+export async function getServerSideProps(context) {
+  console.log(context)
+  const { req } = context;
+  return {
+    props: {
+      domainName: JSON.parse(JSON.stringify(req['headers']['host']))
+    }, // will be passed to the page component as props
+  }
 }

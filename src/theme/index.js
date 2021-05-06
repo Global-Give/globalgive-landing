@@ -15,6 +15,7 @@ export default {
     yellow: '#F6C416',
     white: '#FFFFFF',
     dark: '#2F3142',
+    crimson: '#DC143C',
 
     // highlight	a background color for highlighting text
   },

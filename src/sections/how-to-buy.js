@@ -12,7 +12,7 @@ const data = [
     id: 1,
     title: 'Buying BNB on Binance (for mobile)',
     btn1:  'Download PDF',
-    link1: 'https://pdfhost.io/v/wNnKu2h78_Buying_BNB_Binance.pdf',
+    link1: 'https://pdfhost.io/v/v~.wEPmOL_GlobalGive_Buying_BNB_on_Binance_Exchange.pdf',
     btn2:  'Watch on Youtube',
     link:  'https://youtu.be/atfGsZY5sqo'
   },
@@ -20,7 +20,7 @@ const data = [
     id: 2,
     title: 'Setting TrustWallet and loading with BNB(for mobile)',
     btn1: 'Download PDF',
-    link1:'https://pdfhost.io/v/P20Dzda4Q_GlobalGive_Complete_Guide_to_Buyingpdf.pdf',
+    link1:'https://pdfhost.io/v/xr8yq.Usn_GlobalGive_Setting_up_TrustWallet.pdf',
     btn2: 'Watch on Youtube',
     link2:'https://youtu.be/BdWCVKINwKc'
   },
@@ -28,7 +28,7 @@ const data = [
     id: 3,
     title: 'Complete Guide to buying #GGIVE with BNB',
     btn1: 'Download PDF',
-    link1:'https://pdfhost.io/v/P20Dzda4Q_GlobalGive_Complete_Guide_to_Buyingpdf.pdf',
+    link1:'https://pdfhost.io/v/9gqCxQ6iQ_GlobalGive_Complete_Guidepdf.pdf',
     btn2: 'Video tutorial coming soon',
     link: ''
   }, 

@@ -91,7 +91,7 @@ export default function Feature() {
           </Grid>
 
           <Grid sx={styles.grid} >
-            <a href='#' rel='noopener noreferrer' sx={styles.borderAnchor}>
+            <a href='https://www.coingecko.com/en/coins/globalgive' target="_blank"  rel='noopener noreferrer' sx={styles.borderAnchor}>
               <Button variant='outlinePrimary' aria-label='Get Started'>
                 <Container
                   sx={{
@@ -115,7 +115,7 @@ export default function Feature() {
                 </Container>
               </Button>
             </a>
-            <a href='https://pdfhost.io/v/zcAbLq4f3_GlobalGive_Toxic_Whale_Tax.pdf' target="_blank" rel='noopener noreferrer'  sx={styles.borderAnchor}>
+            <a href='https://pdfhost.io/v/Qs1u2pfjV_GlobalGive_Toxic_Whale_Tax.pdf' target="_blank" rel='noopener noreferrer'  sx={styles.borderAnchor}>
               <Button variant='outlinePrimary' aria-label='Get Started'>
                 <Container
                     sx={{

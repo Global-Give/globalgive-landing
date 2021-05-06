@@ -66,7 +66,7 @@ const MobileDrawer = () => {
               smooth={true}
               offset={-70}
               duration={500}     
-              href="https://pdfhost.io/v/RUajpFeFC_GlobalGive_Whitepaper.pdf"
+              href="https://pdfhost.io/v/gF29NitGV_GlobalGive_Whitepaper.pdf"
               rel="noopener noreferrer"
               target="_blank"
               sx={styles.item}

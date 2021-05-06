@@ -1,6 +1,6 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import { jsx, Heading, Box, Container, Text, Button, Grid, IconButton, Image } from 'theme-ui';
+import { jsx, Heading, Box, Container, Text, Button, Grid, IconButton, Image, Alert } from 'theme-ui';
 import { IoLogoTwitter, IoLogoInstagram, IoLogoReddit } from 'react-icons/io5';
 import { Link } from 'components/link';
 import menuItems from './footer.data';
@@ -68,6 +68,17 @@ export default function Footer() {
               </Button>
             </a>
           </Box>         
+          <Box>
+          <p>globalgive.finance © 2021 All rights reserved</p>  
+          </Box>                                        
+      </Container>
+      <Container sx={styles.footer.secondcontainer}>
+        
+        <span class="disclaimer"><a href="#" sx={{color:'crimson'}}>IMPORTANT DISCLAIMER:</a></span>
+        <span class="text-lite text-xs">The content of this website and any documents are provided for educational and informational purposes only. It is not intended to be and does not 
+            constitute financial, investment or trading advice of any kind. YOu shouldn't make any decisions as to finances, investing, trading or anything else 
+            based on this information without undertaking independent due diligence. Trading of Bitcoin and Altcoins have potential risks involved. Anyone wishing 
+            to invest should seek their own financial advice.</span>
         
       </Container>
       
@@ -101,6 +112,20 @@ const styles = {
       display: 'flex',
       flexWrap: 'wrap',
       pt: [7, null, 8],
+     // pb: ['10px', null, null, '20px'],
+      px: [5, null, null, null, 4],
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
+    secondcontainer: {
+      width: '100%',
+      alignItems: 'stretch',    
+      borderTop: '1px solid',
+      borderTopColor: 'muted',
+      display: 'flex',
+      flexWrap: 'wrap',
+      textAlign:'center',
+     // pt: [7, null, 8],
       pb: ['10px', null, null, '20px'],
       px: [5, null, null, null, 4],
       alignItems: 'center',
@@ -110,7 +135,7 @@ const styles = {
       width: [ null, null, '33.3%'],
       display: 'flex',
       flexDirection: 'column',
-      mb: ['40px', null, null, '60px'],
+      mb: ['30px', null, null, '50px'],
     },
 
     heading: {

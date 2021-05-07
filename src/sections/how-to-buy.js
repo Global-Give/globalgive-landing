@@ -14,7 +14,7 @@ const data = [
     btn1:  'Download PDF',
     link1: 'https://pdfhost.io/v/v~.wEPmOL_GlobalGive_Buying_BNB_on_Binance_Exchange.pdf',
     btn2:  'Watch on Youtube',
-    link:  'https://youtu.be/atfGsZY5sqo'
+    link2:  'https://youtu.be/atfGsZY5sqo'
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const data = [
     btn1: 'Download PDF',
     link1:'https://pdfhost.io/v/9gqCxQ6iQ_GlobalGive_Complete_Guidepdf.pdf',
     btn2: 'Video tutorial coming soon',
-    link: ''
+    link2: ''
   }, 
 ]
 

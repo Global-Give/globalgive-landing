@@ -1,7 +1,7 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
 import { jsx, Heading, Box, Container, Text, Button, Grid, IconButton, Image, Alert } from 'theme-ui';
-import { IoLogoTwitter, IoLogoInstagram, IoLogoReddit } from 'react-icons/io5';
+import { IoLogoTwitter, IoLogoInstagram, IoLogoReddit, IoLogoYoutube } from 'react-icons/io5';
 import { Link } from 'components/link';
 import menuItems from './footer.data';
 import GlobalGiveLogo from 'assets/logos/gg_icon.svg';
@@ -33,7 +33,7 @@ export default function Footer() {
                                 }}>
               We are on social media
             </Heading>
-            <Grid py="10px" columns={[3, 3, 3]}  >
+            <Grid py="10px" px="2.5rem" columns={[4, 4, 4]}  >
               <Box sx={styles.socialIconContainer} >
                 <a href="https://www.reddit.com/r/globalgive/" target="_blank" rel="noopener noreferrer" >
                   <IconButton sx={styles.socialButton}>
@@ -55,6 +55,14 @@ export default function Footer() {
                   </IconButton>
                 </a>
               </Box>
+              <Box sx={styles.socialIconContainer} >
+                <a href="https://www.youtube.com/channel/UCOv_Op-b4KWOcubauyYjg-g" target="_blank" rel="noopener noreferrer" >
+                  <IconButton sx={styles.socialButton}>
+                    <IoLogoYoutube sx={styles.socialIcon} />
+                  </IconButton>
+                </a>
+              </Box>
+              
             </Grid>
           </Box>
           <Box sx={styles.footer.menus} css={{ justifyContent: 'center', alignItems: 'center' }} >
@@ -76,7 +84,7 @@ export default function Footer() {
         
         <span class="disclaimer"><a href="#" sx={{color:'crimson'}}>IMPORTANT DISCLAIMER:</a></span>
         <span class="text-lite text-xs">The content of this website and any documents are provided for educational and informational purposes only. It is not intended to be and does not 
-            constitute financial, investment or trading advice of any kind. YOu shouldn't make any decisions as to finances, investing, trading or anything else 
+            constitute financial, investment or trading advice of any kind. You shouldn't make any decisions as to finances, investing, trading or anything else 
             based on this information without undertaking independent due diligence. Trading of Bitcoin and Altcoins have potential risks involved. Anyone wishing 
             to invest should seek their own financial advice.</span>
         
@@ -89,6 +97,7 @@ export default function Footer() {
 const styles = {
   socialIconContainer: {
     backgroundColor: 'dark',
+    width: 'min-content',
     //width: 'min-content',
     borderRadius: '30%',
     display: 'block',

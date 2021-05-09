@@ -7,29 +7,29 @@ import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaGithubAlt,
-  FaDribbble,
-} from 'react-icons/fa';
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoReddit,
+  IoLogoYoutube
+} from 'react-icons/io5';
 import menuItems from './header.data';
 
 const social = [
   {
-    path: '/',
-    icon: <FaFacebookF />,
+    path: 'https://www.twitter.com/globalgivetoken',
+    Icon: IoLogoTwitter,
   },
   {
-    path: '/',
-    icon: <FaTwitter />,
+    path: 'https://www.instagram.com/globalgivetoken/',
+    Icon: IoLogoInstagram,
   },
   {
-    path: '/',
-    icon: <FaGithubAlt />,
+    path: 'https://www.reddit.com/r/globalgive/',
+    Icon: IoLogoReddit,
   },
   {
-    path: '/',
-    icon: <FaDribbble />,
+    path: 'https://www.youtube.com/channel/UCOv_Op-b4KWOcubauyYjg-g',
+    Icon: IoLogoYoutube,
   },
 ];
 
@@ -110,9 +110,21 @@ const MobileDrawer = () => {
 
           <Box sx={styles.menuFooter}>
             <Box sx={styles.social}>
-              {social.map(({ path, icon }, i) => (
+              {social.map(({ path, Icon }, i) => (
                 <Box as="span" key={i} sx={styles.social.icon}>
-                  <Link to={path}>{icon}</Link>
+                  <a 
+                    href={path}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    sx={{
+                      color: 'white',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    <Icon style={{
+                      'color': 'grey'
+                    }} />
+                  </a>
                 </Box>
               ))}
             </Box>

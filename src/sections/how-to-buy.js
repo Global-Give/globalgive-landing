@@ -78,16 +78,9 @@ export default function HowToBuy() {
                 <a sx={{height:'110px'}}>
                   <p sx={{fontSize:'20px', color:'#e5e5e5', fontWeight:'300'}}>{item.title}</p>
                 </a>
-                <a href={item.link1}  target='_blank' rel='noopener noreferrer' >
-                    <Button variant='outlinePrimary' aria-label={item.title}>
-                        <Container sx={{ fontFamily: 'Jost',
-                                          fontWeight: 300,
-                                          fontSize: '17px', 
-                                          marginX:'10px',
-                                          '@media screen and (max-width: 1215px)': {
-                                            fontSize: '15px',
-                                          }, 
-                                        }}
+                <a href={item.link1}  target='_blank' rel='noopener noreferrer' sx={styles.aElements} >
+                    <Button variant='outlinePrimary' aria-label={item.title} sx={styles.buttons} >
+                        <Container sx={styles.container}
                                    css={{ display: 'flex',
                                           alignItems: 'center',
                                           justifyContent: 'center',}}  >
@@ -95,15 +88,9 @@ export default function HowToBuy() {
                         </Container>
                     </Button>
                 </a>
-                <a href={item.link2}  target='_blank' rel='noopener noreferrer' sx={{marginTop:'30px'}}>
-                    <Button variant='outlinePrimary' aria-label={item.title}>
-                        <Container sx={{ fontFamily: 'Jost',
-                                          fontWeight: 300,
-                                          fontSize: '17px', 
-                                          '@media screen and (max-width: 1215px)': {
-                                            fontSize: '15px',
-                                          },
-                                        }}
+                <a href={item.link2}  target='_blank' rel='noopener noreferrer' sx={styles.aElements}>
+                    <Button variant='outlinePrimary' aria-label={item.title} sx={styles.buttons} >
+                        <Container sx={styles.container}
                                    css={{ display: 'flex',
                                           alignItems: 'center',
                                             justifyContent: 'center',}}  >
@@ -123,6 +110,24 @@ export default function HowToBuy() {
 }
 
 const styles = {
+  aElements: {
+    width: '100%',
+    px: '1.5rem',
+    marginTop:'30px'
+  },
+  buttons: {
+    width: '100%',
+    margin: 0
+  },
+  container: {
+    fontFamily: 'Jost',
+    fontWeight: 300,
+    margin: 0,
+    fontSize: '17px', 
+    '@media screen and (max-width: 1215px)': {
+      fontSize: '15px',
+    },
+  },
   workflow: {
     backgroundColor: 'background_secondary',
     backgroundRepeat: `no-repeat`,

@@ -51,7 +51,6 @@ export default function SEO({
   ].concat(meta);
   return (
     <Head>
-      {console.log("Domain: " + domainName)}
       <title>{title}</title>
       {metaData.map(({ property, content }, i) => (
         <meta key={i} property={property} content={content} />

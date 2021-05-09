@@ -48,7 +48,6 @@ export default function IndexPage({domainName}) {
 }
 
 export async function getServerSideProps(context) {
-  console.log(context)
   const { req } = context;
   return {
     props: {

@@ -43,7 +43,7 @@ export default function NumberCard() {
       id='features'
     >
       <Container>
-        <SectionHeader slogan='' title='Stats' />
+        <SectionHeader slogan='' title='Stats'/>
 
         <Grid sx={styles.grid}>
           {data.map(item => (
@@ -55,7 +55,7 @@ export default function NumberCard() {
                 <a
                   sx={{
                    // fontWeight: '200px',
-                    color: '#000000',
+                    color: 'text',
                     display: 'flex',
                     alignItems: 'center',
                     fontSize: '18px'
@@ -121,7 +121,9 @@ const styles = {
     ],
   },
   card: {
-    background: 'rgb(0,146,136,0.5)',
+    background: 'linear-gradient(45deg, #1a1c25, #1f212c)',
+    boxShadow:  '10px -10px 35px #16171f, -10px 10px 35px #242733',
+    // background: 'rgb(0,146,136,0.5)',
     borderRadius: '11px',
     width: '135%',
     height: '130px',
@@ -137,8 +139,8 @@ const styles = {
   },
   number: {
     fontFamily: 'Jost',
-    fontWeight: 900,
-    fontSize: '25px',
-    color: '#B96E5F',
+    fontWeight: 500,
+    fontSize: '1.5rem',
+    color: 'primary',
   },
 }

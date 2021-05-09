@@ -38,5 +38,8 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
     "next-sitemap": "^1.6.9"
+  },
+  "resolutions": {
+    "hosted-git-info": ">=2.8.9"
   }
 }

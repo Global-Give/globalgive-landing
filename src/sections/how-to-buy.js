@@ -13,16 +13,16 @@ const data = [
     title: 'Buying BNB on Binance (for mobile)',
     btn1:  'Download PDF',
     link1: 'https://pdfhost.io/v/v~.wEPmOL_GlobalGive_Buying_BNB_on_Binance_Exchange.pdf',
-    btn2:  'Watch on Youtube',
-    link2:  'https://youtu.be/atfGsZY5sqo'
+    btn2:  'Video tutorial coming soon',
+    link2:  ''
   },
   {
     id: 2,
     title: 'Setting TrustWallet and loading with BNB(for mobile)',
     btn1: 'Download PDF',
     link1:'https://pdfhost.io/v/xr8yq.Usn_GlobalGive_Setting_up_TrustWallet.pdf',
-    btn2: 'Watch on Youtube',
-    link2:'https://youtu.be/BdWCVKINwKc'
+    btn2: 'Video tutorial coming soon',
+    link2:''
   },
   {
     id: 3,

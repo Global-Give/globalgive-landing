@@ -8,15 +8,14 @@ const faqs = [
     title: 'Who is the team?',
     contents: (
       <div>
-        The GlobalGive Founders and Project Team will continue to grow. It is a
-        requirement that if you want to be a team member of this project, then
-        you must reveal your identity. All of our team members and all of our
-        new additions will be added to the website so you can see for yourself
-        who each and every one of us are. MANY other tokens in this space have
-        dev teams that are choosing to remain anonymous. The GlobalGive Token
-        Team are proud of this project and we are here for the long term. We
-        feel that if you truly believe in what you are doing and are proud of
-        what you are doing then you should have nothing to hide.
+        The GlobalGive Founders and Project Team will continue to grow. It is a requirement 
+        that if you want to be a team member of this project, then you must reveal your identity
+        and doxx yourself within the team. MANY other tokens in this space have dev teams that
+        are choosing to remain anonymous. But the GlobalGive Token Team are proud of this project
+        which is why the founders are doxxed and have been revealed on the website since launch. 
+        You can see for yourself who each and every one of us are, and we are here for the long 
+        term! We feel that if you truly believe in what you are doing and are proud of what you 
+        are doing then you should have nothing to hide
       </div>
     ),
   },

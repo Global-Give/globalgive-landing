@@ -22,6 +22,10 @@ export default [
     label: 'Our Mission',
   },
   {
+    path: 'charity',
+    label: 'Charity',
+  },
+  {
     path: 'roadmap',
     label: 'Roadmap',
   },

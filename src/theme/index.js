@@ -16,6 +16,8 @@ export default {
     white: '#FFFFFF',
     dark: '#2F3142',
     crimson: '#DC143C',
+    orangutan: '#90402b',
+    jungleGreen: '#4e8a3e',
 
     // highlight	a background color for highlighting text
   },

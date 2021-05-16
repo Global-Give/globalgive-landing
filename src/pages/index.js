@@ -13,6 +13,7 @@ import WorkFlow from 'sections/workflow'
 import TestimonialCard from 'sections/testimonial'
 import SecurePayment from 'sections/secure-payment'
 import Package from 'sections/package'
+import Charity from 'sections/charity'
 import Faq from 'sections/faq'
 import ForCharity from 'sections/for-charity'
 import HowToBuy from 'sections/how-to-buy'
@@ -32,6 +33,7 @@ export default function IndexPage({domainName}) {
           <NumberCard />
           <PartnerSection />
           <ForCharity />
+          <Charity />
           <WorkFlow />
           {/* <TestimonialCard /> */}
           {/* <SecurePayment /> */}

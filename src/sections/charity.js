@@ -68,7 +68,7 @@ export default function PartnerSection() {
             }}
           >
             <a rel='noopener noreferrer' sx={styles.borderAnchor}>
-                <CopyToClipboard text=''>
+                <CopyToClipboard text='0x2f890D1cF6BD533CA0778D8701b002740d0A42aA'>
                   <Button
                     onClick={() => {
                       setCopyAddress(true)
@@ -94,7 +94,7 @@ export default function PartnerSection() {
                         justifyContent: 'center',
                       }}
                     >
-                      {CopyAddress ? 'COPIED' : 'Wallet Address Coming up'}
+                      {CopyAddress ? 'COPIED' : 'Copy Wallet Address'}
                     </Container>
                   </Button>
                 </CopyToClipboard>

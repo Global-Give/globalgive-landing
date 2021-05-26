@@ -8,8 +8,9 @@ export default function SectionHeader({title, slogan, isWhite}) {
         as='h2'
         sx={{
           
-          background: 'linear-gradient(180deg, #5A82F6 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(91.34deg, #2698EA 11.48%, #FFB176 53.97%, #ED5158 100.98%)',
-          backgroundClip: 'text',
+         // background: 'linear-gradient(180deg, #5A82F6 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(91.34deg, #2698EA 11.48%, #FFB176 53.97%, #ED5158 100.98%)',
+         background:'white', 
+         backgroundClip: 'text',
           '-webkit-background-clip': 'text',
           '-webkit-text-fill-color': '#0000',
           // color: isWhite ? 'white' : 'heading_secondary',

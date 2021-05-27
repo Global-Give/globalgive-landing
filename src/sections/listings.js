@@ -6,7 +6,7 @@ import SectionHeader from "components/section-header";
 import ImageBtnFeature from "components/image-btn-feature";
 import { useState } from "react";
 import Coinsbit from "assets/latestNews/coinsbit.png";
-import Pancakeswap from "assets/latestNews/Pancakeswap.png";
+import Pancakeswap from "assets/latestNews/pancakeswap.png";
 import Coingecko from "assets/latestNews/coingecko.png";
 
 const data = [

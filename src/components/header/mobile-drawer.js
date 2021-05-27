@@ -74,10 +74,25 @@ const MobileDrawer = () => {
             >
               Whitepaper
             </a>
+            <a
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              href="/charities"
+              sx={{
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              Charities
+            </a>
             {menuItems.map(({ path, label }, i) => (
               <Link
                 onClick={toggleHandler}
                 activeClass="active"
+                href='/#'
                 to={path}
                 spy={true}
                 smooth={true}
@@ -88,6 +103,20 @@ const MobileDrawer = () => {
                 {label}
               </Link>
             ))}
+             <a
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              href="/latestNews"
+              sx={{
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              Latest News
+            </a>
             <a href='https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x60e9880daef10e960da3c45b076dbdac4f111edf'
               target='_blank' 
               rel='noopener noreferrer'

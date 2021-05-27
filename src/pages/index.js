@@ -8,13 +8,12 @@ import Banner from 'sections/banner'
 import Feature from 'sections/feature'
 import PartnerSection from 'sections/partner'
 import WorkFlow from 'sections/workflow'
-import LatestNews from 'sections/latestNews'
-import Charity from 'sections/charity'
 import Faq from 'sections/faq'
 import ForCharity from 'sections/for-charity'
 import HowToBuy from 'sections/how-to-buy'
 import NumberCard from 'sections/number-card'
 import Team from 'sections/team'
+import Listings from 'sections/listings'
 
 export default function IndexPage({domainName}) {
   return (
@@ -24,13 +23,12 @@ export default function IndexPage({domainName}) {
           <SEO title='GlobalGive Token - Charity Token' domainName={domainName} />
           <Banner />
           {/* <KeyFeature /> */}
-          {/* <CoreFeature /> */}
-          <LatestNews/>
+          {/* <CoreFeature /> */}          
           <Feature />
+          <Listings/>
           <NumberCard />
           <PartnerSection />
           <ForCharity />
-          <Charity />
           <WorkFlow />
           {/* <TestimonialCard /> */}
           {/* <SecurePayment /> */}

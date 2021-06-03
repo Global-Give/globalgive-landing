@@ -61,7 +61,7 @@ const MobileDrawer = () => {
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             <a
-              activeClass="active"
+              activeclass="active"
               spy={true}
               smooth={true}
               offset={-70}
@@ -75,7 +75,7 @@ const MobileDrawer = () => {
               Whitepaper
             </a>
             <a
-              activeClass="active"
+              activeclass="active"
               spy={true}
               smooth={true}
               offset={-70}
@@ -91,7 +91,7 @@ const MobileDrawer = () => {
             {menuItems.map(({ path, label }, i) => (
               <Link
                 onClick={toggleHandler}
-                activeClass="active"
+                activeclass="active"
                 href='/#'
                 to={path}
                 spy={true}
@@ -104,7 +104,7 @@ const MobileDrawer = () => {
               </Link>
             ))}
              <a
-              activeClass="active"
+              activeclass="active"
               spy={true}
               smooth={true}
               offset={-70}

@@ -44,7 +44,7 @@ export default function Header({ className }) {
           </div>
           <Flex as="nav" sx={styles.nav}>
             <a
-              activeClass="active"
+              activeclass="active"
               spy={true}
               smooth={true}
               offset={-70}

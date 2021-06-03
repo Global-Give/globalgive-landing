@@ -11,12 +11,26 @@ import Orangutan from "assets/chairties/orangutan.jpg";
 const data = {
   title: " Orangutan Charity",
   subTitle: "Charity Projects",
-  paragraph: "Why has Global Give decided to support the Orangutans?",
-  description: `GlobalGive is going to make an impact with it's Charitable donations. We support all Charities, but felt it was right to start off by introducing our members to one of the most vitally critical times for one of the most beloved animals on the planet. As these species of ape are not seen by many of us, its hard to appreciate the danger they are in. It's at a critical point. This is not a joke. They are also an umbrella species as their survival is imperative to the survival of the forest and jungle they live in, but also the tens of thousands of other species that live in the area. Save the Orangutan and it all gets saved.
- Our first target is to reach a 1 million dollars of donations, so an entire jungle area of 500,000 acres can be sponsored for these amazing animals, but all of our donations are to be spent by these organisation in a way THEY see fit as they are the professionals that understand the delicate ecosystem.  
- Orangutan Charities, not only support the amazing Orangutan, but also supports the locals who work within this area and their families. This is also vital is it creates an environment where families can earn money for looking after these animals and not join logging and palm oil companies to survive.
- All of the species within the Jungle are protected by these organisations and we want you to feel free and ENCOURAGE you to donate a few GlobalGive tokens to there wallet directly.
- To do this please find the exact instructions on how to below:
+  paragraph: "WHY HAS GLOBALGIVE DECIDED TO SUPPORT THE ORANGUTANS?",
+  description: `
+  GlobalGive and our community of GlobalGiver's are making an impact with Charitable donations!  
+  We support all Charities, but felt it was right to start off by introducing our community to one of the most vitally-critical 
+  times for one of the most beloved animals on the planet. As these species of ape are not seen by many of us, it is hard to 
+  appreciate the danger they are in.
+  It is at a critical point. 
+  This is not a joke. 
+  Orangutans are also an umbrella species so their survival is not only imperative to the survival of the forest and jungle they 
+  live in, but also the tens of thousands of other species that live in the area.     
+  Save the Orangutan and it all gets saved.   
+  Our first target is to reach 1 million $GGIVE worth of donations. This target would ensure an area of jungle can be sponsored for 
+  these amazing animals!   
+  All of GlobalGive's donations will be distributed and spent by these charity organisations in a way THEY see fit as they are the 
+  professionals that understand the delicate ecosystem.   
+  Orangutan Charities not only support the amazing Orangutan, but also support the locals who work within this area and their 
+  families. This is also vital as it creates an environment where families can earn money for looking after these animals and
+   not join logging and palm oil companies to survive. All of the species within the Jungle are protected by these organisations 
+   and we want you to feel free and ENCOURAGE you to donate a few GlobalGive tokens to their wallet directly.   
+  To make a donation: copy the Orangutan wallet address below to send your $GGIVE Tokens directly from your $GGIVE wallet
   `,
 };
 

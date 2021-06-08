@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emotion/core": "^11.0.0",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "framer-motion": "^4.0.3",
     "globby": "^11.0.3",

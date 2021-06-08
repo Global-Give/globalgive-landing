@@ -13,33 +13,33 @@ export default [
   //   },
   //   label: 'Whitepaper'
   // },
-//   {
-//     path: 'features',
-//     label: 'Our Proposal',
-//   },
+  //   {
+  //     path: 'features',
+  //     label: 'Our Proposal',
+  //   },
   {
-    path: 'mission',
-    label: 'Our Mission',
+    path: "mission",
+    href: "/#mission",
+    label: "Our Mission",
   },
   {
-    path: 'charity',
-    label: 'Charity',
+    path: "roadmap",
+    href: "/#roadmap",
+    label: "Roadmap",
   },
   {
-    path: 'roadmap',
-    label: 'Roadmap',
+    path: "how-to-buy",
+    href: "/#how-to-buy",
+    label: "How to Buy",
   },
   {
-    path: 'how-to-buy',
-    label: 'How to Buy',
+    path: "faq",
+    href: "/#faq",
+    label: "FAQ",
   },
   {
-    path: 'faq',
-    label: 'FAQ',
+    path: "team",
+    href: "/#team",
+    label: "Team",
   },
-  {
-    path: 'team',
-    label: 'Team'
-  }
 ];
-

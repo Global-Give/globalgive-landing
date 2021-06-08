@@ -5,20 +5,15 @@ import theme from 'theme'
 import SEO from 'components/seo'
 import Layout from 'components/layout'
 import Banner from 'sections/banner'
-import KeyFeature from 'sections/key-feature'
-import CoreFeature from 'sections/core-feature'
 import Feature from 'sections/feature'
 import PartnerSection from 'sections/partner'
 import WorkFlow from 'sections/workflow'
-import TestimonialCard from 'sections/testimonial'
-import SecurePayment from 'sections/secure-payment'
-import Package from 'sections/package'
-import Charity from 'sections/charity'
 import Faq from 'sections/faq'
 import ForCharity from 'sections/for-charity'
 import HowToBuy from 'sections/how-to-buy'
 import NumberCard from 'sections/number-card'
 import Team from 'sections/team'
+import Listings from 'sections/listings'
 
 export default function IndexPage({domainName}) {
   return (
@@ -28,12 +23,12 @@ export default function IndexPage({domainName}) {
           <SEO title='GlobalGive Token - Charity Token' domainName={domainName} />
           <Banner />
           {/* <KeyFeature /> */}
-          {/* <CoreFeature /> */}
+          {/* <CoreFeature /> */}          
           <Feature />
+          <Listings/>
           <NumberCard />
           <PartnerSection />
           <ForCharity />
-          <Charity />
           <WorkFlow />
           {/* <TestimonialCard /> */}
           {/* <SecurePayment /> */}

@@ -8,7 +8,7 @@ import STYLES from './css/roadmap.module.css'
 import ArcIcon1 from 'assets/Arc1.svg'
 import ArcIcon2 from 'assets/Arc2.svg'
 import ArcIcon3 from 'assets/Arc3.svg'
-import globalIcon from 'assets/worldwide.svg'
+import globalIcon from 'assets/world.png'
 
 import ArrowOdd from 'assets/arrowOdd.png'
 import ArrowEven from 'assets/arrowEven.png'
@@ -24,22 +24,19 @@ export default function WorkFlow() {
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
-                    <img src={globalIcon} sx={{
-                        height: '50px',
-                        width: 'auto',
-                    }}></img>
+                    <img src={globalIcon} sx={styles.iconImg}></img>
                 </div>
                 <div>
-                  <Heading sx={styles.wrapper.title}>April 2021</Heading>
+                  
                   <Text sx={styles.wrapper.secondTitle}>The Crust</Text>
                 </div>
               </div>
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul><li>Selection and addition of first charities for donations</li></ul>
+                    <ul><li>Announcements of First Charity Donation and organisation</li></ul>
                     <ul><li>First donation completed within 30 days of token launch</li></ul>
-                    <ul><li>Price tracking various platforms</li></ul>
+                    <ul><li>Listed with Price tracking sites</li></ul>
                     <ul><li>Begin application process for exchange listings</li></ul>
                   </Text>
                 </div>
@@ -64,23 +61,20 @@ export default function WorkFlow() {
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
-                    <img src={globalIcon} sx={{
-                        height: '50px',
-                        width: 'auto',
-                    }}></img>
+                    <img src={globalIcon} sx={styles.iconImg}></img>
                 </div>
                 <div>
-                  <Heading sx={styles.wrapper.title}>May 2021</Heading>
+                  
                   <Text sx={styles.wrapper.secondTitle}>The Mantle</Text>
                 </div>
               </div>
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul><li>Enable monthly donation selection by the community </li></ul>
+                    <ul><li>Start of Community competitions – winners choose Charity of the month</li></ul>
                     <ul><li>Create charity HODLers foundation</li></ul>
-                    <ul><li>Charity organization cross promotion</li></ul>
-                    <ul><li>Move Global Give Token into its own mainnet</li></ul>
+                    <ul><li>Partnerships creating with several Charities</li></ul>
+                    <ul><li>Move GlobalGive Token into its own mainnet</li></ul>
                   </Text>
                 </div>
               </div>
@@ -104,13 +98,10 @@ export default function WorkFlow() {
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
-                    <img src={globalIcon} sx={{
-                        height: '50px',
-                        width: 'auto',
-                    }}></img>
+                    <img src={globalIcon} sx={styles.iconImg}></img>
                 </div>
                 <div>
-                  <Heading sx={styles.wrapper.title}>June 2021</Heading>
+                  
                   <Text sx={styles.wrapper.secondTitle}>Outer Core</Text>
                 </div>
               </div>
@@ -118,10 +109,11 @@ export default function WorkFlow() {
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul><li>Enable HODLer direct charity donation {' '}</li></ul>
-                    <ul><li>Enable users to write off donation activity within our ecosystem {' '}</li></ul>
-                    <ul><li>Work with Leonardo Di Caprio foundation for donations and cross promotion {' '}</li></ul>
-                    <ul><li>United Nations certification as a global charitable organization {' '}</li></ul>
+                    <ul><li>Enable HODLer direct charity donation with selected partners</li></ul>
+                    <ul><li>Enable users to write off donation activity within our ecosystem</li></ul>
+                    <ul><li>Start conversations with Leonardo Di Caprio foundation for donations and cross promotion</li></ul>
+                    <ul><li>United Nations certification as a global charitable organization</li></ul>
+                    <ul><li>Start working with several charity tokens on creating a ‘Charity Exchange’</li></ul>
                   </Text>
                 </div>
               </div>
@@ -145,21 +137,17 @@ export default function WorkFlow() {
             <div sx={styles.wrapper}>
               <div sx={{display: 'flex'}}>
                 <div sx={styles.icondiv}>
-                    <img src={globalIcon} sx={{
-                        height: '50px',
-                        width: 'auto',
-                    }}></img>
+                    <img src={globalIcon} sx={styles.iconImg}></img>
                 </div>
-                <div>
-                  <Heading sx={styles.wrapper.title}>July 2021</Heading>
+                <div>                  
                   <Text sx={styles.wrapper.secondTitle}>Inner Core</Text>
                 </div>
               </div>
               <div sx={styles.objectivediv}>
                 <div sx={styles.objectiveLine}>
                   <Text sx={styles.wrapper.objective}>
-                    <ul><li>Global Give will be the choice for Charity donations around the world with hundreds of charities using the Global Give token as a means to raise funds.  </li></ul>
-                    <ul><li>Global Give will establish itself as a pivotal  and critical crypto asset for decentralized donations worldwide. </li></ul>
+                    <ul><li>GlobalGive will be the choice for Charity donations around the world with hundreds of charities using the GlobalGive token as a means to raise funds.</li></ul>
+                    <ul><li>GlobalGive will establish itself as a pivotal and critical crypto asset for decentralized donations worldwide.</li></ul>
                     <ul><li>The founders and HOLDers will continue to work in saving millions from poverty, increasing education in areas that need it and helping people move up from living on the street. We strive to carry on the great works of all those environmentalists who we so proudly stand on the shoulders of.</li></ul>
                   </Text>
                 </div>
@@ -168,13 +156,17 @@ export default function WorkFlow() {
           </div>
     
         </Container>
-        <a href='#' rel='noopener noreferrer'>
-            <Button variant='outlinePrimary' aria-label='Get Started'>
+        <a href='#' rel='noopener noreferrer' sx={styles.mobileCentered}>
+            <Button variant='outlinePrimary' aria-label='Get Started' >
               <Container
                 sx={{
                   fontFamily: 'Jost',
                   fontWeight: 500,
                   fontSize: '20px',
+                  '@media screen and (max-width: 1215px)': {
+                    fontSize: '15px',
+                    width: '250px',
+                  },
                 }}
                 css={{
                   display: 'flex',
@@ -192,6 +184,14 @@ export default function WorkFlow() {
 }
 
 const styles = {
+  mobileCentered:{
+    '@media screen and (max-width: 380px)': {
+      paddingLeft: '30px'
+    },
+    '@media screen and (min-width: 385px) and (max-width: 480px)': {
+      paddingLeft: '50px'
+    },
+  },
   workflow: {
     backgroundColor: 'background_secondary',
     backgroundRepeat: `no-repeat`,
@@ -213,34 +213,6 @@ const styles = {
     //   zIndex: 0,
     // },
   },
-
-  // card: {
-  //   marginLeft: '4rem',
-  //   marginTop: '2rem',
-  //   width: '100%',
-  // },
-  // card: {
-  // display: 'flex',
-  // flexDirection: '',
-  // position: 'relative',
-  // textAlign: ['center', null, 'left'],
-  // width: ['100%', '100%', '100%'],
-  // mx: 'auto',
-  //   '&::before': {
-  //     position: 'absolute',
-  //     content: '""',
-  //     top: 0,
-  //     left: [0, null, null, null, null, 75, null, 100],
-  //     backgroundRepeat: `no-repeat`,
-  //     backgroundPosition: 'center center',
-  //     width: 180,
-  //     height: 57,
-  //     opacity: 0.3,
-  //     '@media screen and (max-width:1220px)': {
-  //       display: 'none',
-  //     },
-  //   },
-  // },
   arrow: {
     '@media screen and (max-width:600px)': {
       display: 'none',
@@ -248,26 +220,41 @@ const styles = {
     position: 'relative',
   },
 
+  iconImg: {
+    height: '100px',
+    width: 'auto',
+    paddingLeft: '30px',
+    '@media screen and (max-width: 800px)': {
+      height: '70px',      
+    },
+  },
+
   icondiv: {
-    width: ['50px', null, '60px', null, null, '70px'],
-    height: ['50px', null, '60px', null, null, '70px'],
+    width: ['100px', null, '60px', null, null, '50px'],
+    height: ['100px', null, '60px', null, null, '50px'],
     flexShrink: 0,
     borderRadius: [15, null, 23, null, null, 30],
-    backgroundColor: 'white',
+   // backgroundColor: 'white',
     display: 'flex',
     alignItems: 'center',
     mb: [5, null, null, null, null, 6],
-    mr: '7rem',
+    mr: '5rem',
     fontSize: [6, null, 7, null, null, '30px'],
     fontWeight: 700,
     justifyContent: 'center',
     color: '#234582',
+    '@media screen and (max-width: 800px)': {
+      width: ['50px', null, '50px', null, null, '50px'],
+      height: ['50px', null, '50px', null, null, '50px'],  
+      mr: '3rem',   
+    },
   },
 
   objectivediv: {
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
+    paddingBottom: '50px'
   },
 
   objectiveLine: {
@@ -299,12 +286,16 @@ const styles = {
     },
 
     secondTitle: {
-      fontSize: 6,
+      fontSize: 8,
       fontWeight: 600,
       lineHeight: 2,
       color: '#00D3BA',
       opacity: 0.65,
       pr: [0, null, null, null, null, 5],
+      '@media screen and (max-width: 800px)': {
+        fontSize: 6,
+        fontWeight: 400,
+      },
     },
 
     objective: {
@@ -324,5 +315,6 @@ const styles = {
       opacity: 0.65,
       pr: [0, null, null, null, null, 5],
     },
+   
   },
 }

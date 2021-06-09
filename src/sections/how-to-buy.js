@@ -1,42 +1,37 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
 import {jsx} from 'theme-ui'
-import {Container, Grid, Button} from 'theme-ui'
+import {Container, Grid, Button, Box} from 'theme-ui'
 import SectionHeader from 'components/section-header'
 import FeatureCard from 'components/feature-card.js'
 import Link from 'next/link'
 
+
 const data = [
   {
     id: 1,
-    text: 'How to buy BNB(YouTube Video link)',
-    link: 'https://youtu.be/atfGsZY5sqo'
+    title: 'Buying BNB on Binance (for mobile)',
+    btn1:  'Download PDF',
+    link1: 'https://pdfhost.io/v/v~.wEPmOL_GlobalGive_Buying_BNB_on_Binance_Exchange.pdf',
+    btn2:  'Video tutorial coming soon',
+    link2:  ''
   },
   {
     id: 2,
-    text: 'How to Buy BNB(downloadable PDF)',
-    link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf',
+    title: 'Setting TrustWallet and loading with BNB(for mobile)',
+    btn1: 'Download PDF',
+    link1:'https://pdfhost.io/v/xr8yq.Usn_GlobalGive_Setting_up_TrustWallet.pdf',
+    btn2: 'Video tutorial coming soon',
+    link2:''
   },
   {
     id: 3,
-    text: 'How to Load and use Trust Wallet onto your Phone (YouTube Video link)',
-    link: 'https://youtu.be/BdWCVKINwKc'
-  },
-  {
-    id: 4,
-    text: 'How to Load and use Trust Wallet onto your phone (downloadable PDF)',
-    link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf'
-  },
-  {
-    id: 5,
-    text: 'How to Buy GlobalGive on Pancake Swap (YouTube Video Link) ',
-    link: 'https://youtu.be/a8d9VBT--Hw'
-  },
-  {
-    id: 6,
-    text: 'How to Buy GlobalGive on pancake Swap (downloadable PDF)',
-    link: 'https://pdfhost.io/v/VoVlPe4AN_Download_Free_Guide_Pinterest_Pin.pdf'
-  },
+    title: 'Complete Guide to buying #GGIVE with BNB',
+    btn1: 'Download PDF',
+    link1:'https://pdfhost.io/v/9gqCxQ6iQ_GlobalGive_Complete_Guidepdf.pdf',
+    btn2: 'Video tutorial coming soon',
+    link2: ''
+  }, 
 ]
 
 export default function HowToBuy() {
@@ -49,43 +44,64 @@ export default function HowToBuy() {
       }} id='how-to-buy'>
       <Container>
         <SectionHeader slogan='' title='How to buy' />
-        <p sx={{marginTop: '-5rem'}}>If you are already set up with TrustWallet and have BNB ready, simply use the <a href="#features" rel='noopener noreferrer' sx={{color: '#fff'}}>GlobalGive Token contract address</a> on PancakeSwap V2 to purchase GlobalGive Token </p>
-        <div sx={{display: 'flex', justifyContent: 'center', width: '100%', marginTop: '1.5rem', marginBottom: '2.5rem'}}>
-            <div sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}}>
-                <p>Tips for ensuring your transactions go through:</p>
-                <ul sx={{textAlign:'center', marginTop: '-1rem', listStyle: 'none'}}>
-                    <li>- Increase the slippage </li>
-                    <li>- Use round values of coins</li>
-                    <li>- Use smaller value of coins</li>
+        <p sx={{marginTop: '-5rem'}}>If you already have Smart Chain BNB in a Trust Wallet simply use the  <a href="#features" rel='noopener noreferrer' sx={{color: '#fff'}}>GlobalGive Token contract address</a> on PancakeSwap V2 to purchase GlobalGive Tokens. </p>
+          <div sx={styles.howToText}>
+            <p sx={{marginTop: '2rem', fontSize:'20px', color:'#ffff', fontWeight:'300'}}>How to buy using TrustWallet and PancakeSwap</p>
+            <ol>
+              <li>Download TrustWallet app from Google Play or App Store and set up your wallet.</li>
+              <li>Activate BNB coin in your wallet - choosing the Smart Chain Token </li>
+              <li>Purchase BNB from Binance or your chosen Exchange.</li>
+              <li>Using BEP20 network, send your BNB to your Wallet and then swap it to Binance Smart Chain</li>
+              <li>Click DApps tab in TrustWallet. Scroll down and select PancakeSwap
+                <ul>
+                  <li>iOS users: To enable DApps Browser:</li>
+                  <li>Type trust://browser_enable into Safari and tap Go. Tap Open when prompted</li>
+                  <li>For iOS users you’ll want to Enable DApp trust://browser_enable</li>
                 </ul>
-            </div>
-        </div>
-        <Grid sx={styles.grid}>
+              </li>
+              <li>Select PancakeSwap V2.
+                <ul>
+                  <li>In the ‘From’ box , ensure BNB is selected</li>
+                  <li>In the ‘To’ box, tap select a currency. Enter the GlobalGive contract address and tap Add</li>
+                </ul>
+              </li>
+              <li>Adjust slippage %. to 11 – 13%. This can be adjusted by tapping the settings icon in the Exchange box </li>
+              <li>Choose the amount of BNB you want to swap to GlobalGive and hit Swap</li>            
+            </ol>       
+            <p>Your GlobalGive balance will automatically be added to your TrustWallet. Head back to your wallet to see your tokens. You may need to activate GlobalGive token by selecting the toggle icon in the top right corner and entering the contract address into ‘Search Tokens’.</p>
+            <p sx={{marginTop: '2rem', fontSize:'20px', color:'#e5e5e5', fontWeight:'300'}}> Helpful guides meant to assist you if you're new to crypto or need a little extra guidance</p>
+          </div> 
+        <Grid sx={styles.grid}> 
           {data.map(item => (
-            <div sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
-                <a href={item.link} 
-                    target='_blank' 
-                    rel='noopener noreferrer'
-                >
-                    <Button variant='outlinePrimary' aria-label={item.text}>
-                        <Container
-                            sx={{
-                                fontFamily: 'Jost',
-                                fontWeight: 500,
-                                fontSize: '20px',
-                            }}
-                            css={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                            }}
-                            >
-                            BUY
+            <Box>
+              <div sx={{display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+                <a sx={{height:'110px'}}>
+                  <p sx={{fontSize:'20px', color:'#e5e5e5', fontWeight:'300'}}>{item.title}</p>
+                </a>
+                <a href={item.link1}  target='_blank' rel='noopener noreferrer' sx={styles.aElements} >
+                    <Button variant='outlinePrimary' aria-label={item.title} sx={styles.buttons} >
+                        <Container sx={styles.container}
+                                   css={{ display: 'flex',
+                                          alignItems: 'center',
+                                          justifyContent: 'center',}}  >
+                            {item.btn1}
                         </Container>
                     </Button>
                 </a>
-                <FeatureCard text={item.text} />
+                <a href={item.link2}  target='_blank' rel='noopener noreferrer' sx={styles.aElements}>
+                    <Button variant='outlinePrimary' aria-label={item.title} sx={styles.buttons} >
+                        <Container sx={styles.container}
+                                   css={{ display: 'flex',
+                                          alignItems: 'center',
+                                            justifyContent: 'center',}}  >
+                            {item.btn2}
+                        </Container>
+                    </Button>
+                </a>
+                
             </div>
+
+            </Box>
           ))}
         </Grid>
       </Container>
@@ -94,6 +110,24 @@ export default function HowToBuy() {
 }
 
 const styles = {
+  aElements: {
+    width: '100%',
+    px: '1.5rem',
+    marginTop:'30px'
+  },
+  buttons: {
+    width: '100%',
+    margin: 0
+  },
+  container: {
+    fontFamily: 'Jost',
+    fontWeight: 300,
+    margin: 0,
+    fontSize: '17px', 
+    '@media screen and (max-width: 1215px)': {
+      fontSize: '15px',
+    },
+  },
   workflow: {
     backgroundColor: 'background_secondary',
     backgroundRepeat: `no-repeat`,
@@ -138,4 +172,12 @@ const styles = {
       'repeat(3,1fr)',
     ],
   },
+  howToText:{
+    display:'block', 
+    paddingLeft:'100px',
+    '@media screen and (max-width: 768px)': {
+      paddingLeft: '0px'
+  }
+    
+  }
 }

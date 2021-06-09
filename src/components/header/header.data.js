@@ -13,48 +13,33 @@ export default [
   //   },
   //   label: 'Whitepaper'
   // },
-//   {
-//     path: 'features',
-//     label: 'Our Proposal',
-//   },
+  //   {
+  //     path: 'features',
+  //     label: 'Our Proposal',
+  //   },
   {
-    path: 'mission',
-    label: 'Our Mission',
+    path: "mission",
+    href: "/#mission",
+    label: "Our Mission",
   },
   {
-    path: 'roadmap',
-    label: 'Roadmap',
+    path: "roadmap",
+    href: "/#roadmap",
+    label: "Roadmap",
   },
   {
-    path: 'how-to-buy',
-    label: 'How to Buy',
+    path: "how-to-buy",
+    href: "/#how-to-buy",
+    label: "How to Buy",
   },
   {
-    path: 'faq',
-    label: 'FAQ',
+    path: "faq",
+    href: "/#faq",
+    label: "FAQ",
+  },
+  {
+    path: "team",
+    href: "/#team",
+    label: "Team",
   },
 ];
-
-
-// {
-//   path: 'home',
-//   label: 'Home',
-// },
-// {
-//   path: 'token',
-//   label: 'Token',
-// },
-// {
-//   path: 'roadmap',
-//   label: 'Roadmap',
-// },
-// {
-//   path: 'news',
-//   label: 'News',
-// },
-
-// {
-//   path: 'about us',
-//   label: 'About Us',
-// }
-// ];

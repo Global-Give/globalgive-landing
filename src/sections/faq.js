@@ -8,15 +8,14 @@ const faqs = [
     title: 'Who is the team?',
     contents: (
       <div>
-        The GlobalGive Founders and Project Team will continue to grow. It is a
-        requirement that if you want to be a team member of this project, then
-        you must reveal your identity. All of our team members and all of our
-        new additions will be added to the website so you can see for yourself
-        who each and every one of us are. MANY other tokens in this space have
-        dev teams that are choosing to remain anonymous. The GlobalGive Token
-        Team are proud of this project and we are here for the long term. We
-        feel that if you truly believe in what you are doing and are proud of
-        what you are doing then you should have nothing to hide.
+        The GlobalGive Founders and Project Team will continue to grow. It is a requirement 
+        that if you want to be a team member of this project, then you must reveal your identity
+        and doxx yourself within the team. MANY other tokens in this space have dev teams that
+        are choosing to remain anonymous. But the GlobalGive Token Team are proud of this project
+        which is why the founders are doxxed and have been revealed on the website since launch. 
+        You can see for yourself who each and every one of us are, and we are here for the long 
+        term! We feel that if you truly believe in what you are doing and are proud of what you 
+        are doing then you should have nothing to hide
       </div>
     ),
   },
@@ -27,12 +26,12 @@ const faqs = [
       <div>
         There is no single person that can access these wallets. The team has
         created a security protocol in which none of these funds can be accessed
-        unless 4 out of the 5 board members separately authorize a withdraw of
+        unless 4 out of the 5 board members separately authorise a withdrawal of
         the funds. The 5 board members are the founders of the project. They are
-        located in the US, UK and Argentina. Furthermore, the Charity Donation
-        Wallet will have a mechanic that will only allow a monthly withdraw
-        limit, that be exclusively designated for donations. All of the wallet
-        activity can be tracked in BSCScan and we will always be excited to
+        located in the US, UK and France. Furthermore, the Charity Donation
+        Wallet will have a mechanic that will only allow a monthly withdrawal
+        limit, that exclusively designated for donations. All of the wallet
+        activity can be tracked on BSCScan and we will always be excited to
         share with the community what we are using the funds from these wallets
         for.
       </div>
@@ -42,7 +41,7 @@ const faqs = [
     title: `Are you doing and Airdrop?    `,
     contents: (
       <div>
-        Yes, an initial one time air drop of 1000 tokens to the first 100
+        Yes, an initial one time air drop of 10 000  tokens to the first 100
         members to join the project will be executed.
       </div>
     ),
@@ -124,15 +123,12 @@ const faqs = [
     title: ` Is this safe to invest in? / can this be rug pulled?`,
     contents: (
       <div>
-        This project is 100% safe to invest in. When you add tokens and then add
-        liquidity to those tokens, you receive something called an LP-Token, or
-        Liquidity Provider token, in exchange. This allows you to remove the
-        liquidity at any time, which is how rug pulls happen. Without the
-        LP-tokens, you can’t remove the liquidity, which means you can’t rug
-        pull. The GlobalGive Team sent our LP-Tokens to a "burn address" so they
-        can’t be accessed or recovered. This is a method called “burning
-        liquidity”, and it helps ensure the safety and stability of a project
-        like ours.
+        This project is 100% safe to invest in. When you add tokens and then add liquidity to those tokens, 
+        you receive something called an LP-Token, or Liquidity Provider token, in exchange. This allows you 
+        to remove the liquidity at any time, which is how rug pulls happen. Without the LP-tokens, you can’t 
+        remove the liquidity, which means you can’t rug pull. The GlobalGive Team will be putting a timed 
+        lock on our LP Tokens so they can not be accessed. This is a much preferable to the burn method because
+         it gives the team more options to protect the tokens value in the event that the defi exchange has any kind of issues.
       </div>
     ),
   },

@@ -43,7 +43,7 @@ export default function Banner() {
     setVideoOpen(true)
   }
   return (
-    <section sx={styles.banner} id='home'>
+    <section sx={styles.banner} id='home' sx={{variant: 'section.feature'}}>
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading
@@ -60,7 +60,7 @@ export default function Banner() {
           The Token of Choice for Global Charities
           </Text>
           <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
-          GlobalGive is a deflationary token built on the Binance Smart Chain. Investing in this token does not only grow your wealth, but, hopefully, makes the world a better place, as we donate a percentage of proceeds to a charity to be determined every month. GlobalGive is therefore a Rotatory Charity Token represents a ground-breaking option for Charities to raise funds in an ever changing world.
+          GlobalGive is a deflationary token built on the Binance Smart Chain. Investing in this token does not only grow your wealth, but hopefully makes the world a better place, as we donate a percentage of proceeds to a charity to be determined every month. GlobalGive is therefore a rotatory Charity Token representing a ground-breaking option for Charities to raise funds in an ever changing world.
           </Text>
           <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
           Invest in the world while investing in your future!
@@ -72,12 +72,16 @@ export default function Banner() {
           </Text>
           <Flex sx={styles.buttonsContainer}>
             <a href='#features' rel='noopener noreferrer'>
-              <Button variant='defaultBtn' aria-label='Get Started'>
+              <Button variant='outlinePrimary' aria-label='Get Started'>
                 <Container
                   sx={{
                     fontFamily: 'Jost',
                     fontWeight: 500,
                     fontSize: '20px',
+                    '@media screen and (max-width: 1215px)': {
+                      fontSize: '15px',
+                      width: '250px',
+                    },
                   }}
                   css={{
                     display: 'flex',
@@ -89,21 +93,12 @@ export default function Banner() {
                 </Container>
               </Button>
             </a>
-            <a href='#for-charity' rel='noopener noreferrer'>
+            <a href='#for-charity' rel='noopener noreferrer' sx={styles.charityA}>
               <Button variant='outlinePrimary' aria-label='Get Started'>
                 <Container
-                  sx={{
-                    fontFamily: 'Jost',
-                    fontWeight: 500,
-                    fontSize: '20px',
-                  }}
-                  css={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
+                  sx={styles.forCharityBtn}
                 >
-                  For Charity
+                  For Charities
                 </Container>
               </Button>
             </a>
@@ -125,12 +120,31 @@ export default function Banner() {
 }
 
 const styles = {
+  forCharityBtn:{
+    fontFamily: 'Jost',
+    fontWeight: 500,
+    fontSize: '20px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center', 
+    '@media screen and (max-width: 1215px)': {
+      fontSize: '15px',
+      width: '250px',
+    },   
+  },
+
+  charityA:{
+    '@media screen and (max-width: 480px)': {
+      marginTop: '40px'
+    },
+  },
+
   banner: {
     alternateLogo: {
       color: 'white',
     },
     overflow: ['hidden', 'initial', null, 'hidden'],
-
+    
     borderBottomRightRadius: [100, 150, null, null, null, 250],
     pt: ['150px', null, null, null, null, null, '140px', '130px'],
     pb: ['100px', null, null, '110px', null, 10, '150px'],
@@ -138,6 +152,10 @@ const styles = {
     container: {
       display: 'flex',
       justifyContent: 'center',
+      marginBottom:'-120px',
+      '@media screen and (max-width: 1024px)': {
+        marginTop: '140px'
+      },
     },
     bgImage: {
       pointerEvents: 'none',

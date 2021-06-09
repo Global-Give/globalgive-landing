@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Button} from 'theme-ui'
 import { Box } from 'theme-ui';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
@@ -6,29 +7,29 @@ import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaGithubAlt,
-  FaDribbble,
-} from 'react-icons/fa';
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoReddit,
+  IoLogoYoutube
+} from 'react-icons/io5';
 import menuItems from './header.data';
 
 const social = [
   {
-    path: '/',
-    icon: <FaFacebookF />,
+    path: 'https://www.twitter.com/globalgivetoken',
+    Icon: IoLogoTwitter,
   },
   {
-    path: '/',
-    icon: <FaTwitter />,
+    path: 'https://www.instagram.com/globalgivetoken/',
+    Icon: IoLogoInstagram,
   },
   {
-    path: '/',
-    icon: <FaGithubAlt />,
+    path: 'https://www.reddit.com/r/globalgive/',
+    Icon: IoLogoReddit,
   },
   {
-    path: '/',
-    icon: <FaDribbble />,
+    path: 'https://www.youtube.com/channel/UCOv_Op-b4KWOcubauyYjg-g',
+    Icon: IoLogoYoutube,
   },
 ];
 
@@ -60,13 +61,12 @@ const MobileDrawer = () => {
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             <a
-              activeClass="active"
+              activeclass="active"
               spy={true}
               smooth={true}
               offset={-70}
-              duration={500}
-              href="#"
-              href="https://google.com"
+              duration={500}     
+              href="https://pdfhost.io/v/gF29NitGV_GlobalGive_Whitepaper.pdf"
               rel="noopener noreferrer"
               target="_blank"
               sx={styles.item}
@@ -74,10 +74,25 @@ const MobileDrawer = () => {
             >
               Whitepaper
             </a>
+            <a
+              activeclass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              href="/charities"
+              sx={{
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              Charities
+            </a>
             {menuItems.map(({ path, label }, i) => (
               <Link
                 onClick={toggleHandler}
-                activeClass="active"
+                activeclass="active"
+                href='/#'
                 to={path}
                 spy={true}
                 smooth={true}
@@ -88,13 +103,57 @@ const MobileDrawer = () => {
                 {label}
               </Link>
             ))}
+             <a
+              activeclass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              href="/latestNews"
+              sx={{
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              Latest News
+            </a>
+            <a href='https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x60e9880daef10e960da3c45b076dbdac4f111edf'
+              target='_blank' 
+              rel='noopener noreferrer'
+              sx={{
+                height: "min-content"
+              }}
+            >
+              <Button
+                className='donate__btn'
+                variant='secondary'
+                aria-label='Buy'
+                sx={{
+                  marginTop: '20px',
+                }}
+              >
+                Buy $GGIVE
+              </Button>
+            </a>
           </Box>
 
           <Box sx={styles.menuFooter}>
             <Box sx={styles.social}>
-              {social.map(({ path, icon }, i) => (
+              {social.map(({ path, Icon }, i) => (
                 <Box as="span" key={i} sx={styles.social.icon}>
-                  <Link to={path}>{icon}</Link>
+                  <a 
+                    href={path}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    sx={{
+                      color: 'white',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    <Icon style={{
+                      'color': 'grey'
+                    }} />
+                  </a>
                 </Box>
               ))}
             </Box>
@@ -148,6 +207,18 @@ const styles = {
   },
 
   menu: {
+    ".donate__btn": {
+      mr: 0,
+      ml: 0,
+      borderColor: 'primary',
+      color: 'primary',
+      width: "100%",
+      '&:hover': {
+        boxShadow: 'rgba(0, 211, 186, 0.37) 0px 9px 20px -5px',
+        backgroundColor: 'primary',
+        color: 'white',
+      },
+    },
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
@@ -181,6 +252,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: '20px',
 
     icon: {
       display: 'flex',

@@ -65,11 +65,11 @@ export default function Banner() {
           <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
           Invest in the world while investing in your future!
           </Text>
-          <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
+          {/* <Text as='p' variant='heroSecondary' sx={styles.banner.description}>
             Hold <Image src={AlternateGlobalGiveLogo} sx={{height: '15px'}} />
             <span sx={styles.banner.alternateLogo}> GlobalGive</span>, change
             the world!
-          </Text>
+          </Text> */}
           <Flex sx={styles.buttonsContainer}>
             <a href='#features' rel='noopener noreferrer'>
               <Button variant='outlinePrimary' aria-label='Get Started'>

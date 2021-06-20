@@ -8,13 +8,51 @@ import { useState } from "react";
 import Coinsbit from "assets/latestNews/coinsbit.png";
 import Pancakeswap from "assets/latestNews/pancakeswap.png";
 import Coingecko from "assets/latestNews/coingecko.png";
+import Bogged from 'assets/latestNews/bogged.png'
+import Bsc from 'assets/latestNews/bscscan.jpeg'
+import BigOne from 'assets/latestNews/bigone.jpeg'
+import Blockfolio from 'assets/latestNews/blockfolio.jpeg'
+import CoinMarket from 'assets/latestNews/coinmarketcap.jpeg'
 
 const data = [
+  {
+    logoImage: BigOne,
+    logoDescription: "BigONE",
+    btnName: "Access BigONE",
+    btnURL: "https://big.one/cn/trade/GGIVE-USDT",
+  },  
+  {
+    logoImage: Pancakeswap,
+    logoDescription: "Pancakeswap logo",
+    btnName: "Access Pancakeswap",
+    btnURL: "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x60e9880daef10e960da3c45b076dbdac4f111edf",
+  },
   {
     logoImage: Coinsbit,
     logoDescription: "Coinsbit logo",
     btnName: "Register to Coinsbit",
     btnURL: "https://coinsbit.io/register",
+  },
+];
+
+const track = [
+  {
+    logoImage: Bsc,
+    logoDescription: "BSCscan",
+    btnName: "Access BSCscan",
+    btnURL: "https://bscscan.com/token/0x60e9880daef10e960da3c45b076dbdac4f111edf",
+  },
+  {
+    logoImage: Blockfolio,
+    logoDescription: "Blockfolio",
+    btnName: "Access Blockfolio",
+    btnURL: "https://blockfolio.com/coin/GGIVE",
+  },
+  {
+    logoImage: CoinMarket,
+    logoDescription: "CoinMarketCap",
+    btnName: "Access CoinMarketCap",
+    btnURL: "https://coinmarketcap.com/currencies/globalgive/",
   },
   {
     logoImage: Coingecko,
@@ -23,10 +61,10 @@ const data = [
     btnURL: "https://www.coingecko.com/en/coins/globalgive",
   },
   {
-    logoImage: Pancakeswap,
-    logoDescription: "Pancakeswap logo",
-    btnName: "Access Pancakeswap",
-    btnURL: "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x60e9880daef10e960da3c45b076dbdac4f111edf",
+    logoImage: Bogged,
+    logoDescription: "Bogged",
+    btnName: "Access Bogged",
+    btnURL: "https://charts.bogged.finance/?token=0x60e9880DAeF10E960dA3c45b076dbdAc4f111Edf",
   },
 ];
 export default function Listings() {
@@ -37,7 +75,7 @@ export default function Listings() {
       id="listings"
     >
       <Container sx={{ paddingTop: "20px" }}>
-        <SectionHeader title="Listings" />
+        <SectionHeader title="Track Us On:" />
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <ImageBtnFeature
@@ -45,6 +83,17 @@ export default function Listings() {
               logoDescription={item.logoDescription}
               btnName={item.btnName}
               btnURL={item.btnURL}              
+            />
+          ))}
+        </Grid>
+        <SectionHeader title="Buys Us On" />
+        <Grid sx={styles.grid}>
+          {track.map((item) => (
+            <ImageBtnFeature
+              logoImage={item.logoImage}
+              logoDescription={item.logoDescription}
+              btnName={item.btnName}
+              btnURL={item.btnURL}          
             />
           ))}
         </Grid>
@@ -75,6 +124,5 @@ const styles = {
       null,
       'repeat(3,1fr)',
     ],
-    
   },
 };

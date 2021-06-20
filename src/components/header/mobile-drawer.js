@@ -70,7 +70,7 @@ const MobileDrawer = () => {
               rel="noopener noreferrer"
               target="_blank"
               sx={styles.item}
-              style={{'color': 'white', 'text-decoration': 'none'}}
+              style={{'color': '#fff', 'text-decoration': 'none'}}
             >
               Whitepaper
             </a>
@@ -82,9 +82,10 @@ const MobileDrawer = () => {
               duration={500}
               href="/charities"
               sx={{
-                color: "white",
+                color: "#fff",
                 textDecoration: "none",
               }}
+              style={{'color': '#fff', 'text-decoration': 'none'}}
             >
               Charities
             </a>
@@ -99,6 +100,7 @@ const MobileDrawer = () => {
                 offset={-70}
                 duration={500}
                 key={i}
+                style={{'color': '#fff', 'text-decoration': 'none'}}
               >
                 {label}
               </Link>
@@ -111,9 +113,10 @@ const MobileDrawer = () => {
               duration={500}
               href="/latestNews"
               sx={{
-                color: "white",
+                color: "#fff",
                 textDecoration: "none",
               }}
+              style={{'color': '#fff', 'text-decoration': 'none'}}
             >
               Latest News
             </a>
@@ -146,7 +149,7 @@ const MobileDrawer = () => {
                     rel="noopener noreferrer"
                     target="_blank"
                     sx={{
-                      color: 'white',
+                      color: '#fff',
                       textDecoration: 'none'
                     }}
                   >
@@ -166,7 +169,7 @@ const MobileDrawer = () => {
 
 const styles = {
   item: {
-    color: 'white',
+    color: '#fff',
     textDecoration: 'none'          
   },
   handler: {
@@ -216,7 +219,7 @@ const styles = {
       '&:hover': {
         boxShadow: 'rgba(0, 211, 186, 0.37) 0px 9px 20px -5px',
         backgroundColor: 'primary',
-        color: 'white',
+        color: '#fff',
       },
     },
     width: '100%',
@@ -273,7 +276,7 @@ const styles = {
   },
 
   button: {
-    color: 'white',
+    color: '#fff',
     fontSize: '14px',
     fw: '700',
     height: '45px',

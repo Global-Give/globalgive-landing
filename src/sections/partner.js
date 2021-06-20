@@ -15,7 +15,14 @@ const data = {
     
     We are doing all of the above whilst rewarding investors for simply holding $GGIVE and providing increased investor protection measures.
     
-    Hold GlobalGive, change the world!`,
+    Hold GlobalGive, change the world!
+
+    We are here to disrupt an archaic system and replace it with a model that benefits investors, charities and the donators in a much better way. 
+
+    We see cryptocurrency as the future and we have positioned ourselves to be the token of choice for global charities whereby donations can be made in $GGIVE from anyone around the world to any charity.
+
+    By using our innovative platform to create longterm partnerships, global charities will have an ongoing means of fundraising and donation drives via $GGIVE providing a co-beneficial financial ecosystem in 
+    `,
 }
 
 export default function PartnerSection() {

@@ -27,7 +27,7 @@ export default function NumberCard() {
     {
       id: 3,
       text: 'Number of Holders ',
-      number: '3,760',
+      number: '3,800',
       icon: '💎🙌',
       img: null
     },

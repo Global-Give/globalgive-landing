@@ -32,7 +32,8 @@ const styles = {
     paddingLeft:'20px',
     "@media screen and (max-width: 1340px)": {
       paddingLeft:'30px',
-    }
+    },
+    height: '76px'
   },
   image: {
     "@media screen and (max-width: 1215px)": {

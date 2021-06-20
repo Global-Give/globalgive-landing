@@ -1,6 +1,6 @@
 /**  @jsxRuntime classic **/
 /** @jsx jsx */
-import {jsx, Container, Box, Flex} from 'theme-ui'
+import {jsx, Container, Box, Flex, Button} from 'theme-ui'
 import TextFeature from 'components/text-feature'
 import Image from 'components/image'
 import Logo from 'assets/logos/gg_icon.svg'
@@ -27,6 +27,16 @@ const data = {
       <a css={{color: '#fff', fontSize: '18px'}} href='mailto:Charity@globalgive.finance? subject=Reaching out concerning for charity'>
         charity@globalgive.finance
       </a>
+			<div>
+				<a href='/charities' rel='noopener noreferrer'>
+					<Button variant='outlinePrimary' aria-label='Get Started'>
+						<Container
+						>
+							View our partner charities here
+						</Container>
+					</Button>
+				</a>
+			</div>
     </div>
   ),
 }

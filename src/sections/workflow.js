@@ -156,7 +156,7 @@ export default function WorkFlow() {
           </div>
     
         </Container>
-        <a href='#' rel='noopener noreferrer' sx={styles.mobileCentered}>
+        <a target="_blank" href='https://pdfhost.io/v/B596DN.8U_GlobalGive_Detailed_Road_Map.pdf' rel='noopener noreferrer' sx={styles.mobileCentered}>
             <Button variant='outlinePrimary' aria-label='Get Started' >
               <Container
                 sx={{

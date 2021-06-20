@@ -13,8 +13,8 @@ const data = [
     title: 'Buying BNB on Binance (for mobile)',
     btn1:  'Download PDF',
     link1: 'https://pdfhost.io/v/v~.wEPmOL_GlobalGive_Buying_BNB_on_Binance_Exchange.pdf',
-    btn2:  'Video tutorial coming soon',
-    link2:  ''
+    btn2:  'Watch video tutorial',
+    link2:  'https://youtu.be/AjIsqkNFx1c'
   },
   {
     id: 2,
@@ -29,8 +29,8 @@ const data = [
     title: 'Complete Guide to buying #GGIVE with BNB',
     btn1: 'Download PDF',
     link1:'https://pdfhost.io/v/9gqCxQ6iQ_GlobalGive_Complete_Guidepdf.pdf',
-    btn2: 'Video tutorial coming soon',
-    link2: ''
+    btn2: 'Watch video tutorial',
+    link2: 'https://youtu.be/Gw_lbMiVYwI'
   }, 
 ]
 

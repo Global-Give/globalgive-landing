@@ -13,7 +13,7 @@ export default function ImageBtnFeature({
       {btnName && (
         <Link href={btnURL} variant="default">
           <Button variant="imgButton" aria-label={btnName} sx={styles.button}>
-            <img src={logoImage} alt={logoDescription} sx={styles.image}></img>
+            <img src={logoImage} alt={logoDescription} sx={{height: "100%", width: '100%'}}></img>
           </Button>
         </Link>
       )}
@@ -33,7 +33,6 @@ const styles = {
     "@media screen and (max-width: 1340px)": {
       paddingLeft:'30px',
     },
-    height: '76px'
   },
   image: {
     "@media screen and (max-width: 1215px)": {

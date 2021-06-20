@@ -77,23 +77,24 @@ export default function Listings() {
       <Container sx={{ paddingTop: "20px" }}>
         <SectionHeader title="Track Us On:" />
         <Grid sx={styles.grid}>
-          {data.map((item) => (
-            <ImageBtnFeature
-              logoImage={item.logoImage}
-              logoDescription={item.logoDescription}
-              btnName={item.btnName}
-              btnURL={item.btnURL}              
-            />
-          ))}
-        </Grid>
-        <SectionHeader title="Buys Us On" />
-        <Grid sx={styles.grid}>
           {track.map((item) => (
             <ImageBtnFeature
               logoImage={item.logoImage}
               logoDescription={item.logoDescription}
               btnName={item.btnName}
-              btnURL={item.btnURL}          
+              btnURL={item.btnURL}        
+              sx= {{width: '200px', height: '100px'}}  
+            />
+          ))}
+        </Grid>
+        <SectionHeader title="Buy Us On:" />
+        <Grid sx={styles.grid}>
+          {data.map((item) => (
+            <ImageBtnFeature
+              logoImage={item.logoImage}
+              logoDescription={item.logoDescription}
+              btnName={item.btnName}
+              btnURL={item.btnURL}     
             />
           ))}
         </Grid>

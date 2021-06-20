@@ -5,130 +5,161 @@ import SectionHeader from 'components/section-header'
 import Accordion from 'components/accordion/accordion'
 const faqs = [
   {
-    title: 'Who is the team?',
-    contents: (
-      <div>
-        The GlobalGive Founders and Project Team will continue to grow. It is a requirement 
-        that if you want to be a team member of this project, then you must reveal your identity
-        and doxx yourself within the team. MANY other tokens in this space have dev teams that
-        are choosing to remain anonymous. But the GlobalGive Token Team are proud of this project
-        which is why the founders are doxxed and have been revealed on the website since launch. 
-        You can see for yourself who each and every one of us are, and we are here for the long 
-        term! We feel that if you truly believe in what you are doing and are proud of what you 
-        are doing then you should have nothing to hide
-      </div>
-    ),
-  },
-  {
-    title:
-      'What assurance do I have that the project development wallet and charity wallet will not be rug pulled?',
-    contents: (
-      <div>
-        There is no single person that can access these wallets. The team has
-        created a security protocol in which none of these funds can be accessed
-        unless 4 out of the 5 board members separately authorise a withdrawal of
-        the funds. The 5 board members are the founders of the project. They are
-        located in the US, UK and France. Furthermore, the Charity Donation
-        Wallet will have a mechanic that will only allow a monthly withdrawal
-        limit, that exclusively designated for donations. All of the wallet
-        activity can be tracked on BSCScan and we will always be excited to
-        share with the community what we are using the funds from these wallets
-        for.
-      </div>
-    ),
-  },
-  {
-    title: `Are you doing and Airdrop?    `,
-    contents: (
-      <div>
-        Yes, an initial one time air drop of 10 000  tokens to the first 100
-        members to join the project will be executed.
-      </div>
-    ),
-  },
-  {
-    title: ` Did you do a Presale?`,
-    contents: (
-      <div>
-        Yes, the Presale will allocate a soft cap of 20% of the supply with a
-        Hard Cap of 30% of the total supply. This is to provide plenty of
-        Liquidity to the pool at launch so we can have a more stable price
-        moving forward. This also helps fulfill listing requirements for Coin
-        Gecko.
-      </div>
-    ),
-  },
-  {
-    title: ` How will you do the donations? `,
-    contents: (
-      <div>
-        We will initially make donations to charities that already accept
-        cryptocurrency. If we find a charity that we want to donate to, who do
-        not yet have the ability to accept cryto currency then we will help
-        guide them through the process so they can start receiving donations
-        from us.{' '}
-      </div>
-    ),
-  },
-  {
-    title: `What makes this token different from other Charity Tokens. `,
-    contents: (
-      <div>
-        We are not a token that is designed to focus on just one cause. We will
-        build a roster of partnerships with every type of charity we can
-        possibly reach out to. Whether the cause is environmental, medical, or
-        humanitarian in nature, we plan to be there to help. Beyond development
-        of foundational partnerships with established charity organizations, we
-        will be allowing the community to vote on charities that we will donate
-        to. Of course it should go without saying that we will have a vetting
-        process to ensure our donations are going to organizations that will use
-        the money responsibly. We will not donate to 'scam charities'.
-        Furthermore, we are starting to see 'meme tokens' pivot to charity as a
-        way to keep the hype going for their project. We are NOT a meme token,
-        we take charity seriously and we created this token for this purpose. We
-        believe charity is not something that should just be exploited as a
-        marketing strategy to keep your meme coin alive. We are building
-        something that is going to be here for many years to come.{' '}
-      </div>
-    ),
-  },
-  {
-    title: ` What is this 'toxic whale tax' and why did you create it?
+    title: ` What is GlobalGive Token $GGIVE?
     `,
     contents: (
       <div>
-        We have seen a very large problem of whale manipulation in the new token
-        space. Generally whales are good for project growth and continued
-        adoption, but there are always a handful of 'Toxic Whales' that do not
-        care about the project at all, they are only there to massively dump
-        their tokens and try to scare others into selling off at a loss just so
-        they can make a profit and then buy back into their positions so they
-        can do it over and over again. These Toxic Whales effectively end up
-        using the project as their own personal piggy bank. We have seen many
-        projects growth and development be completely arrested by these toxic
-        practices. We are sick of seeing this so we have created a solution. We
-        have implemented a progressive tax system that will make it very painful
-        for a whale to try and engage in these toxic practices. This progressive
-        tax system will ensure that the profits of the whales that believe in
-        the project and sell responsibly and are there to grow with the project
-        will be protected, it also ensures that the profits of the smaller
-        investors will be protected. The only people we foresee having a problem
-        with the progressive tax system are the toxic whale manipulators, and
-        frankly we don't care what they think. They are welcome to leave our
-        project and go find others that they can attempt to manipulate.
+        Launched on 1st May 2021, GlobalGive is a community-driven charity token with a difference! Our unprecedented charity partnership program ensures charities of all sizes benefit, not just from a one-off donation but continued support and cause awareness. 				
       </div>
     ),
   },
   {
-    title: ` Is this safe to invest in? / can this be rug pulled?`,
+    title: `Who are the team behind GlobalGive?`,
     contents: (
       <div>
-        This project is 100% safe to invest in. When you add tokens and then add liquidity to those tokens, 
-        you receive something called an LP-Token, or Liquidity Provider token, in exchange. This allows you 
-        to remove the liquidity at any time, which is how rug pulls happen. Without the LP-tokens, you can’t 
-        remove the liquidity, which means you can’t rug pull. The GlobalGive Team will be putting a timed 
-        lock on our LP Tokens so they can not be accessed. This is a much preferable to the burn method because
-         it gives the team more options to protect the tokens value in the event that the defi exchange has any kind of issues.
+        The GlobalGive Token Team are proud of this project which is why the founders are doxxed and have been revealed on the website since launch! You can see for yourself who each and every one of us are, and we are here for the long term! We feel that if you truly believe in what you are doing and are proud of what you are doing then you should have nothing to hide. 				
+      </div>
+    ),
+  },
+  {
+    title: ` Was there presale?`,
+    contents: (
+      <div>
+        Yes. The presale allocation was 30% of the total supply. This provided plenty of liquidity to the pool at launch to ensure a more stable price moving forward. This also ensured our record-breaking time to listing on CoinGecko - under 36 hours! 						
+						
+						
+						
+      </div>
+    ),
+  },
+  {
+    title: ` Is there a tax on buys?`,
+    contents: (
+      <div>
+        No! We don't believe that anyone should be taxed for investing in a genuine charity project such as GlobalGive. This is a massive incentive to investors and prevents donators from being penalised! and this is exclusive to GlobalGive								
+      </div>
+    ),
+  },
+  {
+    title: ` Is there a tax on sales?`,
+    contents: (
+      <div>
+        There is a 10% on sales; of which 2% is redistributed to HODlers, 2% is burnt, and 6% is added to the liquidity pool. We have also impletemented a progressive whale tax to additional investor protection. Donations to charity wallets are exempt from tax.									
+      </div>
+    ),
+  },
+  {
+    title: ` What is a toxic whale tax and how does it protect my investment?`,
+    contents: (
+      <div>
+        "GlobalGive is a community project and our unparalleled whale tax was impletemented to protect our community from toxic whales. The whale tax means that the higher the amount of tokens sold, the higher the percentage tax is paid. 
+
+        We do not support people who dump large amounts to undermine the price of the token. 
+
+        We want to protect everyone from instability, irrespective of how much you have to invest in the project. 
+
+        To the best of our knowledge, we are also the only token to implement a progressive whale tax to avoid whale dumps. "												
+      </div>
+    ),
+  },
+  {
+    title: ` Why is GlobalGive different to other charity tokens?`,
+    contents: (
+      <div>
+       "Partnerships! Our vision has always been long term relationships with charities.
+
+        We were never interested in just handing out money as a way to promote the token. From very beginning, GlobalGive was created for the purpose of charity and not as an afterthought simply to maintain hype!
+
+        Our unprecedented charity partnership is mutually beneficial. We promote and donate and charities stand next to us in support of this great project just like the rest of the community and the world at large in due time.
+        "																
+      </div>
+    ),
+  },
+  {
+    title: ` How are charity partners chosen?`,
+    contents: (
+      <div>
+       All of our charity partners are carefully vetted and verified. Once accepted, partners receive an initial donation and continue to benefit from GlobalGive's support. We encourage our community members put forward their suggestions for charities. Once vetted and shortlisted, we hold a community vote for each month's charity of the month. 																						
+      </div>
+    ),
+  },
+  {
+    title: ` Do charities have to be partners with GlobalGive to benefit?`,
+    contents: (
+      <div>
+      There are numerous benefits to becoming a partner, but any registered charity is able to open their own dedicated wallet and start accepting $GGIVE tokens by promoting on their platforms and website. 																							
+      </div>
+    ),
+  },
+  {
+    title: ` What is the official $GGIVE charity wallet address?`,
+    contents: (
+      <div>
+       0xb37185db7f6607dfe9fecb7869bc2dfc24d537e3														
+      </div>
+    ),
+  },
+  {
+    title: ` Do you have proof of donating?`,
+    contents: (
+      <div>
+       Of course! Our first donation was made to the orangutan charity redapes.org, the official acknowledgement can be seen on Twitter here																				
+      </div>
+    ),
+  },
+  {
+    title: ` What is the official $GGIVE smart contract address`,
+    contents: (
+      <div>
+       0x60e9880daef10e960da3c45b076dbdac4f111edf											
+      </div>
+    ),
+  },
+  {
+    title: ` Where can I buy $GGIVE`,
+    contents: (
+      <div>
+       You can buy $GGIVE on PancakeSwap
+       You can also trade $GGIVE on BigONE, Coinsbit and coming soon - CoinsbitINDIA								
+      </div>
+    ),
+  },
+  {
+    title: ` I've sent funds directly to the $GGIVE smart contract address, can it be retrieved?`,
+    contents: (
+      <div>
+       If you send funds directly to our contract address, it cannot be retrieved or sent back.									
+      </div>
+    ),
+  },
+  {
+    title: ` Are you on socials?`,
+    contents: (
+      <div>
+       Of course! Join the community and stay up to date with all the latest GlobalGive news
+       <ul sx={{listStyle: 'none'}}>
+           <li>
+               <a sx={{color: "#fff"}} href="https://t.me/globalgivetokencommunity" target="_blank">Telegram</a>
+           </li>
+           <li>
+               <a sx={{color: "#fff"}} href="https://www.twitter.com/globalgivetoken" target="_blank">Twitter</a>
+           </li>
+           <li>
+               <a sx={{color: "#fff"}} href="https://www.reddit.com/r/globalgive/" target="_blank">Reddit</a>
+           </li>
+           <li>
+               <a sx={{color: "#fff"}} href="https://www.instagram.com/globalgivetoken/" target="_blank">Instagram</a>
+           </li>
+           <li>
+               <a sx={{color: "#fff"}} href="https://discord.gg/QGcTVpHTVv" target="_blank">Discord</a>
+           </li>
+           <li>
+               <a sx={{color: "#fff"}} href="https://www.youtube.com/channel/UCOv_Op-b4KWOcubauyYjg-g" target="_blank">YouTube</a>
+           </li>
+           <li>
+               <a sx={{color: "#fff"}} href="https://soundcloud.com/nic-davidson-637718802" target="_blank">SoundCloud AMAs</a>
+           </li>
+       </ul>										
       </div>
     ),
   },
@@ -155,4 +186,10 @@ export default function Faq() {
       </Container>
     </section>
   )
+}
+
+const styles = {
+    socials: {
+        color: '#fff',
+    }
 }

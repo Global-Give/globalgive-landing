@@ -9,15 +9,7 @@ import Logo from 'assets/logos/gg_icon.svg'
 const data = {  
   title: 'Our Mission',
   subTitle: 'What we do',
-  description: `At GlobalGive, we are leading the field in using the power of decentralised finance to become the industry-standard for charities to acquire and receive donations – from grassroots non-profits and disaster relief funds to established charities with global reach. 
-    
-    Our goal is to provide a platform, driven by our community of GlobalGiver’s, to boost awareness to causes that need it most as well as donating to more charities monthly. 
-    
-    We are doing all of the above whilst rewarding investors for simply holding $GGIVE and providing increased investor protection measures.
-    
-    Hold GlobalGive, change the world!
-
-    We are here to disrupt an archaic system and replace it with a model that benefits investors, charities and the donators in a much better way. 
+  description: `We are here to disrupt an archaic system and replace it with a model that benefits investors, charities and the donators in a much better way. 
 
     We see cryptocurrency as the future and we have positioned ourselves to be the token of choice for global charities whereby donations can be made in $GGIVE from anyone around the world to any charity.
 
